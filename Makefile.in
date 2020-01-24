@@ -23,7 +23,6 @@ PLAT = LINUX
 #-----------------------------------------------------------------------------
  
 BLLIB = ../f2c_BLAS-3.8.0/blas_LINUX.a ../libf2c/libf2c.a -lm
-#BLLIB = ../f2c_BLAS-3.8.0/blas_LINUX.a ~/tools/libf2c/libf2c.a -lm
 CBLIB = ../lib/cblas_$(PLAT).a
 
 #-----------------------------------------------------------------------------
