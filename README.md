@@ -111,3 +111,5 @@ tests are correct, the following procedure has been followed:
 1. Convert BLAS to C and CBLAS to C **without modifying the test source code**
 2. Once CBLAS passes all the original tests, convert the test source code
   **without modifying the CBLAS or BLAS C code**.
+3. Check that all the tests (now written in C) pass with the BLAS and CBLAS
+  code (written in C too)
