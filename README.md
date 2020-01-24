@@ -55,6 +55,7 @@ The original source code of CBLAS contains the following  BLAS wrappers written
 in FORTRAN:
 
 ```bash
+
 cdotcsub.f
 cdotusub.f
 dasumsub.f
@@ -75,6 +76,7 @@ sdsdotsub.f
 snrm2sub.f
 zdotcsub.f
 zdotusub.f
+
 ```
 
 As these were simple wrappers, their usage in the C code has been replaced
@@ -107,3 +109,13 @@ tests are correct, the following procedure has been followed:
   **without modifying the CBLAS or BLAS C code**.
 3. Check that all the tests (now written in C) pass with the BLAS and CBLAS
   code (written in C too)
+
+## Linking CBLAS
+
+To use the CBLAS lib, use the follwing flags
+
+```
+<path>/<to>/<this>/<dir>/lib/cblas_LINUX.a \
+    <path>/<to>/<this>/<dir>/f2c_BLAS-3.8.0/blas_LINUX.a \
+    <path>/<to>/<this>/<dir>/libf2c/libf2c.a -lm
+```
