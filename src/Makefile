@@ -43,20 +43,19 @@ dlev1 = cblas_drotg.o cblas_drotmg.o cblas_drot.o cblas_drotm.o  \
 #
 clev1 = cblas_cswap.o cblas_cscal.o cblas_csscal.o cblas_ccopy.o \
          cblas_caxpy.o cblas_cdotu_sub.o cblas_cdotc_sub.o \
-         cblas_icamax.o cdotcsub.o cdotusub.o icamaxsub.o 
+         cblas_icamax.o
 
 #
 # All object files for double complex precision
 #
 zlev1 = cblas_zswap.o cblas_zscal.o cblas_zdscal.o cblas_zcopy.o \
          cblas_zaxpy.o cblas_zdotu_sub.o cblas_zdotc_sub.o cblas_dznrm2.o \
-         cblas_dzasum.o cblas_izamax.o zdotcsub.o zdotusub.o      \
-         dzasumsub.o  dznrm2sub.o  izamaxsub.o 
+         cblas_dzasum.o cblas_izamax.o
 
 #
 # Common files for single / complex precision
 #
-sclev1 = cblas_scasum.o scasumsub.o cblas_scnrm2.o scnrm2sub.o
+sclev1 = cblas_scasum.o
 
 #
 # All object files
