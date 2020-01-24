@@ -30,14 +30,6 @@ following command has been run:
 sed -i 's/long int /int /g' f2c.h
 ```
 
-To make `libf2c`, run:
-
-```bash
-make -f makefile.u  # on linux
-```
-
-from the directory `libf2c/`.
-
 ### Automated translation of BLAS from FORTRAN to C
 
 BLAS, which is originally written in FORTRAN, has been tranlated to C using the
