@@ -43,7 +43,7 @@ dlev1 = cblas_drotg.o cblas_drotmg.o cblas_drot.o cblas_drotm.o  \
 #
 clev1 = cblas_cswap.o cblas_cscal.o cblas_csscal.o cblas_ccopy.o \
          cblas_caxpy.o cblas_cdotu_sub.o cblas_cdotc_sub.o \
-         cblas_icamax.o
+	 cblas_icamax.o cblas_crotg.o
 
 #
 # All object files for double complex precision
