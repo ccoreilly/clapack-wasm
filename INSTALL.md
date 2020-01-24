@@ -30,6 +30,7 @@ This generates `blas_LINUX.a` in `f2c_BLAS/` (among other things).
 ## CBLAS + CBLAS tests
 
 ```bash
+cp Makefile.in.LINUX Makefile.in  # if targetting linux
 make
 ```
 
