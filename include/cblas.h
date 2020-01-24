@@ -44,7 +44,7 @@ void   cblas_zdotu_sub(const int N, const void *X, const int incX,
                        const void *Y, const int incY, void *dotu);
 void   cblas_zdotc_sub(const int N, const void *X, const int incX,
                        const void *Y, const int incY, void *dotc);
-
+void   cblas_zrotg(void *a, void *b, void *c, void *s);
 
 /*
  * Functions having prefixes S D SC DZ

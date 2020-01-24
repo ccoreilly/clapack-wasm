@@ -50,7 +50,7 @@ clev1 = cblas_cswap.o cblas_cscal.o cblas_csscal.o cblas_ccopy.o \
 #
 zlev1 = cblas_zswap.o cblas_zscal.o cblas_zdscal.o cblas_zcopy.o \
          cblas_zaxpy.o cblas_zdotu_sub.o cblas_zdotc_sub.o cblas_dznrm2.o \
-         cblas_dzasum.o cblas_izamax.o
+	 cblas_dzasum.o cblas_izamax.o cblas_zrotg.o
 
 #
 # Common files for single / complex precision
