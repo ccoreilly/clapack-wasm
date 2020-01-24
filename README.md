@@ -5,6 +5,8 @@
 This repo contains a checked version of CBLAS with BLAS, both entirely written
 in C. Having all soure code in C allows to easily convert the library to WASM.
 
+For install instructions, please refer to [INSTALL](./INSTALL.md).
+
 ## Automatic FORTRAN 77 to C translation
 
 ### f2c
