@@ -9,7 +9,7 @@ Install instructions tested with:
 
 ```bash
 cd libf2c
-make
+make # for linux, otherwise add -f makefile.WASM
 cd ..
 ```
 
@@ -19,6 +19,8 @@ This generates `libf2c.a` in `libf2c/` (among other things).
 
 ```bash
 cd f2c_BLAS-3.8.0
+# if compiling for linux host, use make.inc.WASM otherwise
+cp make.inc.LINUX make.inc
 make
 cd ..
 ```
