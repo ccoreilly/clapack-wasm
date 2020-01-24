@@ -112,7 +112,7 @@ tests are correct, the following procedure has been followed:
 
 ## Linking CBLAS
 
-To use the CBLAS lib, use the follwing flags
+To use the CBLAS lib, use the following flags
 
 ```
 <path>/<to>/<this>/<dir>/lib/cblas_LINUX.a \
