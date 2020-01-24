@@ -7,4 +7,5 @@ libf2c/*.wasm
 libf2c/arith.h
 libf2c/signal1.h
 libf2c/sysdep1.h
+Makefile.in
 testing/x[cdsz]cblat*
