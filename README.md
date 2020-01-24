@@ -84,7 +84,7 @@ zdotusub.f
 ```
 
 As these were simple wrappers, their usage in the C code has been replaced
-by direct calls to the BLAS subroutines (provided by the BLAS library). These
+by direct calls to the BLAS subroutines (provided by the BLAS library). The
 modifications had to make the following assumptions:
 
 * BLAS to C type equivalence
@@ -92,7 +92,7 @@ modifications had to make the following assumptions:
   * `DOUBLEREAL` -> `double`
   * `INTEGER` -> `int`
   * `VOID` -> `void`
-* f2c converted function interface
+* `f2c` converted function interface
   * The subroutines `cdotc`, `cdotu`, `zdotc`, and `zdotu` return no value but
     store the result in a pointer given as a subroutine parameter
 * Complex types
@@ -101,3 +101,13 @@ modifications had to make the following assumptions:
 
 With these modifications, the FORTRAN free code of CBLAS passes all the
 (unmodified) tests in the `testing` directory.
+
+## CBLAS test suite
+
+To allow automated testing of the generated CBLAS library in wasm, the test
+suites has also been converted to c using `f2c`. To ensure that the converted
+tests are correct, the following procedure has been followed:
+
+1. Convert BLAS to C and CBLAS to C **without modifying the test source code**
+2. Once CBLAS passes all the original tests, convert the test source code
+  **without modifying the CBLAS or BLAS C code**.
