@@ -13,7 +13,7 @@
 # to the CFLAGS = line below.
 
 .SUFFIXES: .c .o
-	CC = gcc
+CC = gcc
 SHELL = /bin/sh
 CFLAGS = -O -DNON_UNIX_STDIO
 
