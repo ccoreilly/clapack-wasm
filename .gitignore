@@ -5,3 +5,4 @@ lib/
 libf2c/arith.h
 libf2c/signal1.h
 libf2c/sysdep1.h
+testing/x[cdsz]cblat*
