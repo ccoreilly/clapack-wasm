@@ -91,7 +91,7 @@
 /* > \endverbatim */
 /* > */
 /*  ===================================================================== */
-/* Subroutine */ int sscal_(integer *n, real *sa, real *sx, integer *incx)
+/* Subroutine */ void sscal_(integer *n, real *sa, real *sx, integer *incx)
 {
     /* System generated locals */
     integer i__1, i__2;
@@ -121,7 +121,7 @@
 
     /* Function Body */
     if (*n <= 0 || *incx <= 0) {
-	return 0;
+	return;
     }
     if (*incx == 1) {
 
@@ -137,7 +137,7 @@
 		sx[i__] = *sa * sx[i__];
 	    }
 	    if (*n < 5) {
-		return 0;
+		return;
 	    }
 	}
 	mp1 = m + 1;
@@ -160,6 +160,6 @@
 	    sx[i__] = *sa * sx[i__];
 	}
     }
-    return 0;
+    return;
 } /* sscal_ */
 

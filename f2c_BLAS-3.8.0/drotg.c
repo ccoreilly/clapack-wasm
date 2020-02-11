@@ -85,7 +85,7 @@ static doublereal c_b2 = 1.;
 /* > \endverbatim */
 /* > */
 /*  ===================================================================== */
-/* Subroutine */ int drotg_(doublereal *da, doublereal *db, doublereal *c__, 
+/* Subroutine */ void drotg_(doublereal *da, doublereal *db, doublereal *c__, 
 	doublereal *s)
 {
     /* System generated locals */
@@ -141,6 +141,6 @@ static doublereal c_b2 = 1.;
     }
     *da = r__;
     *db = z__;
-    return 0;
+    return;
 } /* drotg_ */
 

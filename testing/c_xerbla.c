@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <ctype.h>
 #include <stdarg.h>
 #include <string.h>
+// #include <ctype.h>
 #include "cblas.h"
 #include "cblas_test.h"
 
@@ -82,6 +82,13 @@ void cblas_xerbla(int info, const char *rout, const char *form, ...)
       cblas_lerr = PASSED;
       cblas_ok = FALSE;
    } else cblas_lerr = FAILED;
+}
+
+
+int tolower(int c) {
+    if (c < 91 && c > 65)
+        return c + 32;
+    return c;
 }
 
 #ifdef F77_Char

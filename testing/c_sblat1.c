@@ -154,7 +154,7 @@ static integer c__5 = 5;
 
     /* Local variables */
     integer k;
-    extern /* Subroutine */ int srotgtest_(real *, real *, real *, real *);
+    extern /* Subroutine */ void srotgtest_(real *, real *, real *, real *);
     real sa, sb, sc, ss;
     extern /* Subroutine */ int stest1_(real *, real *, real *, real *);
 
@@ -240,7 +240,7 @@ L40:
     /* Local variables */
     integer i__;
     extern real snrm2test_(integer *, real *, integer *);
-    extern /* Subroutine */ int sscaltest_(integer *, real *, real *, integer 
+    extern /* Subroutine */ void sscaltest_(integer *, real *, real *, integer 
 	    *);
     extern real sasumtest_(integer *, real *, integer *);
     real sx[8];
@@ -372,7 +372,7 @@ L40:
     /* Local variables */
     extern real sdottest_(integer *, real *, integer *, real *, integer *);
     integer i__, j;
-    extern /* Subroutine */ int scopytest_(integer *, real *, integer *, real 
+    extern /* Subroutine */ void scopytest_(integer *, real *, integer *, real 
 	    *, integer *), sswaptest_(integer *, real *, integer *, real *, 
 	    integer *), saxpytest_(integer *, real *, real *, integer *, real 
 	    *, integer *);
@@ -506,7 +506,7 @@ L40:
     /* Subroutine */ int s_stop(char *, ftnlen);
 
     /* Local variables */
-    extern /* Subroutine */ int srottest_(integer *, real *, integer *, real *
+    extern /* Subroutine */ void srottest_(integer *, real *, integer *, real *
 	    , integer *, real *, real *);
     integer i__, k, ki, kn, mx, my;
     real sx[7], sy[7], stx[7], sty[7];

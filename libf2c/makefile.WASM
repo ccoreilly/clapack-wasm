@@ -15,7 +15,7 @@
 .SUFFIXES: .c .o
 CC = emcc
 SHELL = /bin/sh
-CFLAGS = -O -DNON_UNIX_STDIO
+CFLAGS = -DNON_UNIX_STDIO
 
 LD = wasm-ld
 RANLIB = emranlib
@@ -24,7 +24,7 @@ AR = emar
 # compile, then strip unnecessary symbols
 .c.o:
 	$(CC) -c -DSkip_f2c_Undefs $(CFLAGS) $*.c
-	$(LD) -r -o $*.xxx $*.o
+	$(LD) --relocatable -o $*.xxx $*.o
 	mv $*.xxx $*.o
 ## Under Solaris (and other systems that do not understand ld -x),
 ## omit -x in the ld line above.
@@ -76,7 +76,7 @@ OFILES = $(MISC) $(POW) $(CX) $(DCX) $(REAL) $(DBL) $(INT) \
 all: f2c.h signal1.h sysdep1.h libf2c.a
 
 libf2c.a: $(OFILES)
-	$(AR) r libf2c.a $?
+	$(AR) cr libf2c.a $?
 	-$(RANLIB) libf2c.a
 
 ## Shared-library variant: the following rule works on Linux
@@ -130,7 +130,7 @@ install: libf2c.a
 	-$(RANLIB) $(LIBDIR)/libf2c.a
 
 clean:
-	rm -f libf2c.a *.o arith.h signal1.h sysdep1.h
+	rm -f libf2c.a *.o arith.h signal1.h sysdep1.h libf2c.so
 
 backspac.o:	fio.h
 close.o:	fio.h

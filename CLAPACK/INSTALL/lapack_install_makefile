@@ -1,0 +1,15 @@
+TOPDIR=..
+include $(TOPDIR)/make.inc
+F2CLIB       = $(TOPDIR)/F2CLIBS/libf2c.a
+
+.SUFFIXES : .o .c 
+
+all:  dlamch.o dlamchtst.o dsecnd.o dsecndtst.o ilaver.o LAPACK_version.o lsame.o lsametst.o second.o secondtst.o slamch.o slamchtst.o tstiee.o 
+
+clean:
+	rm -f *.o
+
+slamch.o: slamch.c ; $(CC) $(NOOPT) -c $< -o $@
+dlamch.o: dlamch.c ; $(CC) $(NOOPT) -c $< -o $@
+
+.c.o: ; $(CC) $(CFLAGS) -c $< -o $@

@@ -29,7 +29,7 @@ alev = $(alev1) $(alev2) $(alev3) $(errhand)
 slev1 = cblas_srotg.o cblas_srotmg.o cblas_srot.o cblas_srotm.o  \
          cblas_sswap.o cblas_sscal.o  cblas_scopy.o cblas_saxpy.o \
          cblas_sdot.o  cblas_sdsdot.o cblas_snrm2.o cblas_sasum.o \
-         cblas_isamax.o
+	 cblas_isamax.o cblas_scnrm2.o
 #
 # All object files for double real precision
 #

@@ -154,7 +154,7 @@ static integer c__5 = 5;
 
     /* Local variables */
     integer k;
-    extern /* Subroutine */ int drotgtest_(doublereal *, doublereal *, 
+    extern /* Subroutine */ void drotgtest_(doublereal *, doublereal *, 
 	    doublereal *, doublereal *);
     doublereal sa, sb, sc, ss;
     extern /* Subroutine */ int stest1_(doublereal *, doublereal *, 
@@ -239,7 +239,7 @@ L40:
     /* Local variables */
     integer i__;
     extern doublereal dnrm2test_(integer *, doublereal *, integer *);
-    extern /* Subroutine */ int dscaltest_(integer *, doublereal *, 
+    extern /* Subroutine */ void dscaltest_(integer *, doublereal *, 
 	    doublereal *, integer *);
     extern doublereal dasumtest_(integer *, doublereal *, integer *);
     doublereal sx[8];
@@ -368,7 +368,7 @@ L40:
     extern doublereal ddottest_(integer *, doublereal *, integer *, 
 	    doublereal *, integer *);
     integer i__, j;
-    extern /* Subroutine */ int dcopytest_(integer *, doublereal *, integer *,
+    extern /* Subroutine */ void dcopytest_(integer *, doublereal *, integer *,
 	     doublereal *, integer *), dswaptest_(integer *, doublereal *, 
 	    integer *, doublereal *, integer *), daxpytest_(integer *, 
 	    doublereal *, doublereal *, integer *, doublereal *, integer *);
@@ -499,7 +499,7 @@ L40:
     /* Subroutine */ int s_stop(char *, ftnlen);
 
     /* Local variables */
-    extern /* Subroutine */ int drottest_(integer *, doublereal *, integer *, 
+    extern /* Subroutine */ void drottest_(integer *, doublereal *, integer *, 
 	    doublereal *, integer *, doublereal *, doublereal *);
     integer i__, k, ki, kn, mx, my;
     doublereal sx[7], sy[7], stx[7], sty[7];

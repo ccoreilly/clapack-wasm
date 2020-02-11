@@ -55,8 +55,8 @@ include make.inc
 #
 #######################################################################
 
-all: $(BLASLIB)
- 
+all: $(BLASLIB).a
+
 #---------------------------------------------------------
 #  Comment out the next 6 definitions if you already have
 #  the Level 1 BLAS.
@@ -119,7 +119,7 @@ $(ZBLAS2): $(FRC)
 #  Comment out the next 4 definitions if you already have
 #  the Level 3 BLAS.
 #---------------------------------------------------------
-SBLAS3 = sgemm.o ssymm.o ssyrk.o ssyr2k.o strmm.o strsm.o 
+SBLAS3 = sgemm.o ssymm.o ssyrk.o ssyr2k.o strmm.o strsm.o
 $(SBLAS3): $(FRC)
 
 CBLAS3 = cgemm.o csymm.o csyrk.o csyr2k.o ctrmm.o ctrsm.o \
@@ -137,29 +137,32 @@ ALLOBJ=$(SBLAS1) $(SBLAS2) $(SBLAS3) $(DBLAS1) $(DBLAS2) $(DBLAS3)	\
 	$(CBLAS1) $(CBLAS2) $(CBLAS3) $(ZBLAS1) \
 	$(ZBLAS2) $(ZBLAS3) $(ALLBLAS)
 
-$(BLASLIB): $(ALLOBJ)
+$(BLASLIB).a: $(ALLOBJ)
 	$(ARCH) $(ARCHFLAGS) $@ $(ALLOBJ)
 	$(RANLIB) $@
 
+$(BLASLIB).so: $(ALLOBJ)
+	$(CC) -shared -o $@ $(ALLOBJ)
+
 single: $(SBLAS1) $(ALLBLAS) $(SBLAS2) $(SBLAS3)
-	$(ARCH) $(ARCHFLAGS) $(BLASLIB) $(SBLAS1) $(ALLBLAS) \
+	$(ARCH) $(ARCHFLAGS) $(BLASLIB).a $(SBLAS1) $(ALLBLAS) \
 	$(SBLAS2) $(SBLAS3)
-	$(RANLIB) $(BLASLIB)
+	$(RANLIB) $(BLASLIB).a
 
 double: $(DBLAS1) $(ALLBLAS) $(DBLAS2) $(DBLAS3)
-	$(ARCH) $(ARCHFLAGS) $(BLASLIB) $(DBLAS1) $(ALLBLAS) \
+	$(ARCH) $(ARCHFLAGS) $(BLASLIB).a $(DBLAS1) $(ALLBLAS) \
 	$(DBLAS2) $(DBLAS3)
-	$(RANLIB) $(BLASLIB)
+	$(RANLIB) $(BLASLIB).a
 
 complex: $(CBLAS1) $(CB1AUX) $(ALLBLAS) $(CBLAS2) $(CBLAS3)
-	$(ARCH) $(ARCHFLAGS) $(BLASLIB) $(CBLAS1) $(CB1AUX) \
+	$(ARCH) $(ARCHFLAGS) $(BLASLIB).a $(CBLAS1) $(CB1AUX) \
 	$(ALLBLAS) $(CBLAS2) $(CBLAS3)
-	$(RANLIB) $(BLASLIB)
+	$(RANLIB) $(BLASLIB).a
 
 complex16: $(ZBLAS1) $(ZB1AUX) $(ALLBLAS) $(ZBLAS2) $(ZBLAS3)
-	$(ARCH) $(ARCHFLAGS) $(BLASLIB) $(ZBLAS1) $(ZB1AUX) \
+	$(ARCH) $(ARCHFLAGS) $(BLASLIB).a $(ZBLAS1) $(ZB1AUX) \
 	$(ALLBLAS) $(ZBLAS2) $(ZBLAS3)
-	$(RANLIB) $(BLASLIB)
+	$(RANLIB) $(BLASLIB).a
 
 FRC:
 	@FRC=$(FRC)
@@ -167,5 +170,5 @@ FRC:
 clean:
 	rm -f *.o
 
-.c.o: 
+.c.o:
 	$(CC) $(CFLAGS) -c $< -o $@

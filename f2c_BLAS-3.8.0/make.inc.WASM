@@ -16,7 +16,7 @@ PLAT = _WA
 #  desired load options for your machine.
 #
 CC       = emcc
-CFLAGS   = -I/home/mahu/tools/libf2c # -fcx-fortran-rules
+CFLAGS   = -I../libf2c
 DRVOPTS  = $(OPTS)
 NOOPT    =
 LOADER   = emcc
@@ -31,4 +31,4 @@ RANLIB   = emranlib
 #
 #  The location and name of the Reference BLAS library.
 #
-BLASLIB      = blas$(PLAT).a
+BLASLIB      = blas$(PLAT)
