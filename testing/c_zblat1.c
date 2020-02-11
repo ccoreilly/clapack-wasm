@@ -187,12 +187,12 @@ static doublereal c_b43 = 1.;
 
     /* Local variables */
     integer i__;
-    extern /* Subroutine */ int zscaltest_(integer *, doublecomplex *, 
+    extern /* Subroutine */ void zscaltest_(integer *, doublecomplex *, 
 	    doublecomplex *, integer *);
     doublecomplex cx[8];
     extern doublereal dznrm2test_(integer *, doublecomplex *, integer *);
     integer np1;
-    extern /* Subroutine */ int zdscaltest_(integer *, doublereal *, 
+    extern /* Subroutine */ void zdscaltest_(integer *, doublereal *, 
 	    doublecomplex *, integer *);
     extern integer izamaxtest_(integer *, doublecomplex *, integer *);
     extern doublereal dzasumtest_(integer *, doublecomplex *, integer *);
@@ -413,17 +413,17 @@ static doublereal c_b43 = 1.;
 
     /* Local variables */
     integer i__;
-    extern /* Subroutine */ int zdotctest_(integer *, doublecomplex *, 
+    extern /* Subroutine */ void zdotctest_(integer *, doublecomplex *, 
 	    integer *, doublecomplex *, integer *, doublecomplex *), 
 	    zcopytest_(integer *, doublecomplex *, integer *, doublecomplex *,
 	     integer *);
     integer ki;
-    extern /* Subroutine */ int zdotutest_(integer *, doublecomplex *, 
+    extern /* Subroutine */ void zdotutest_(integer *, doublecomplex *, 
 	    integer *, doublecomplex *, integer *, doublecomplex *), 
 	    zswaptest_(integer *, doublecomplex *, integer *, doublecomplex *,
 	     integer *);
     integer kn;
-    extern /* Subroutine */ int zaxpytest_(integer *, doublecomplex *, 
+    extern /* Subroutine */ void zaxpytest_(integer *, doublecomplex *, 
 	    doublecomplex *, integer *, doublecomplex *, integer *);
     doublecomplex cx[7], cy[7];
     integer mx, my;

@@ -12,7 +12,7 @@
 
 #include "f2c.h"
 
-/* Subroutine */ int xerbla_array__(char *srname_array__, integer *
+/* Subroutine */ void xerbla_array__(char *srname_array__, integer *
 	srname_len__, integer *info, ftnlen srname_array_len)
 {
     /* System generated locals */
@@ -24,7 +24,7 @@
 
     /* Local variables */
     integer i__;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     char srname[32];
 
 
@@ -97,5 +97,5 @@
 		srname_array__[i__];
     }
     xerbla_(srname, info);
-    return 0;
+    return;
 } /* xerbla_array__ */

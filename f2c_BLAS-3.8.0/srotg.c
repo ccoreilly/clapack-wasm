@@ -85,7 +85,7 @@ static real c_b2 = 1.f;
 /* > \endverbatim */
 /* > */
 /*  ===================================================================== */
-/* Subroutine */ int srotg_(real *sa, real *sb, real *c__, real *s)
+/* Subroutine */ void srotg_(real *sa, real *sb, real *c__, real *s)
 {
     /* System generated locals */
     real r__1, r__2;
@@ -140,6 +140,6 @@ static real c_b2 = 1.f;
     }
     *sa = r__;
     *sb = z__;
-    return 0;
+    return;
 } /* srotg_ */
 

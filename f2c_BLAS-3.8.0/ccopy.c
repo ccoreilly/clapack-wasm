@@ -93,7 +93,7 @@
 /* > \endverbatim */
 /* > */
 /*  ===================================================================== */
-/* Subroutine */ int ccopy_(integer *n, complex *cx, integer *incx, complex *
+/* Subroutine */ void ccopy_(integer *n, complex *cx, integer *incx, complex *
 	cy, integer *incy)
 {
     /* System generated locals */
@@ -123,7 +123,7 @@
 
     /* Function Body */
     if (*n <= 0) {
-	return 0;
+	return;
     }
     if (*incx == 1 && *incy == 1) {
 
@@ -157,6 +157,6 @@
 	    iy += *incy;
 	}
     }
-    return 0;
+    return;
 } /* ccopy_ */
 

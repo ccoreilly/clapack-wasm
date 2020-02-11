@@ -199,12 +199,13 @@ static real c_b43 = 1.f;
     extern real scnrm2test_(integer *, complex *, integer *);
     integer np1;
     extern integer icamaxtest_(integer *, complex *, integer *);
-    extern /* Subroutine */ int csscaltest_(integer *, real *, complex *, 
+    extern /* Subroutine */ void csscaltest_(integer *, real *, complex *, 
 	    integer *);
     extern real scasumtest_(integer *, complex *, integer *);
     integer len;
-    extern /* Subroutine */ int cscal_(integer *, complex *, complex *, 
-	    integer *), ctest_(integer *, complex *, complex *, complex *, 
+    extern /* Subroutine */ void cscal_(integer *, complex *, complex *, 
+	    integer *);
+    extern int ctest_(integer *, complex *, complex *, complex *, 
 	    real *);
     complex mwpcs[5], mwpct[5];
     extern /* Subroutine */ int itest1_(integer *, integer *), stest1_(real *,
@@ -430,7 +431,7 @@ static real c_b43 = 1.f;
 
     /* Local variables */
     integer i__;
-    extern /* Subroutine */ int cdotctest_(integer *, complex *, integer *, 
+    extern /* Subroutine */ void cdotctest_(integer *, complex *, integer *, 
 	    complex *, integer *, complex *), ccopytest_(integer *, complex *,
 	     integer *, complex *, integer *), cdotutest_(integer *, complex *
 	    , integer *, complex *, integer *, complex *), cswaptest_(integer 

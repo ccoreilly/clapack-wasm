@@ -110,7 +110,7 @@ static logical c_false = FALSE_;
 	    ftnlen);
     /* Subroutine */ int s_stop(char *, ftnlen);
     integer f_clos(cllist *);
-    /* Subroutine */ int s_copy(char *, char *, ftnlen, ftnlen);
+    /* Subroutine */ void s_copy(char *, char *, ftnlen, ftnlen);
 
     /* Local variables */
     real a[4225]	/* was [65][65] */, g[65];
@@ -170,7 +170,7 @@ static logical c_false = FALSE_;
     logical rorder;
     integer layout;
     logical ltestt;
-    extern /* Subroutine */ int cs2chke_(char *, ftnlen);
+    extern /* Subroutine */ void cs2chke_(char *);
     logical tsterr;
 
     /* Fortran I/O blocks */
@@ -654,7 +654,7 @@ L100:
 		    ftnlen)12);
 /*           Test error exits. */
 	    if (tsterr) {
-		cs2chke_(snames + (isnum - 1) * 12, (ftnlen)12);
+		cs2chke_(snames + (isnum - 1) * 12);
 		s_wsle(&io___87);
 		e_wsle();
 	    }
@@ -853,7 +853,7 @@ L240:
     alist al__1;
 
     /* Builtin functions */
-    /* Subroutine */ int s_copy(char *, char *, ftnlen, ftnlen);
+    /* Subroutine */ void s_copy(char *, char *, ftnlen, ftnlen);
     integer s_wsfe(cilist *), do_fio(integer *, char *, ftnlen), e_wsfe(void),
 	     f_rew(alist *);
 
@@ -883,11 +883,11 @@ L240:
     integer incxs, incys;
     char trans[1];
     logical banded;
-    extern /* Subroutine */ int csgbmv_(integer *, char *, integer *, integer 
+    extern /* Subroutine */ void csgbmv_(integer *, char *, integer *, integer 
 	    *, integer *, integer *, real *, real *, integer *, real *, 
-	    integer *, real *, real *, integer *, ftnlen), csgemv_(integer *, 
+	    integer *, real *, real *, integer *), csgemv_(integer *, 
 	    char *, integer *, integer *, real *, real *, integer *, real *, 
-	    integer *, real *, real *, integer *, ftnlen);
+	    integer *, real *, real *, integer *);
     char ctrans[14];
     real errmax;
     extern logical lseres_(char *, char *, integer *, integer *, real *, real 
@@ -1149,8 +1149,7 @@ L240:
 					}
 					csgemv_(iorder, trans, &m, &n, &alpha,
 						 &aa[1], &lda, &xx[1], &incx, 
-						&beta, &yy[1], &incy, (ftnlen)
-						1);
+						&beta, &yy[1], &incy);
 				    } else if (banded) {
 					if (*trace) {
 					    io___145.ciunit = *ntra;
@@ -1187,7 +1186,7 @@ L240:
 					csgbmv_(iorder, trans, &m, &n, &kl, &
 						ku, &alpha, &aa[1], &lda, &xx[
 						1], &incx, &beta, &yy[1], &
-						incy, (ftnlen)1);
+						incy);
 				    }
 
 /*                             Check if error-exit was taken incorrectly. */
@@ -1444,7 +1443,7 @@ L140:
     alist al__1;
 
     /* Builtin functions */
-    /* Subroutine */ int s_copy(char *, char *, ftnlen, ftnlen);
+    /* Subroutine */ void s_copy(char *, char *, ftnlen, ftnlen);
     integer s_wsfe(cilist *), do_fio(integer *, char *, ftnlen), e_wsfe(void),
 	     f_rew(alist *);
 
@@ -1477,14 +1476,14 @@ L140:
     real errmax;
     extern logical lseres_(char *, char *, integer *, integer *, real *, real 
 	    *, integer *, ftnlen, ftnlen);
-    extern /* Subroutine */ int cssbmv_(integer *, char *, integer *, integer 
+    extern /* Subroutine */ void cssbmv_(integer *, char *, integer *, integer 
 	    *, real *, real *, integer *, real *, integer *, real *, real *, 
-	    integer *, ftnlen);
+	    integer *);
     real transl;
-    extern /* Subroutine */ int csspmv_(integer *, char *, integer *, real *, 
-	    real *, real *, integer *, real *, real *, integer *, ftnlen), 
+    extern /* Subroutine */ void csspmv_(integer *, char *, integer *, real *, 
+	    real *, real *, integer *, real *, real *, integer *), 
 	    cssymv_(integer *, char *, integer *, real *, real *, integer *, 
-	    real *, integer *, real *, real *, integer *, ftnlen);
+	    real *, integer *, real *, real *, integer *);
 
     /* Fortran I/O blocks */
     static cilist io___197 = { 0, 0, 0, fmt_9993, 0 };
@@ -1713,7 +1712,7 @@ L140:
 				    }
 				    cssymv_(iorder, uplo, &n, &alpha, &aa[1], 
 					    &lda, &xx[1], &incx, &beta, &yy[1]
-					    , &incy, (ftnlen)1);
+					    , &incy);
 				} else if (banded) {
 				    if (*trace) {
 					io___198.ciunit = *ntra;
@@ -1745,7 +1744,7 @@ L140:
 				    }
 				    cssbmv_(iorder, uplo, &n, &k, &alpha, &aa[
 					    1], &lda, &xx[1], &incx, &beta, &
-					    yy[1], &incy, (ftnlen)1);
+					    yy[1], &incy);
 				} else if (packed) {
 				    if (*trace) {
 					io___199.ciunit = *ntra;
@@ -1772,8 +1771,7 @@ L140:
 					f_rew(&al__1);
 				    }
 				    csspmv_(iorder, uplo, &n, &alpha, &aa[1], 
-					    &xx[1], &incx, &beta, &yy[1], &
-					    incy, (ftnlen)1);
+					    &xx[1], &incx, &beta, &yy[1], &incy);
 				}
 
 /*                          Check if error-exit was taken incorrectly. */
@@ -2042,7 +2040,7 @@ L130:
     alist al__1;
 
     /* Builtin functions */
-    /* Subroutine */ int s_copy(char *, char *, ftnlen, ftnlen);
+    /* Subroutine */ void s_copy(char *, char *, ftnlen, ftnlen);
     integer s_cmp(char *, char *, ftnlen, ftnlen), s_wsfe(cilist *), do_fio(
 	    integer *, char *, ftnlen), e_wsfe(void), f_rew(alist *);
 
@@ -2075,22 +2073,19 @@ L130:
     real errmax;
     extern logical lseres_(char *, char *, integer *, integer *, real *, real 
 	    *, integer *, ftnlen, ftnlen);
-    extern /* Subroutine */ int cstbmv_(integer *, char *, char *, char *, 
-	    integer *, integer *, real *, integer *, real *, integer *, 
-	    ftnlen, ftnlen, ftnlen);
+    extern /* Subroutine */ void cstbmv_(integer *, char *, char *, char *, 
+	    integer *, integer *, real *, integer *, real *, integer *);
     real transl;
-    extern /* Subroutine */ int cstbsv_(integer *, char *, char *, char *, 
-	    integer *, integer *, real *, integer *, real *, integer *, 
-	    ftnlen, ftnlen, ftnlen);
+    extern /* Subroutine */ void cstbsv_(integer *, char *, char *, char *, 
+	    integer *, integer *, real *, integer *, real *, integer *);
     char transs[1];
-    extern /* Subroutine */ int cstpmv_(integer *, char *, char *, char *, 
-	    integer *, real *, real *, integer *, ftnlen, ftnlen, ftnlen), 
+    extern /* Subroutine */ void cstpmv_(integer *, char *, char *, char *, 
+	    integer *, real *, real *, integer *), 
 	    cstrmv_(integer *, char *, char *, char *, integer *, real *, 
-	    integer *, real *, integer *, ftnlen, ftnlen, ftnlen), cstpsv_(
+	    integer *, real *, integer *), cstpsv_(
 	    integer *, char *, char *, char *, integer *, real *, real *, 
-	    integer *, ftnlen, ftnlen, ftnlen), cstrsv_(integer *, char *, 
-	    char *, char *, integer *, real *, integer *, real *, integer *, 
-	    ftnlen, ftnlen, ftnlen);
+	    integer *), cstrsv_(integer *, char *, 
+	    char *, char *, integer *, real *, integer *, real *, integer *);
 
     /* Fortran I/O blocks */
     static cilist io___252 = { 0, 0, 0, fmt_9993, 0 };
@@ -2316,8 +2311,7 @@ L130:
 					f_rew(&al__1);
 				    }
 				    cstrmv_(iorder, uplo, trans, diag, &n, &
-					    aa[1], &lda, &xx[1], &incx, (
-					    ftnlen)1, (ftnlen)1, (ftnlen)1);
+					    aa[1], &lda, &xx[1], &incx);
 				} else if (banded) {
 				    if (*trace) {
 					io___253.ciunit = *ntra;
@@ -2344,8 +2338,7 @@ L130:
 					f_rew(&al__1);
 				    }
 				    cstbmv_(iorder, uplo, trans, diag, &n, &k,
-					     &aa[1], &lda, &xx[1], &incx, (
-					    ftnlen)1, (ftnlen)1, (ftnlen)1);
+					     &aa[1], &lda, &xx[1], &incx);
 				} else if (packed) {
 				    if (*trace) {
 					io___254.ciunit = *ntra;
@@ -2368,8 +2361,7 @@ L130:
 					f_rew(&al__1);
 				    }
 				    cstpmv_(iorder, uplo, trans, diag, &n, &
-					    aa[1], &xx[1], &incx, (ftnlen)1, (
-					    ftnlen)1, (ftnlen)1);
+					    aa[1], &xx[1], &incx);
 				}
 			    } else if (s_cmp(sname + 9, "sv", (ftnlen)2, (
 				    ftnlen)2) == 0) {
@@ -2397,8 +2389,7 @@ L130:
 					f_rew(&al__1);
 				    }
 				    cstrsv_(iorder, uplo, trans, diag, &n, &
-					    aa[1], &lda, &xx[1], &incx, (
-					    ftnlen)1, (ftnlen)1, (ftnlen)1);
+					    aa[1], &lda, &xx[1], &incx);
 				} else if (banded) {
 				    if (*trace) {
 					io___256.ciunit = *ntra;
@@ -2425,8 +2416,7 @@ L130:
 					f_rew(&al__1);
 				    }
 				    cstbsv_(iorder, uplo, trans, diag, &n, &k,
-					     &aa[1], &lda, &xx[1], &incx, (
-					    ftnlen)1, (ftnlen)1, (ftnlen)1);
+					     &aa[1], &lda, &xx[1], &incx);
 				} else if (packed) {
 				    if (*trace) {
 					io___257.ciunit = *ntra;
@@ -2449,8 +2439,7 @@ L130:
 					f_rew(&al__1);
 				    }
 				    cstpsv_(iorder, uplo, trans, diag, &n, &
-					    aa[1], &xx[1], &incx, (ftnlen)1, (
-					    ftnlen)1, (ftnlen)1);
+					    aa[1], &xx[1], &incx);
 				}
 			    }
 
@@ -2736,7 +2725,8 @@ L130:
     logical isame[13];
     extern /* Subroutine */ int smake_(char *, char *, char *, integer *, 
 	    integer *, real *, integer *, real *, integer *, integer *, 
-	    integer *, logical *, real *, ftnlen, ftnlen, ftnlen), csger_(
+	    integer *, logical *, real *, ftnlen, ftnlen, ftnlen);
+    extern void csger_(
 	    integer *, integer *, integer *, real *, real *, integer *, real *
 	    , integer *, real *, integer *);
     integer nargs;
@@ -3160,7 +3150,7 @@ L150:
     alist al__1;
 
     /* Builtin functions */
-    /* Subroutine */ int s_copy(char *, char *, ftnlen, ftnlen);
+    /* Subroutine */ void s_copy(char *, char *, ftnlen, ftnlen);
     integer s_wsfe(cilist *), do_fio(integer *, char *, ftnlen), e_wsfe(void),
 	     f_rew(alist *);
 
@@ -3189,12 +3179,12 @@ L150:
     logical reset;
     char cuplo[14];
     integer incxs;
-    extern /* Subroutine */ int csspr_(integer *, char *, integer *, real *, 
-	    real *, integer *, real *, ftnlen);
+    extern /* Subroutine */ void csspr_(integer *, char *, integer *, real *, 
+	    real *, integer *, real *);
     logical upper;
     char uplos[1];
-    extern /* Subroutine */ int cssyr_(integer *, char *, integer *, real *, 
-	    real *, integer *, real *, integer *, ftnlen);
+    extern /* Subroutine */ void cssyr_(integer *, char *, integer *, real *, 
+	    real *, integer *, real *, integer *);
     logical packed;
     real errmax;
     extern logical lseres_(char *, char *, integer *, integer *, real *, real 
@@ -3375,7 +3365,7 @@ L150:
 			    f_rew(&al__1);
 			}
 			cssyr_(iorder, uplo, &n, &alpha, &xx[1], &incx, &aa[1]
-				, &lda, (ftnlen)1);
+				, &lda);
 		    } else if (packed) {
 			if (*trace) {
 			    io___343.ciunit = *ntra;
@@ -3397,8 +3387,7 @@ L150:
 			    al__1.aunit = *ntra;
 			    f_rew(&al__1);
 			}
-			csspr_(iorder, uplo, &n, &alpha, &xx[1], &incx, &aa[1]
-				, (ftnlen)1);
+			csspr_(iorder, uplo, &n, &alpha, &xx[1], &incx, &aa[1]);
 		    }
 
 /*                 Check if error-exit was taken incorrectly. */
@@ -3642,7 +3631,7 @@ L130:
     alist al__1;
 
     /* Builtin functions */
-    /* Subroutine */ int s_copy(char *, char *, ftnlen, ftnlen);
+    /* Subroutine */ void s_copy(char *, char *, ftnlen, ftnlen);
     integer s_wsfe(cilist *), do_fio(integer *, char *, ftnlen), e_wsfe(void),
 	     f_rew(alist *);
 
@@ -3673,10 +3662,10 @@ L130:
     integer incxs, incys;
     logical upper;
     char uplos[1];
-    extern /* Subroutine */ int csspr2_(integer *, char *, integer *, real *, 
-	    real *, integer *, real *, integer *, real *, ftnlen), cssyr2_(
+    extern /* Subroutine */ void csspr2_(integer *, char *, integer *, real *, 
+	    real *, integer *, real *, integer *, real *), cssyr2_(
 	    integer *, char *, integer *, real *, real *, integer *, real *, 
-	    integer *, real *, integer *, ftnlen);
+	    integer *, real *, integer *);
     logical packed;
     real errmax;
     extern logical lseres_(char *, char *, integer *, integer *, real *, real 
@@ -3885,7 +3874,7 @@ L130:
 				f_rew(&al__1);
 			    }
 			    cssyr2_(iorder, uplo, &n, &alpha, &xx[1], &incx, &
-				    yy[1], &incy, &aa[1], &lda, (ftnlen)1);
+				    yy[1], &incy, &aa[1], &lda);
 			} else if (packed) {
 			    if (*trace) {
 				io___395.ciunit = *ntra;
@@ -3910,7 +3899,7 @@ L130:
 				f_rew(&al__1);
 			    }
 			    csspr2_(iorder, uplo, &n, &alpha, &xx[1], &incx, &
-				    yy[1], &incy, &aa[1], (ftnlen)1);
+				    yy[1], &incy, &aa[1]);
 			}
 
 /*                    Check if error-exit was taken incorrectly. */

@@ -93,7 +93,7 @@
 /* > \endverbatim */
 /* > */
 /*  ===================================================================== */
-/* Subroutine */ int zswap_(integer *n, doublecomplex *zx, integer *incx, 
+/* Subroutine */ void zswap_(integer *n, doublecomplex *zx, integer *incx, 
 	doublecomplex *zy, integer *incy)
 {
     /* System generated locals */
@@ -124,7 +124,7 @@
 
     /* Function Body */
     if (*n <= 0) {
-	return 0;
+	return;
     }
     if (*incx == 1 && *incy == 1) {
 
@@ -165,6 +165,6 @@
 	    iy += *incy;
 	}
     }
-    return 0;
+    return;
 } /* zswap_ */
 
