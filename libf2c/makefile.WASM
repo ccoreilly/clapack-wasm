@@ -15,7 +15,7 @@
 .SUFFIXES: .c .o
 CC = emcc
 SHELL = /bin/sh
-CFLAGS = -DNON_UNIX_STDIO
+CFLAGS = -DNON_UNIX_STDIO -O3
 
 LD = wasm-ld
 RANLIB = emranlib

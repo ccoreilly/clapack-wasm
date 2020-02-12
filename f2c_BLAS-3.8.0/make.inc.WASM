@@ -16,7 +16,7 @@ PLAT = _WA
 #  desired load options for your machine.
 #
 CC       = emcc
-CFLAGS   = -I../libf2c
+CFLAGS   = -I../libf2c -O3
 DRVOPTS  = $(OPTS)
 NOOPT    =
 LOADER   = emcc
