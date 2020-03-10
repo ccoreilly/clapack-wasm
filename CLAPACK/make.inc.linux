@@ -21,8 +21,8 @@ PLAT = _LINUX
 #
 #######################################################
 # This is used to compile C libary
-# if no wrapping of the blas library is needed, uncomment next line
-CC        = gcc -DNO_BLAS_WRAP
+# if no wrapping of the blas library is needed, add -DNO_BLAS_WRAP
+CC        = gcc
 CFLAGS    = -I$(TOPDIR)/INCLUDE -I$(TOPDIR)/../libf2c
 LOADER    = $(CC)
 LOADOPTS  =

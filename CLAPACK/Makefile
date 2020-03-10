@@ -13,7 +13,7 @@ all: cblaswrap lapack_install lib # lapack_testing blas_testing
 #lib: f2clib lapacklib tmglib
 lib: variants lapacklib tmglib
 
-clean: cleanlib cleantesting # cleanblas_testing 
+clean: cleanlib cleantesting
 
 lapack_install:
 	( cd INSTALL; $(MAKE) )
@@ -75,12 +75,10 @@ blas_testing:
 
 cleanlib:
 	( cd INSTALL; $(MAKE) clean )
-	# ( cd BLAS/SRC; $(MAKE) clean )
 	( cd SRC; $(MAKE) clean )
 	( cd SRC/VARIANTS; $(MAKE) clean )
 	( cd TESTING/MATGEN; $(MAKE) clean )
-	# ( cd F2CLIBS/libf2c; $(MAKE) clean )
-	( cd F2CLIBS; rm -f *.a)
+	( cd BLAS/WRAP; $(MAKE) clean )
 
 cleanblas_testing:	
 	( cd BLAS/TESTING; $(MAKE) -f Makeblat1 clean )
