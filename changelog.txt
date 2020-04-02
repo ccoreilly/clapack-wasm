@@ -1,0 +1,96 @@
+Added following typedefs to include/cblas_f77.h
+	#ifndef doublecomplex
+		typedef struct { double r, i; } doublecomplex;
+	#endif
+
+	#ifndef complex
+		typedef struct { float r, i; } complex;
+	#endif
+
+Added following prototypes to include/cblas.h
+	void   cblas_crotg(void *a, void *b, void *c, void *s);
+	void   cblas_zrotg(void *a, void *b, void *c, void *s);
+
+Added following wrappers
+	src/cblas_crotg.c
+	src/cblas_zrotg.c
+
+Changes to src/cblas_ddot.c
+	Direct call to ddot_ instead of using fortran subroutine F77_ddot_sub
+
+Changes to src/cblas_zdotc_sub.c
+	Direct call to zdotc_ instead of using fortran subroutine F77_zdotc_sub
+
+Changes to src/cblas_izamax.c
+	Direct call to izamax instead of using fortran subroutine F77_izamax_sub
+
+Changes to src/cblas_idamax.c
+	Direct call to idamax instead of using fortran subroutine F77_idamax_sub
+
+Changes to src/cblas_scnrm2.c
+	Direct call to scnrm2_ instead of using fortran subroutine F77_scnrm2_sub
+
+Changes to src/cblas_dzasum.c
+	Direct call to dzasum_ instead of using fortran subroutine F77_dzasum_sub
+
+Changes to src/cblas_sasum.c
+	Direct call to sasum_ instead of using fortran subroutine F77_sasum_sub
+
+Changes to src/cblas_dasum.c
+	Direct call to dasum_ instead of using fortran subroutine F77_dzasum_sub
+
+Changes to src/cblas_sdoc.c
+	Direct call to sdot_ instead of using fortran subroutine F77_sdot_sub
+
+Changes to src/cblas_dnrm2.c
+	Direct call to dnrm2_ instead of using fortran subroutine F77_dnrm2_sub
+
+Changes to src/cblas_scasum.c
+	Direct call to scasum_ instead of using fortran subroutine F77_scasum_sub
+
+Changes to src/cblas_snrm2.c
+	Direct call to snrm2_ instead of using fortran subroutine F77_snrm2_sub
+
+Changes to src/cblas_cdotc_sub.c
+	Direct call to cdotc_ instead of using fortran subroutine F77_cdotc_sub
+
+Changes to src/cblas_isamax.c
+	Direct call to isamax_ instead of using fortran subroutine F77_isamax_sub
+
+Changes to src/cblas_dsdot.c
+	Direct call to dsdot_ instead of using fortran subroutine F77_dsdot_sub
+
+Changes to src/cblas_sdsdot.c
+	Direct call to sdsdot_ instead of using fortran subroutine F77_sdsdot_sub
+
+Changes to src/cblas_zdotu_sub.c
+	Direct call to zdotu_ instead of using fortran subroutine F77_zdotu_sub
+
+Changes to src/cblas_cdotu_sub.c
+	Direct call to cdotu_ instead of using fortran subroutine F77_cdotu_sub
+
+Changes to src/cblas_dznrm2.c
+	Direct call to dznrm2_ instead of using fortran subroutine F77_dznrm2_sub
+
+Changes to src/cblas_icamax_sub.c
+	Direct call to icamax_ instead of using fortran subroutine F77_icamax_sub
+
+Changes to src/cblas_cdotu_sub.c
+	Direct call to cdotu_ instead of using fortran subroutine F77_cdotu_sub
+
+Changes to testing/c_xerbla.c
+	Hard coded tolower function as linking to native implementation failed
+
+Converted following files with f2c version 20191129
+	testing/c_cblat1.f --> testing/c_cblat1.c
+	testing/c_cblat2.f --> testing/c_cblat2.c
+	testing/c_cblat3.f --> testing/c_cblat3.c
+	testing/c_dblat1.f --> testing/c_dblat1.c
+	testing/c_dblat2.f --> testing/c_dblat2.c
+	testing/c_dblat3.f --> testing/c_dblat3.c
+	testing/c_sblat1.f --> testing/c_sblat1.c
+	testing/c_sblat2.f --> testing/c_sblat2.c
+	testing/c_sblat3.f --> testing/c_sblat3.c
+	testing/c_zblat1.f --> testing/c_zblat1.c
+	testing/c_zblat2.f --> testing/c_zblat2.c
+	testing/c_zblat3.f --> testing/c_zblat3.c
