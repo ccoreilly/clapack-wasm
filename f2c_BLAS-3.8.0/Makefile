@@ -39,7 +39,7 @@ include make.inc
 #       make
 #  without any arguments creates a library of all four precisions.
 #  The name of the library is held in BLASLIB, which is set in the
-#  top-level make.inc
+#  make.inc
 #
 #  To remove the object files after the library is created, enter
 #       make clean
@@ -50,8 +50,8 @@ include make.inc
 #
 #  Edward Anderson, University of Tennessee
 #  March 26, 1990
-#  Susan Ostrouchov, Last updated September 30, 1994
-#  ejr, May 2006.
+#  Susan Ostrouchov,  September 30, 1994
+#  Julie Langou, December 2017
 #
 #######################################################################
 
@@ -134,7 +134,7 @@ ZBLAS3 = zgemm.o zsymm.o zsyrk.o zsyr2k.o ztrmm.o ztrsm.o \
 $(ZBLAS3): $(FRC)
 
 ALLOBJ=$(SBLAS1) $(SBLAS2) $(SBLAS3) $(DBLAS1) $(DBLAS2) $(DBLAS3)	\
-	$(CBLAS1) $(CBLAS2) $(CBLAS3) $(ZBLAS1) \
+	$(CBLAS1) $(CBLAS2) $(CBLAS3) $(ZBLAS1) 	\
 	$(ZBLAS2) $(ZBLAS3) $(ALLBLAS)
 
 $(BLASLIB).a: $(ALLOBJ)
