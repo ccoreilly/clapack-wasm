@@ -1,0 +1,574 @@
+Added make.inc.WASM and make.inc.LINUX
+	Both are heavily inspired by the original make.inc
+
+Removed make.inc
+
+Changes to Makefile
+	Replaced fortran compiler and compiler flags with c compiler and compiler
+	flags
+
+Use of xerbla.c found in CLAPACK-3.2.1/BLAS/SRC with following changes
+	Added #include <stdio.h>
+	Removed #include "blaswrap.h"
+	Changed return type of function changed to void
+
+Use of xerbla_array.c found in CLAPACK-3.2.1/BLAS/SRC with following changes
+	Removed #include "blaswrap.h"
+	Changed return type to be void
+	Changed signature of xerbla_ to return void
+
+Changes in caxpy.c
+	Changed return type to void
+
+Changes in ccopy.c
+	Changed return type to void
+
+Changes in cgbmv.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in cgemm.c
+	Changed return type to void
+	Removed last 2 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in cgemv.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in cgerc.c
+	Changed return type to void
+	Corrected signature and usage of xerbla_
+
+Changes in cgeru.c
+	Changed return type to void
+	Corrected signature and usage of xerbla_
+
+Changes in chbmv.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in chemm.c
+	Changed return type to void
+	Removed last 2 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in chemv.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in cher.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in cher2.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in cher2k.c
+	Changed return type to void
+	Removed last 2 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in cherk.c
+	Changed return type to void
+	Removed last 2 argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in chpmv.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in chpr.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in chpr2.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in crotg.c
+	Changed return type to void
+
+Changes in cscal.c
+	Changed return type to void
+
+Changes in csscal.c
+	Changed return type to void
+
+Changes in cswap.c
+	Changed return type to void
+
+Changes in csymm.c
+	Changed return type to void
+	Removed last 2 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in csyr2k.c
+	Changed return type to void
+	Removed last 2 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in csyrk.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in ctbmv.c
+	Changed return type to void
+	Removed last 3 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in ctbsv.c
+	Changed return type to void
+	Removed last 3 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in ctpsv.c
+	Changed return type to void
+	Removed last 3 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in ctrmm.c
+	Changed return type to void
+	Removed last 4 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in ctrmv.c
+	Changed return type to void
+	Removed last 3 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in ctrsm.c
+	Changed return type to void
+	Removed last 4 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in ctrsv.c
+	Changed return type to void
+	Removed last 3 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in daxpy.c
+	Changed return type to void
+
+Changes in dcopy.c
+	Changed return type to void
+
+Changes in dgbmv.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in dgemm.c
+	Changed return type to void
+	Removed last 2 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in dgemv.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in dger.c
+	Changed return type to void
+	Corrected signature and usage of xerbla_
+
+Changes in drot.c
+	Changed return type to void
+
+Changes in drotg.c
+	Changed return type to void
+
+Changes in drotm.c
+	Changed return type to void
+
+Changes in drotmg.c
+	Changed return type to void
+
+Changes in dsbmv.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in dscal.c
+	Changed return type to void
+
+Changes in dspmv.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in dspr.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in dspr2.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in dswap.c
+	Changed return type to void
+
+Changes in dsymm.c
+	Changed return type to void
+	Removed last 2 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in dsymv.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in dsyr.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in dsyr2.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in dsyr2k.c
+	Changed return type to void
+	Removed last 2 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in dsyrk.c
+	Changed return type to void
+	Removed last 2 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in dtbmv.c
+	Changed return type to void
+	Removed last 3 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in dtbsv.c
+	Changed return type to void
+	Removed last 3 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in dtpmv.c
+	Changed return type to void
+	Removed last 3 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in dtpsv.c
+	Changed return type to void
+	Removed last 3 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in dtrmm.c
+	Changed return type to void
+	Removed last 4 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in dtrmv.c
+	Changed return type to void
+	Removed last 3 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in dtrsm.c
+	Changed return type to void
+	Removed last 4 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in dtrsv.c
+	Changed return type to void
+	Removed last 3 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in lsame.c
+	Removed last 2 arguments of function definition as not expected in clapack
+
+Changes in saxpy.c
+	Changed return type to void
+
+Changes in scopy.c
+	Changed return type to void
+
+Changes in sgbmv.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in sgemm.c
+	Changed return type to void
+	Removed last 2 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in sgemv.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in sger.c
+	Changed return type to void
+	Corrected signature and usage of xerbla_
+
+Changes in srot.c
+	Changed return type to void
+
+Changes in srotg.c
+	Changed return type to void
+
+Changes in srotm.c
+	Changed return type to void
+
+Changes in srotmg.c
+	Changed return type to void
+
+Changes in ssbmv.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in sscal.c
+	Changed return type to void
+
+Changes in sspmv.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in sspr.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in sspr2.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in sswap.c
+	Changed return type to void
+
+Changes in ssymm.c
+	Changed return type to void
+	Removed last 2 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in ssymv.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in ssyr.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in ssyr2.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in ssyr2k.c
+	Changed return type to void
+	Removed last 2 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in ssyrk.c
+	Changed return type to void
+	Removed last 2 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in stbmv.c
+	Changed return type to void
+	Removed last 3 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in stbsv.c
+	Changed return type to void
+	Removed last 3 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in stpmv.c
+	Changed return type to void
+	Removed last 3 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in stpsv.c
+	Changed return type to void
+	Removed last 3 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in strmm.c
+	Changed return type to void
+	Removed last 4 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in strmv.c
+	Changed return type to void
+	Removed last 3 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in strsm.c
+	Changed return type to void
+	Removed last 4 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in strsv.c
+	Changed return type to void
+	Removed last 3 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in zaxpy.c
+	Changed return type to void
+
+Changes in zcopy.c
+	Changed return type to void
+
+Changes in zdscal.c
+	Changed return type to void
+
+Changes in zgbmv.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in zgemm.c
+	Changed return type to void
+	Removed last 2 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in zgemv.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in zgerc.c
+	Changed return type to void
+	Corrected signature and usage of xerbla_
+
+Changes in zgeru.c
+	Changed return type to void
+	Corrected signature and usage of xerbla_
+
+Changes in zhbmv.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in zhemm.c
+	Changed return type to void
+	Removed last 2 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in zhemv.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in zher.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in zher2.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in zher2k.c
+	Changed return type to void
+	Removed last 2 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in zherk.c
+	Changed return type to void
+	Removed last 2 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in zhpmv.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in zhpr.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in zhpr2.c
+	Changed return type to void
+	Removed last argument of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in zrotg.c
+	Changed return type to void
+
+Changes in zscal.c
+	Changed return type to void
+
+Changes in zswap.c
+	Changed return type to void
+
+Changes in zsymm.c
+	Changed return type to void
+	Removed last 2 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in zsyr2k.c
+	Changed return type to void
+	Removed last 2 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in zsyrk.c
+	Changed return type to void
+	Removed last 2 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in ztbmv.c
+	Changed return type to void
+	Removed last 2 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in ztbsv.c
+	Changed return type to void
+	Removed last 3 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in ztpmv.c
+	Changed return type to void
+	Removed last 3 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in ztpsv.c
+	Changed return type to void
+	Removed last 3 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in ztrmm.c
+	Changed return type to void
+	Removed last 4 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in ztrmv.c
+	Changed return type to void
+	Removed last 3 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in ztrsm.c
+	Changed return type to void
+	Removed last 4 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
+
+Changes in ztrsv.c
+	Changed return type to void
+	Removed last 3 arguments of function definition as not expected by cblas
+	Corrected signature and usage of lsame_ and xerbla_
