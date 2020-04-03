@@ -8,6 +8,14 @@ Added following files to compile whole repo
 	Makefile.in.WASM
 	INSTALL.md
 
+Removed Makefiles for untested systems
+	Makefile.SGI64
+	Makefile.SUN4
+	Makefile.LINUX
+	Makefile.SUN4SOL2
+	Makefile.HPPA
+	Makefile.ALPHA
+
 Changes to src/Makefile
 	Added build of cblas_scnrm2.o in target slev1
 	Removed build of sdtsub.o, sdsdotsub.o, snrm2sub.o, sasumsub.o and
@@ -118,6 +126,28 @@ Changes to testing/c_xerbla.c
 
 Changes to testing/Makefile
 	Added include of libf2c header in line 134
+
+Removed following .f files
+	src/cdotusub.f
+	src/sasumsub.f
+	src/zdotcsub.f
+	src/dnrm2sub.f
+	src/icamaxsub.f
+	src/zdotusub.f
+	src/isamaxsub.f
+	src/dzasumsub.f
+	src/idamaxsub.f
+	src/snrm2sub.f
+	src/dznrm2sub.f
+	src/sdotsub.f
+	src/scasumsub.f
+	src/cdotcsub.f
+	src/dsdotsub.f
+	src/sdsdotsub.f
+	src/scnrm2sub.f
+	src/izamaxsub.f
+	src/ddotsub.f
+	src/dasumsub.f
 
 Converted following files with f2c version 20191129
 	testing/c_cblat1.f --> testing/c_cblat1.c
