@@ -1,3 +1,38 @@
+Renamed original README in CBLAS_README
+
+Added README.md that gives a short overview of the repo
+
+Added following files to compile whole repo
+	install_repo.sh
+	Makefile.in.LINUX
+	Makefile.in.WASM
+	INSTALL.md
+
+Changes to src/Makefile
+	Added build of cblas_scnrm2.o in target slev1
+	Removed build of sdtsub.o, sdsdotsub.o, snrm2sub.o, sasumsub.o and
+	isamaxsub.o in target slev1
+	Removed build of ddotsub.o, dsdotsub.o, dnrm2sub.o, dasumsub.o and
+	idamaxsub.o in target dlev1
+	Added build of cblas_crotg.o to target clev1
+	Removed build of cdotcsub.o, cdotusub.o and icamaxsub.o in target clev1
+	Removed build of scasumsub.o, cblas_scnrm2.o and scnrm2sub.o in target
+	sclev1
+
+Added following file to run all blas tests in one command
+	run_cblas_tests.sh
+
+Added following javascript files to run blas tests
+	run_wasm_cblas_tests.sh
+	testing/pre_xccblat2.js
+	testing/pre_xdcblat2.js
+	testing/pre_xzcblat3.js
+	testing/pre_xccblat3.js
+	testing/pre_xscblat2.js
+	testing/pre_xscblat3.js
+	testing/pre_xdcblat3.js
+	testing/pre_xzcblat2.js
+
 Added following typedefs to include/cblas_f77.h
 	#ifndef doublecomplex
 		typedef struct { double r, i; } doublecomplex;
@@ -22,10 +57,10 @@ Changes to src/cblas_zdotc_sub.c
 	Direct call to zdotc_ instead of using fortran subroutine F77_zdotc_sub
 
 Changes to src/cblas_izamax.c
-	Direct call to izamax instead of using fortran subroutine F77_izamax_sub
+	Direct call to izamax_ instead of using fortran subroutine F77_izamax_sub
 
 Changes to src/cblas_idamax.c
-	Direct call to idamax instead of using fortran subroutine F77_idamax_sub
+	Direct call to idamax_ instead of using fortran subroutine F77_idamax_sub
 
 Changes to src/cblas_scnrm2.c
 	Direct call to scnrm2_ instead of using fortran subroutine F77_scnrm2_sub
@@ -80,6 +115,9 @@ Changes to src/cblas_cdotu_sub.c
 
 Changes to testing/c_xerbla.c
 	Hard coded tolower function as linking to native implementation failed
+
+Changes to testing/Makefile
+	Added include of libf2c header in line 134
 
 Converted following files with f2c version 20191129
 	testing/c_cblat1.f --> testing/c_cblat1.c
