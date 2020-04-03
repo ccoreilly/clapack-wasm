@@ -1,0 +1,19 @@
+Changes to makefile.u
+	Changed compiler to gcc
+	Added -DNON_UNIX_STDIO flag
+
+Added makefile.WASM
+
+Changes to f2c.h0
+	Redefined integer to be int
+	Redefined uinteger to be usigned int
+	Redefined logical to be int
+	Redefined flag to be int
+	Redefined ftnlen to be int
+	Redefined ftnint to be int
+
+Added following .h files as required by some .c files
+	arith.h
+	signal1.h
+	f2c.h
+	sysdep1.h
