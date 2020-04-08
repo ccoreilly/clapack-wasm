@@ -55,7 +55,7 @@ include make.inc
 #
 #######################################################################
 
-all: $(BLASLIB).a
+all: $(BLASLIB)
 
 #---------------------------------------------------------
 #  Comment out the next 6 definitions if you already have
@@ -137,32 +137,29 @@ ALLOBJ=$(SBLAS1) $(SBLAS2) $(SBLAS3) $(DBLAS1) $(DBLAS2) $(DBLAS3)	\
 	$(CBLAS1) $(CBLAS2) $(CBLAS3) $(ZBLAS1) 	\
 	$(ZBLAS2) $(ZBLAS3) $(ALLBLAS)
 
-$(BLASLIB).a: $(ALLOBJ)
+$(BLASLIB): $(ALLOBJ)
 	$(ARCH) $(ARCHFLAGS) $@ $(ALLOBJ)
 	$(RANLIB) $@
 
-$(BLASLIB).so: $(ALLOBJ)
-	$(CC) -shared -o $@ $(ALLOBJ)
-
 single: $(SBLAS1) $(ALLBLAS) $(SBLAS2) $(SBLAS3)
-	$(ARCH) $(ARCHFLAGS) $(BLASLIB).a $(SBLAS1) $(ALLBLAS) \
+	$(ARCH) $(ARCHFLAGS) $(BLASLIB) $(SBLAS1) $(ALLBLAS) \
 	$(SBLAS2) $(SBLAS3)
-	$(RANLIB) $(BLASLIB).a
+	$(RANLIB) $(BLASLIB)
 
 double: $(DBLAS1) $(ALLBLAS) $(DBLAS2) $(DBLAS3)
-	$(ARCH) $(ARCHFLAGS) $(BLASLIB).a $(DBLAS1) $(ALLBLAS) \
+	$(ARCH) $(ARCHFLAGS) $(BLASLIB) $(DBLAS1) $(ALLBLAS) \
 	$(DBLAS2) $(DBLAS3)
-	$(RANLIB) $(BLASLIB).a
+	$(RANLIB) $(BLASLIB)
 
 complex: $(CBLAS1) $(CB1AUX) $(ALLBLAS) $(CBLAS2) $(CBLAS3)
-	$(ARCH) $(ARCHFLAGS) $(BLASLIB).a $(CBLAS1) $(CB1AUX) \
+	$(ARCH) $(ARCHFLAGS) $(BLASLIB) $(CBLAS1) $(CB1AUX) \
 	$(ALLBLAS) $(CBLAS2) $(CBLAS3)
-	$(RANLIB) $(BLASLIB).a
+	$(RANLIB) $(BLASLIB)
 
 complex16: $(ZBLAS1) $(ZB1AUX) $(ALLBLAS) $(ZBLAS2) $(ZBLAS3)
-	$(ARCH) $(ARCHFLAGS) $(BLASLIB).a $(ZBLAS1) $(ZB1AUX) \
+	$(ARCH) $(ARCHFLAGS) $(BLASLIB) $(ZBLAS1) $(ZB1AUX) \
 	$(ALLBLAS) $(ZBLAS2) $(ZBLAS3)
-	$(RANLIB) $(BLASLIB).a
+	$(RANLIB) $(BLASLIB)
 
 FRC:
 	@FRC=$(FRC)
