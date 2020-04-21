@@ -2,10 +2,52 @@
 
 ## Overview
 
-This repo contains a checked version of CBLAS with BLAS, both entirely written
+This repo contains a tested version of CBLAS with BLAS, both entirely written
 in C. Having all soure code in C allows to easily convert the library to WASM.
 
+CLAPACK is also included but no tests were run.
+
 For install instructions, please refer to [INSTALL](./INSTALL.md).
+
+This repository contains
+
+```bash
+.
+├── CBLAS_README
+├── CLAPACK/
+├── examples
+├── f2c_BLAS-3.8.0/
+├── include/
+├── libf2c/
+├── src/
+└── testing/
+```
+
+* `CBLAS_README` is the README originally found in CBLAS.
+* `CLAPACK` contains the CLAPACK source code with redundancies (e.g. BLAS)
+  removed.
+* `examples`, `include`, `src` and `testing` are the directories with the same
+  name found in CBLAS.
+* `f2c_BLAS-3.8.0` contains the source code of BLAS-3.8.0 converted to C using the
+  `f2c` program. For more information about this conversion, please this
+  [section](#automatic-fortran-77-to-c-translation).
+* `libf2c` contains functions and structure definition required by `f2c` converted
+  programs to run.
+
+The dependencies look as follows:
+
+```mermaid
+graph TD
+  BLAS --> libf2c
+  CBLAS --> BLAS
+  CLAPACK --> libf2c
+  CLAPACK --> CBLAS
+```
+
+Changes made to these various directories are all listed in a `changelog.txt`
+file put in these directories.
+
+For a summary of what changed in these components, please read below.
 
 ## Automatic FORTRAN 77 to C translation
 
@@ -32,30 +74,37 @@ following command has been run:
 sed -i 's/long int /int /g' f2c.h
 ```
 
+For the complete list of changes made to libf2c, please refer to
+[./libf2c/changelog.txt](./libf2c/changelog.txt).
+
 ### Automated translation of BLAS from FORTRAN to C
 
 BLAS, which is originally written in FORTRAN, has been tranlated to C using the
 program [`f2c`](https://www.netlib.org/f2c/) using the command
 
 ```bash
-mkdir f2ced
-f2c -d f2ced -aR *.c
+mkdir f2c_BLAS-3.8.0
+f2c -d f2c_BLAS-3.8.0 -aR *.c
 ```
 
 in the BLAS (version 3.8.0) directory.
 
-This produces C files in the directory `f2ced/`. Note that the files `xerbla.f`
-and `xerbla_array.f` cannot be translated to C with `f2c` as they contain non
-FORTRAN 77 instructions. For these two files, the C source code has been taken
-from [`CLAPACK-3.2.1`](https://www.netlib.org/clapack/).
+This produces C files in the directory `f2c_BLAS-3.8.0/`. Note that the files
+`xerbla.f` and `xerbla_array.f` cannot be translated to C with `f2c` as they
+contain non FORTRAN 77 instructions. For these two files, the C source code has
+been taken from [`CLAPACK-3.2.1`](https://www.netlib.org/clapack/).
+
+All other changes (mostly function signature changes) are listed in
+[f2c_BLAS-3.8.0/changelog.txt](f2c_BLAS-3.8.0/changelog.txt).
 
 ## CBLAS
 
-The original source code of CBLAS contains the following  BLAS wrappers written
+### CBLAS changes
+
+The original source code of CBLAS contains the following BLAS wrappers written
 in FORTRAN:
 
 ```bash
-
 cdotcsub.f
 cdotusub.f
 dasumsub.f
@@ -76,7 +125,6 @@ sdsdotsub.f
 snrm2sub.f
 zdotcsub.f
 zdotusub.f
-
 ```
 
 As these were simple wrappers, their usage in the C code has been replaced
@@ -98,7 +146,9 @@ modifications had to make the following assumptions:
 With these modifications, the FORTRAN free code of CBLAS passes all the
 (unmodified) tests in the `testing` directory.
 
-## CBLAS test suite
+For the complete list of changes, please refer to [changelog.txt](changelog.txt)
+
+### CBLAS test suite
 
 To allow automated testing of the generated CBLAS library in wasm, the test
 suites has also been converted to c using `f2c`. To ensure that the converted
@@ -110,12 +160,33 @@ tests are correct, the following procedure has been followed:
 3. Check that all the tests (now written in C) pass with the BLAS and CBLAS
   code (written in C too)
 
-## Linking CBLAS
+## CLAPACK
 
-To use the CBLAS lib, use the following flags
+Usage of the following functions had to be changed:
+* `xerbla_` (return value type)
+* `lsame_` (return value and argument list)
+* `s_copy` (return value type)
+* `s_cat` (return value type)
+
+For the complete list of changes, please refer to
+[CLAPACK/changelog.txt](CLAPACK/changelog.txt)
+
+For more information about CLAPACK and LAPACK, please refer to
 
 ```
-<path>/<to>/<this>/<dir>/lib/cblas_LINUX.a \
-    <path>/<to>/<this>/<dir>/f2c_BLAS-3.8.0/blas_LINUX.a \
-    <path>/<to>/<this>/<dir>/libf2c/libf2c.a -lm
+Anderson, E.; Bai, Z.; Bischof, C.; Blackford, S.; Demmel, J.; Dongarra, J.;
+Du Croz, J.; Greenbaum, A.; Hammarling, S.; McKenney, A. & Sorensen, D.
+LAPACK Users' Guide
+Society for Industrial and Applied Mathematics, 1999
+```
+
+## Linking against CLAPACK
+
+To use the various libraries, assuming that the variable `CLAPACKROOT` contains
+the path to the root of this directory, link as follows:
+
+```
+$(CLAPACKROOT)/CLAPACK/lapack.a $(CLAPACKROOT)/CLAPACK/libcblaswr.a \
+$(CLAPACKROOT)/lib/cblas.a \
+$(CLAPACKROOT)/f2c_BLAS-3.8.0/blas.a $(CLAPACKROOT)/libf2c/libf2c.a
 ```
