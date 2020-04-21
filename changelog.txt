@@ -1,3 +1,5 @@
+Added file LICENSE
+
 Renamed original README in CBLAS_README
 
 Added README.md that gives a short overview of the repo
