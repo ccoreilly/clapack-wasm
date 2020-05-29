@@ -94,7 +94,7 @@
 /* > \endverbatim */
 /* > */
 /*  ===================================================================== */
-/* Subroutine */ void dswap_(integer *n, doublereal *dx, integer *incx, 
+/* Subroutine */ int dswap_(integer *n, doublereal *dx, integer *incx, 
 	doublereal *dy, integer *incy)
 {
     /* System generated locals */
@@ -127,7 +127,7 @@
 
     /* Function Body */
     if (*n <= 0) {
-	return;
+	return 0;
     }
     if (*incx == 1 && *incy == 1) {
 
@@ -145,7 +145,7 @@
 		dy[i__] = dtemp;
 	    }
 	    if (*n < 3) {
-		return;
+		return 0;
 	    }
 	}
 	mp1 = m + 1;
@@ -183,6 +183,6 @@
 	    iy += *incy;
 	}
     }
-    return;
+    return 0;
 } /* dswap_ */
 

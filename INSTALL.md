@@ -37,7 +37,7 @@ make -f makefile.WASM
 
 ### BLAS
 
-This generates `blas_LINUX.a` in `f2c_BLAS/` (among other things).
+This generates `blas_LINUX.a` in `f2c_BLAS-3.8.0/` (among other things).
 
 #### LINUX
 
@@ -65,6 +65,7 @@ This generates:
 #### Linux
 
 ```bash
+cd CBLAS
 cp Makefile.in.LINUX Makefile.in
 make
 ```
@@ -72,6 +73,7 @@ make
 #### WASM
 
 ```bash
+cd CBLAS
 cp Makefile.in.WASM Makefile.in
 make
 ```
@@ -81,7 +83,7 @@ make
 #### Linux
 
 ```bash
-cd CLAPACK
+cd CLAPACK-3.2.1
 cp make.inc.linux make.inc
 make
 ```
@@ -89,12 +91,14 @@ make
 #### WASM
 
 ```bash
-cd CLAPACK
+cd CLAPACK-3.2.1
 cp make.inc.WASM make.inc
 make
 ```
 
 ## Running CBLAS tests
+
+From the `CBLAS` directory
 
 ### Linux
 

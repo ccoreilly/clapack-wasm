@@ -157,9 +157,9 @@
 /* > \endverbatim */
 /* > */
 /*  ===================================================================== */
-/* Subroutine */ void zhpr2_(char *uplo, integer *n, doublecomplex *alpha, 
+/* Subroutine */ int zhpr2_(char *uplo, integer *n, doublecomplex *alpha, 
 	doublecomplex *x, integer *incx, doublecomplex *y, integer *incy, 
-	doublecomplex *ap)
+	doublecomplex *ap, ftnlen uplo_len)
 {
     /* System generated locals */
     integer i__1, i__2, i__3, i__4, i__5, i__6;
@@ -172,8 +172,8 @@
     /* Local variables */
     integer i__, j, k, kk, ix, iy, jx, jy, kx, ky, info;
     doublecomplex temp1, temp2;
-    extern  logical lsame_(char *, char *);
-    extern /* Subroutine */ void xerbla_(char *, integer *);
+    extern logical lsame_(char *, char *, ftnlen, ftnlen);
+    extern /* Subroutine */ int xerbla_(char *, integer *, ftnlen);
 
 
 /*  -- Reference BLAS level2 routine (version 3.7.0) -- */
@@ -208,7 +208,8 @@
 
     /* Function Body */
     info = 0;
-    if (! lsame_(uplo, "U") && ! lsame_(uplo, "L")) {
+    if (! lsame_(uplo, "U", (ftnlen)1, (ftnlen)1) && ! lsame_(uplo, "L", (
+	    ftnlen)1, (ftnlen)1)) {
 	info = 1;
     } else if (*n < 0) {
 	info = 2;
@@ -218,14 +219,14 @@
 	info = 7;
     }
     if (info != 0) {
-	xerbla_("ZHPR2 ", &info);
-	return;
+	xerbla_("ZHPR2 ", &info, (ftnlen)6);
+	return 0;
     }
 
 /*     Quick return if possible. */
 
     if (*n == 0 || alpha->r == 0. && alpha->i == 0.) {
-	return;
+	return 0;
     }
 
 /*     Set up the start points in X and Y if the increments are not both */
@@ -250,7 +251,7 @@
 /*     are accessed sequentially with one pass through AP. */
 
     kk = 1;
-    if (lsame_(uplo, "U")) {
+    if (lsame_(uplo, "U", (ftnlen)1, (ftnlen)1)) {
 
 /*        Form  A  when upper triangle is stored in AP. */
 
@@ -506,7 +507,7 @@
 	}
     }
 
-    return;
+    return 0;
 
 /*     End of ZHPR2 . */
 

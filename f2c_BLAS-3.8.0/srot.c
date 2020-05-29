@@ -104,7 +104,7 @@
 /* > \endverbatim */
 /* > */
 /*  ===================================================================== */
-/* Subroutine */ void srot_(integer *n, real *sx, integer *incx, real *sy, 
+/* Subroutine */ int srot_(integer *n, real *sx, integer *incx, real *sy, 
 	integer *incy, real *c__, real *s)
 {
     /* System generated locals */
@@ -135,7 +135,7 @@
 
     /* Function Body */
     if (*n <= 0) {
-	return;
+	return 0;
     }
     if (*incx == 1 && *incy == 1) {
 
@@ -169,6 +169,6 @@
 	    iy += *incy;
 	}
     }
-    return;
+    return 0;
 } /* srot_ */
 

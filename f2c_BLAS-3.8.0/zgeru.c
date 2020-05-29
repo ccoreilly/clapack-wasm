@@ -142,7 +142,7 @@
 /* > \endverbatim */
 /* > */
 /*  ===================================================================== */
-/* Subroutine */ void zgeru_(integer *m, integer *n, doublecomplex *alpha, 
+/* Subroutine */ int zgeru_(integer *m, integer *n, doublecomplex *alpha, 
 	doublecomplex *x, integer *incx, doublecomplex *y, integer *incy, 
 	doublecomplex *a, integer *lda)
 {
@@ -153,7 +153,7 @@
     /* Local variables */
     integer i__, j, ix, jy, kx, info;
     doublecomplex temp;
-    extern /* Subroutine */ void xerbla_(char *, integer *);
+    extern /* Subroutine */ int xerbla_(char *, integer *, ftnlen);
 
 
 /*  -- Reference BLAS level2 routine (version 3.7.0) -- */
@@ -200,14 +200,14 @@
 	info = 9;
     }
     if (info != 0) {
-	xerbla_("ZGERU ", &info);
-	return;
+	xerbla_("ZGERU ", &info, (ftnlen)6);
+	return 0;
     }
 
 /*     Quick return if possible. */
 
     if (*m == 0 || *n == 0 || alpha->r == 0. && alpha->i == 0.) {
-	return;
+	return 0;
     }
 
 /*     Start the operations. In this version the elements of A are */
@@ -275,7 +275,7 @@
 	}
     }
 
-    return;
+    return 0;
 
 /*     End of ZGERU . */
 

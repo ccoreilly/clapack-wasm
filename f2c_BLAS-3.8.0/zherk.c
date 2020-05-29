@@ -185,9 +185,9 @@
 /* > \endverbatim */
 /* > */
 /*  ===================================================================== */
-/* Subroutine */ void zherk_(char *uplo, char *trans, integer *n, integer *k, 
+/* Subroutine */ int zherk_(char *uplo, char *trans, integer *n, integer *k, 
 	doublereal *alpha, doublecomplex *a, integer *lda, doublereal *beta, 
-	doublecomplex *c__, integer *ldc)
+	doublecomplex *c__, integer *ldc, ftnlen uplo_len, ftnlen trans_len)
 {
     /* System generated locals */
     integer a_dim1, a_offset, c_dim1, c_offset, i__1, i__2, i__3, i__4, i__5, 
@@ -201,11 +201,11 @@
     /* Local variables */
     integer i__, j, l, info;
     doublecomplex temp;
-    extern  logical lsame_(char *, char *);
+    extern logical lsame_(char *, char *, ftnlen, ftnlen);
     integer nrowa;
     doublereal rtemp;
     logical upper;
-    extern /* Subroutine */ void xerbla_(char *, integer *);
+    extern /* Subroutine */ int xerbla_(char *, integer *, ftnlen);
 
 
 /*  -- Reference BLAS level3 routine (version 3.7.0) -- */
@@ -242,17 +242,18 @@
     c__ -= c_offset;
 
     /* Function Body */
-    if (lsame_(trans, "N")) {
+    if (lsame_(trans, "N", (ftnlen)1, (ftnlen)1)) {
 	nrowa = *n;
     } else {
 	nrowa = *k;
     }
-    upper = lsame_(uplo, "U");
+    upper = lsame_(uplo, "U", (ftnlen)1, (ftnlen)1);
 
     info = 0;
-    if (! upper && ! lsame_(uplo, "L")) {
+    if (! upper && ! lsame_(uplo, "L", (ftnlen)1, (ftnlen)1)) {
 	info = 1;
-    } else if (! lsame_(trans, "N") && ! lsame_(trans, "C")) {
+    } else if (! lsame_(trans, "N", (ftnlen)1, (ftnlen)1) && ! lsame_(trans, 
+	    "C", (ftnlen)1, (ftnlen)1)) {
 	info = 2;
     } else if (*n < 0) {
 	info = 3;
@@ -264,14 +265,14 @@
 	info = 10;
     }
     if (info != 0) {
-	xerbla_("ZHERK ", &info);
-	return;
+	xerbla_("ZHERK ", &info, (ftnlen)6);
+	return 0;
     }
 
 /*     Quick return if possible. */
 
     if (*n == 0 || (*alpha == 0. || *k == 0) && *beta == 1.) {
-	return;
+	return 0;
     }
 
 /*     And when  alpha.eq.zero. */
@@ -340,12 +341,12 @@
 		}
 	    }
 	}
-	return;
+	return 0;
     }
 
 /*     Start the operations. */
 
-    if (lsame_(trans, "N")) {
+    if (lsame_(trans, "N", (ftnlen)1, (ftnlen)1)) {
 
 /*        Form  C := alpha*A*A**H + beta*C. */
 
@@ -593,7 +594,7 @@
 	}
     }
 
-    return;
+    return 0;
 
 /*     End of ZHERK . */
 

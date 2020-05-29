@@ -159,8 +159,9 @@
 /* > \endverbatim */
 /* > */
 /*  ===================================================================== */
-/* Subroutine */ void sspmv_(char *uplo, integer *n, real *alpha, real *ap, 
-	real *x, integer *incx, real *beta, real *y, integer *incy)
+/* Subroutine */ int sspmv_(char *uplo, integer *n, real *alpha, real *ap, 
+	real *x, integer *incx, real *beta, real *y, integer *incy, ftnlen 
+	uplo_len)
 {
     /* System generated locals */
     integer i__1, i__2;
@@ -168,8 +169,8 @@
     /* Local variables */
     integer i__, j, k, kk, ix, iy, jx, jy, kx, ky, info;
     real temp1, temp2;
-    extern  logical lsame_(char *, char *);
-    extern /* Subroutine */ void xerbla_(char *, integer *);
+    extern logical lsame_(char *, char *, ftnlen, ftnlen);
+    extern /* Subroutine */ int xerbla_(char *, integer *, ftnlen);
 
 
 /*  -- Reference BLAS level2 routine (version 3.7.0) -- */
@@ -202,7 +203,8 @@
 
     /* Function Body */
     info = 0;
-    if (! lsame_(uplo, "U") && ! lsame_(uplo, "L")) {
+    if (! lsame_(uplo, "U", (ftnlen)1, (ftnlen)1) && ! lsame_(uplo, "L", (
+	    ftnlen)1, (ftnlen)1)) {
 	info = 1;
     } else if (*n < 0) {
 	info = 2;
@@ -212,14 +214,14 @@
 	info = 9;
     }
     if (info != 0) {
-	xerbla_("SSPMV ", &info);
-	return;
+	xerbla_("SSPMV ", &info, (ftnlen)6);
+	return 0;
     }
 
 /*     Quick return if possible. */
 
     if (*n == 0 || *alpha == 0.f && *beta == 1.f) {
-	return;
+	return 0;
     }
 
 /*     Set up the start points in  X  and  Y. */
@@ -275,10 +277,10 @@
 	}
     }
     if (*alpha == 0.f) {
-	return;
+	return 0;
     }
     kk = 1;
-    if (lsame_(uplo, "U")) {
+    if (lsame_(uplo, "U", (ftnlen)1, (ftnlen)1)) {
 
 /*        Form  y  when AP contains the upper triangle. */
 
@@ -372,7 +374,7 @@
 	}
     }
 
-    return;
+    return 0;
 
 /*     End of SSPMV . */
 

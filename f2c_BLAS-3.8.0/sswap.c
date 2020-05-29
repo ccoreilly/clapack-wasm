@@ -94,7 +94,7 @@
 /* > \endverbatim */
 /* > */
 /*  ===================================================================== */
-/* Subroutine */ void sswap_(integer *n, real *sx, integer *incx, real *sy, 
+/* Subroutine */ int sswap_(integer *n, real *sx, integer *incx, real *sy, 
 	integer *incy)
 {
     /* System generated locals */
@@ -127,7 +127,7 @@
 
     /* Function Body */
     if (*n <= 0) {
-	return;
+	return 0;
     }
     if (*incx == 1 && *incy == 1) {
 
@@ -145,7 +145,7 @@
 		sy[i__] = stemp;
 	    }
 	    if (*n < 3) {
-		return;
+		return 0;
 	    }
 	}
 	mp1 = m + 1;
@@ -183,6 +183,6 @@
 	    iy += *incy;
 	}
     }
-    return;
+    return 0;
 } /* sswap_ */
 

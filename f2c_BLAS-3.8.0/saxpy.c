@@ -101,7 +101,7 @@
 /* > \endverbatim */
 /* > */
 /*  ===================================================================== */
-/* Subroutine */ void saxpy_(integer *n, real *sa, real *sx, integer *incx, 
+/* Subroutine */ int saxpy_(integer *n, real *sa, real *sx, integer *incx, 
 	real *sy, integer *incy)
 {
     /* System generated locals */
@@ -133,10 +133,10 @@
 
     /* Function Body */
     if (*n <= 0) {
-	return;
+	return 0;
     }
     if (*sa == 0.f) {
-	return;
+	return 0;
     }
     if (*incx == 1 && *incy == 1) {
 
@@ -153,7 +153,7 @@
 	    }
 	}
 	if (*n < 4) {
-	    return;
+	    return 0;
 	}
 	mp1 = m + 1;
 	i__1 = *n;
@@ -183,6 +183,6 @@
 	    iy += *incy;
 	}
     }
-    return;
+    return 0;
 } /* saxpy_ */
 

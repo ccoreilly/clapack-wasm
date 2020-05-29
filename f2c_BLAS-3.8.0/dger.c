@@ -142,7 +142,7 @@
 /* > \endverbatim */
 /* > */
 /*  ===================================================================== */
-/* Subroutine */ void dger_(integer *m, integer *n, doublereal *alpha, 
+/* Subroutine */ int dger_(integer *m, integer *n, doublereal *alpha, 
 	doublereal *x, integer *incx, doublereal *y, integer *incy, 
 	doublereal *a, integer *lda)
 {
@@ -152,7 +152,7 @@
     /* Local variables */
     integer i__, j, ix, jy, kx, info;
     doublereal temp;
-    extern /* Subroutine */ void xerbla_(char *, integer *);
+    extern /* Subroutine */ int xerbla_(char *, integer *, ftnlen);
 
 
 /*  -- Reference BLAS level2 routine (version 3.7.0) -- */
@@ -199,14 +199,14 @@
 	info = 9;
     }
     if (info != 0) {
-	xerbla_("DGER  ", &info);
-	return;
+	xerbla_("DGER  ", &info, (ftnlen)6);
+	return 0;
     }
 
 /*     Quick return if possible. */
 
     if (*m == 0 || *n == 0 || *alpha == 0.) {
-	return;
+	return 0;
     }
 
 /*     Start the operations. In this version the elements of A are */
@@ -254,7 +254,7 @@
 	}
     }
 
-    return;
+    return 0;
 
 /*     End of DGER  . */
 

@@ -200,9 +200,10 @@
 /* > \endverbatim */
 /* > */
 /*  ===================================================================== */
-/* Subroutine */ void csyr2k_(char *uplo, char *trans, integer *n, integer *k, 
+/* Subroutine */ int csyr2k_(char *uplo, char *trans, integer *n, integer *k, 
 	complex *alpha, complex *a, integer *lda, complex *b, integer *ldb, 
-	complex *beta, complex *c__, integer *ldc)
+	complex *beta, complex *c__, integer *ldc, ftnlen uplo_len, ftnlen 
+	trans_len)
 {
     /* System generated locals */
     integer a_dim1, a_offset, b_dim1, b_offset, c_dim1, c_offset, i__1, i__2, 
@@ -212,10 +213,10 @@
     /* Local variables */
     integer i__, j, l, info;
     complex temp1, temp2;
-    extern  logical lsame_(char *, char *);
+    extern logical lsame_(char *, char *, ftnlen, ftnlen);
     integer nrowa;
     logical upper;
-    extern /* Subroutine */ void xerbla_(char *, integer *);
+    extern /* Subroutine */ int xerbla_(char *, integer *, ftnlen);
 
 
 /*  -- Reference BLAS level3 routine (version 3.7.0) -- */
@@ -255,17 +256,18 @@
     c__ -= c_offset;
 
     /* Function Body */
-    if (lsame_(trans, "N")) {
+    if (lsame_(trans, "N", (ftnlen)1, (ftnlen)1)) {
 	nrowa = *n;
     } else {
 	nrowa = *k;
     }
-    upper = lsame_(uplo, "U");
+    upper = lsame_(uplo, "U", (ftnlen)1, (ftnlen)1);
 
     info = 0;
-    if (! upper && ! lsame_(uplo, "L")) {
+    if (! upper && ! lsame_(uplo, "L", (ftnlen)1, (ftnlen)1)) {
 	info = 1;
-    } else if (! lsame_(trans, "N") && ! lsame_(trans, "T")) {
+    } else if (! lsame_(trans, "N", (ftnlen)1, (ftnlen)1) && ! lsame_(trans, 
+	    "T", (ftnlen)1, (ftnlen)1)) {
 	info = 2;
     } else if (*n < 0) {
 	info = 3;
@@ -279,15 +281,15 @@
 	info = 12;
     }
     if (info != 0) {
-	xerbla_("CSYR2K", &info);
-	return;
+	xerbla_("CSYR2K", &info, (ftnlen)6);
+	return 0;
     }
 
 /*     Quick return if possible. */
 
     if (*n == 0 || (alpha->r == 0.f && alpha->i == 0.f || *k == 0) && (
 	    beta->r == 1.f && beta->i == 0.f)) {
-	return;
+	return 0;
     }
 
 /*     And when  alpha.eq.zero. */
@@ -350,12 +352,12 @@
 		}
 	    }
 	}
-	return;
+	return 0;
     }
 
 /*     Start the operations. */
 
-    if (lsame_(trans, "N")) {
+    if (lsame_(trans, "N", (ftnlen)1, (ftnlen)1)) {
 
 /*        Form  C := alpha*A*B**T + alpha*B*A**T + C. */
 
@@ -601,7 +603,7 @@
 	}
     }
 
-    return;
+    return 0;
 
 /*     End of CSYR2K. */
 

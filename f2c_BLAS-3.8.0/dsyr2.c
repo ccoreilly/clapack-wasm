@@ -159,9 +159,9 @@
 /* > \endverbatim */
 /* > */
 /*  ===================================================================== */
-/* Subroutine */ void dsyr2_(char *uplo, integer *n, doublereal *alpha, 
+/* Subroutine */ int dsyr2_(char *uplo, integer *n, doublereal *alpha, 
 	doublereal *x, integer *incx, doublereal *y, integer *incy, 
-	doublereal *a, integer *lda)
+	doublereal *a, integer *lda, ftnlen uplo_len)
 {
     /* System generated locals */
     integer a_dim1, a_offset, i__1, i__2;
@@ -169,8 +169,8 @@
     /* Local variables */
     integer i__, j, ix, iy, jx, jy, kx, ky, info;
     doublereal temp1, temp2;
-    extern  logical lsame_(char *, char *);
-    extern /* Subroutine */ void xerbla_(char *, integer *);
+    extern logical lsame_(char *, char *, ftnlen, ftnlen);
+    extern /* Subroutine */ int xerbla_(char *, integer *, ftnlen);
 
 
 /*  -- Reference BLAS level2 routine (version 3.7.0) -- */
@@ -207,7 +207,8 @@
 
     /* Function Body */
     info = 0;
-    if (! lsame_(uplo, "U") && ! lsame_(uplo, "L")) {
+    if (! lsame_(uplo, "U", (ftnlen)1, (ftnlen)1) && ! lsame_(uplo, "L", (
+	    ftnlen)1, (ftnlen)1)) {
 	info = 1;
     } else if (*n < 0) {
 	info = 2;
@@ -219,14 +220,14 @@
 	info = 9;
     }
     if (info != 0) {
-	xerbla_("DSYR2 ", &info);
-	return;
+	xerbla_("DSYR2 ", &info, (ftnlen)6);
+	return 0;
     }
 
 /*     Quick return if possible. */
 
     if (*n == 0 || *alpha == 0.) {
-	return;
+	return 0;
     }
 
 /*     Set up the start points in X and Y if the increments are not both */
@@ -251,7 +252,7 @@
 /*     accessed sequentially with one pass through the triangular part */
 /*     of A. */
 
-    if (lsame_(uplo, "U")) {
+    if (lsame_(uplo, "U", (ftnlen)1, (ftnlen)1)) {
 
 /*        Form  A  when A is stored in the upper triangle. */
 
@@ -335,7 +336,7 @@
 	}
     }
 
-    return;
+    return 0;
 
 /*     End of DSYR2 . */
 

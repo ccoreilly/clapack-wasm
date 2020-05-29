@@ -147,8 +147,8 @@
 /* > \endverbatim */
 /* > */
 /*  ===================================================================== */
-/* Subroutine */ void cher_(char *uplo, integer *n, real *alpha, complex *x, 
-	integer *incx, complex *a, integer *lda)
+/* Subroutine */ int cher_(char *uplo, integer *n, real *alpha, complex *x, 
+	integer *incx, complex *a, integer *lda, ftnlen uplo_len)
 {
     /* System generated locals */
     integer a_dim1, a_offset, i__1, i__2, i__3, i__4, i__5;
@@ -161,8 +161,8 @@
     /* Local variables */
     integer i__, j, ix, jx, kx, info;
     complex temp;
-    extern  logical lsame_(char *, char *);
-    extern /* Subroutine */ void xerbla_(char *, integer *);
+    extern logical lsame_(char *, char *, ftnlen, ftnlen);
+    extern /* Subroutine */ int xerbla_(char *, integer *, ftnlen);
 
 
 /*  -- Reference BLAS level2 routine (version 3.7.0) -- */
@@ -198,7 +198,8 @@
 
     /* Function Body */
     info = 0;
-    if (! lsame_(uplo, "U") && ! lsame_(uplo, "L")) {
+    if (! lsame_(uplo, "U", (ftnlen)1, (ftnlen)1) && ! lsame_(uplo, "L", (
+	    ftnlen)1, (ftnlen)1)) {
 	info = 1;
     } else if (*n < 0) {
 	info = 2;
@@ -208,14 +209,14 @@
 	info = 7;
     }
     if (info != 0) {
-	xerbla_("CHER  ", &info);
-	return;
+	xerbla_("CHER  ", &info, (ftnlen)6);
+	return 0;
     }
 
 /*     Quick return if possible. */
 
     if (*n == 0 || *alpha == 0.f) {
-	return;
+	return 0;
     }
 
 /*     Set the start point in X if the increment is not unity. */
@@ -230,7 +231,7 @@
 /*     accessed sequentially with one pass through the triangular part */
 /*     of A. */
 
-    if (lsame_(uplo, "U")) {
+    if (lsame_(uplo, "U", (ftnlen)1, (ftnlen)1)) {
 
 /*        Form  A  when A is stored in upper triangle. */
 
@@ -394,7 +395,7 @@
 	}
     }
 
-    return;
+    return 0;
 
 /*     End of CHER  . */
 

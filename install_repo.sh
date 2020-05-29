@@ -54,16 +54,21 @@ cd libf2c
 make -f $libf2c_make
 cd ../
 echo "Making BLAS"
+./apply_patches.sh patches/f2c_BLAS-3.8.0 f2c_BLAS-3.8.0
 cd f2c_BLAS-3.8.0
 cp $blas_make make.inc
 make
 cd ../
 echo "Making CBLAS"
+./apply_patches.sh patches/CBLAS CBLAS
+cd CBLAS
 mkdir -p lib
 cp $cblas_make Makefile.in
 make
+cd ../
 echo "Making CLAPACK"
-cd CLAPACK
+./apply_patches.sh patches/CLAPACK-3.2.1 CLAPACK-3.2.1
+cd CLAPACK-3.2.1
 mkdir -p SRC/VARIANTS/LIB
 cp $clapack_make make.inc
 make
