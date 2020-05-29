@@ -167,5 +167,8 @@ FRC:
 clean:
 	rm -f *.o
 
+cleanall: clean
+	rm -f *.a
+
 .c.o:
 	$(CC) $(CFLAGS) -c $< -o $@

@@ -9,25 +9,20 @@ CLAPACK is also included but no tests were run.
 
 For install instructions, please refer to [INSTALL](./INSTALL.md).
 
-This repository contains
+This repository contains the following directories
 
 ```bash
 .
-├── CBLAS_README
-├── CLAPACK/
-├── examples
+├── CBLAS/
+├── CLAPACK-3.2.1/
 ├── f2c_BLAS-3.8.0/
-├── include/
 ├── libf2c/
-├── src/
-└── testing/
+└── patches/
 ```
 
-* `CBLAS_README` is the README originally found in CBLAS.
 * `CLAPACK` contains the CLAPACK source code with redundancies (e.g. BLAS)
   removed.
-* `examples`, `include`, `src` and `testing` are the directories with the same
-  name found in CBLAS.
+* `CBLAS` contains the original source code of CBLAS
 * `f2c_BLAS-3.8.0` contains the source code of BLAS-3.8.0 converted to C using the
   `f2c` program. For more information about this conversion, please this
   [section](#automatic-fortran-77-to-c-translation).
@@ -44,8 +39,15 @@ graph TD
   CLAPACK --> CBLAS
 ```
 
-Changes made to these various directories are all listed in a `changelog.txt`
-file put in these directories.
+To avoid breaking the license of CBLAS, CLAPACK or BLAS, the source code of
+these libraries is distributed as found in the original packages. However,
+to successfully compile and use these libraries, these source files have to be
+slightly modified. These modifications are stored as patches under the directory
+`patches`. The patches are automatically applied before compiling the different
+components.
+
+The changes applied by each patch are described in files named `changelog.txt`
+located under `CBLAS`, `CLAPACK-3.2.1`, `f2c_BLAS-3.8.0` and `libf2c`.
 
 For a summary of what changed in these components, please read below.
 
@@ -146,7 +148,7 @@ modifications had to make the following assumptions:
 With these modifications, the FORTRAN free code of CBLAS passes all the
 (unmodified) tests in the `testing` directory.
 
-For the complete list of changes, please refer to [changelog.txt](changelog.txt)
+For the complete list of changes, please refer to [CBLAS/changelog.txt](CBLAS/changelog.txt)
 
 ### CBLAS test suite
 
@@ -186,7 +188,7 @@ To use the various libraries, assuming that the variable `CLAPACKROOT` contains
 the path to the root of this directory, link as follows:
 
 ```
-$(CLAPACKROOT)/CLAPACK/lapack.a $(CLAPACKROOT)/CLAPACK/libcblaswr.a \
-$(CLAPACKROOT)/lib/cblas.a \
+$(CLAPACKROOT)/CLAPACK-3.2.1/lapack.a $(CLAPACKROOT)/CLAPACK-3.2.1/libcblaswr.a \
+$(CLAPACKROOT)/CBLAS/lib/cblas.a \
 $(CLAPACKROOT)/f2c_BLAS-3.8.0/blas.a $(CLAPACKROOT)/libf2c/libf2c.a
 ```

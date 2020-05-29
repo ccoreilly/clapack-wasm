@@ -100,7 +100,7 @@
 /* > \endverbatim */
 /* > */
 /*  ===================================================================== */
-/* Subroutine */ void zaxpy_(integer *n, doublecomplex *za, doublecomplex *zx, 
+/* Subroutine */ int zaxpy_(integer *n, doublecomplex *za, doublecomplex *zx, 
 	integer *incx, doublecomplex *zy, integer *incy)
 {
     /* System generated locals */
@@ -134,10 +134,10 @@
 
     /* Function Body */
     if (*n <= 0) {
-	return;
+	return 0;
     }
     if (dcabs1_(za) == 0.) {
-	return;
+	return 0;
     }
     if (*incx == 1 && *incy == 1) {
 
@@ -180,6 +180,6 @@
 	}
     }
 
-    return;
+    return 0;
 } /* zaxpy_ */
 

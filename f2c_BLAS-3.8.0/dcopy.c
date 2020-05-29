@@ -94,7 +94,7 @@
 /* > \endverbatim */
 /* > */
 /*  ===================================================================== */
-/* Subroutine */ void dcopy_(integer *n, doublereal *dx, integer *incx, 
+/* Subroutine */ int dcopy_(integer *n, doublereal *dx, integer *incx, 
 	doublereal *dy, integer *incy)
 {
     /* System generated locals */
@@ -126,7 +126,7 @@
 
     /* Function Body */
     if (*n <= 0) {
-	return;
+	return 0;
     }
     if (*incx == 1 && *incy == 1) {
 
@@ -142,7 +142,7 @@
 		dy[i__] = dx[i__];
 	    }
 	    if (*n < 7) {
-		return;
+		return 0;
 	    }
 	}
 	mp1 = m + 1;
@@ -176,6 +176,6 @@
 	    iy += *incy;
 	}
     }
-    return;
+    return 0;
 } /* dcopy_ */
 

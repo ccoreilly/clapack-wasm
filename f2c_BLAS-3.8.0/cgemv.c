@@ -170,9 +170,9 @@
 /* > \endverbatim */
 /* > */
 /*  ===================================================================== */
-/* Subroutine */ void cgemv_(char *trans, integer *m, integer *n, complex *
+/* Subroutine */ int cgemv_(char *trans, integer *m, integer *n, complex *
 	alpha, complex *a, integer *lda, complex *x, integer *incx, complex *
-	beta, complex *y, integer *incy)
+	beta, complex *y, integer *incy, ftnlen trans_len)
 {
     /* System generated locals */
     integer a_dim1, a_offset, i__1, i__2, i__3, i__4, i__5;
@@ -185,8 +185,8 @@
     integer i__, j, ix, iy, jx, jy, kx, ky, info;
     complex temp;
     integer lenx, leny;
-    extern  logical lsame_(char *, char *);
-    extern /* Subroutine */ void xerbla_(char *, integer *);
+    extern logical lsame_(char *, char *, ftnlen, ftnlen);
+    extern /* Subroutine */ int xerbla_(char *, integer *, ftnlen);
     logical noconj;
 
 
@@ -224,7 +224,9 @@
 
     /* Function Body */
     info = 0;
-    if (! lsame_(trans, "N") && ! lsame_(trans, "T") && ! lsame_(trans, "C")) {
+    if (! lsame_(trans, "N", (ftnlen)1, (ftnlen)1) && ! lsame_(trans, "T", (
+	    ftnlen)1, (ftnlen)1) && ! lsame_(trans, "C", (ftnlen)1, (ftnlen)1)
+	    ) {
 	info = 1;
     } else if (*m < 0) {
 	info = 2;
@@ -238,23 +240,23 @@
 	info = 11;
     }
     if (info != 0) {
-	xerbla_("CGEMV ", &info);
-	return;
+	xerbla_("CGEMV ", &info, (ftnlen)6);
+	return 0;
     }
 
 /*     Quick return if possible. */
 
     if (*m == 0 || *n == 0 || alpha->r == 0.f && alpha->i == 0.f && (beta->r 
 	    == 1.f && beta->i == 0.f)) {
-	return;
+	return 0;
     }
 
-    noconj = lsame_(trans, "T");
+    noconj = lsame_(trans, "T", (ftnlen)1, (ftnlen)1);
 
 /*     Set  LENX  and  LENY, the lengths of the vectors x and y, and set */
 /*     up the start points in  X  and  Y. */
 
-    if (lsame_(trans, "N")) {
+    if (lsame_(trans, "N", (ftnlen)1, (ftnlen)1)) {
 	lenx = *n;
 	leny = *m;
     } else {
@@ -324,9 +326,9 @@
 	}
     }
     if (alpha->r == 0.f && alpha->i == 0.f) {
-	return;
+	return 0;
     }
-    if (lsame_(trans, "N")) {
+    if (lsame_(trans, "N", (ftnlen)1, (ftnlen)1)) {
 
 /*        Form  y := alpha*A*x + y. */
 
@@ -463,7 +465,7 @@
 	}
     }
 
-    return;
+    return 0;
 
 /*     End of CGEMV . */
 

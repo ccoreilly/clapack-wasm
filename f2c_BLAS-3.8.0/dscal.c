@@ -91,7 +91,7 @@
 /* > \endverbatim */
 /* > */
 /*  ===================================================================== */
-/* Subroutine */ void dscal_(integer *n, doublereal *da, doublereal *dx, 
+/* Subroutine */ int dscal_(integer *n, doublereal *da, doublereal *dx, 
 	integer *incx)
 {
     /* System generated locals */
@@ -122,7 +122,7 @@
 
     /* Function Body */
     if (*n <= 0 || *incx <= 0) {
-	return;
+	return 0;
     }
     if (*incx == 1) {
 
@@ -138,7 +138,7 @@
 		dx[i__] = *da * dx[i__];
 	    }
 	    if (*n < 5) {
-		return;
+		return 0;
 	    }
 	}
 	mp1 = m + 1;
@@ -161,6 +161,6 @@
 	    dx[i__] = *da * dx[i__];
 	}
     }
-    return;
+    return 0;
 } /* dscal_ */
 

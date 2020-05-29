@@ -193,9 +193,10 @@
 /* > \endverbatim */
 /* > */
 /*  ===================================================================== */
-/* Subroutine */ void dtrsm_(char *side, char *uplo, char *transa, char *diag, 
+/* Subroutine */ int dtrsm_(char *side, char *uplo, char *transa, char *diag, 
 	integer *m, integer *n, doublereal *alpha, doublereal *a, integer *
-	lda, doublereal *b, integer *ldb)
+	lda, doublereal *b, integer *ldb, ftnlen side_len, ftnlen uplo_len, 
+	ftnlen transa_len, ftnlen diag_len)
 {
     /* System generated locals */
     integer a_dim1, a_offset, b_dim1, b_offset, i__1, i__2, i__3;
@@ -204,10 +205,10 @@
     integer i__, j, k, info;
     doublereal temp;
     logical lside;
-    extern  logical lsame_(char *, char *);
+    extern logical lsame_(char *, char *, ftnlen, ftnlen);
     integer nrowa;
     logical upper;
-    extern /* Subroutine */ void xerbla_(char *, integer *);
+    extern /* Subroutine */ int xerbla_(char *, integer *, ftnlen);
     logical nounit;
 
 
@@ -245,23 +246,26 @@
     b -= b_offset;
 
     /* Function Body */
-    lside = lsame_(side, "L");
+    lside = lsame_(side, "L", (ftnlen)1, (ftnlen)1);
     if (lside) {
 	nrowa = *m;
     } else {
 	nrowa = *n;
     }
-    nounit = lsame_(diag, "N");
-    upper = lsame_(uplo, "U");
+    nounit = lsame_(diag, "N", (ftnlen)1, (ftnlen)1);
+    upper = lsame_(uplo, "U", (ftnlen)1, (ftnlen)1);
 
     info = 0;
-    if (! lside && ! lsame_(side, "R")) {
+    if (! lside && ! lsame_(side, "R", (ftnlen)1, (ftnlen)1)) {
 	info = 1;
-    } else if (! upper && ! lsame_(uplo, "L")) {
+    } else if (! upper && ! lsame_(uplo, "L", (ftnlen)1, (ftnlen)1)) {
 	info = 2;
-    } else if (! lsame_(transa, "N") && ! lsame_(transa, "T") && ! lsame_(transa, "C")) {
+    } else if (! lsame_(transa, "N", (ftnlen)1, (ftnlen)1) && ! lsame_(transa,
+	     "T", (ftnlen)1, (ftnlen)1) && ! lsame_(transa, "C", (ftnlen)1, (
+	    ftnlen)1)) {
 	info = 3;
-    } else if (! lsame_(diag, "U") && ! lsame_(diag, "N")) {
+    } else if (! lsame_(diag, "U", (ftnlen)1, (ftnlen)1) && ! lsame_(diag, 
+	    "N", (ftnlen)1, (ftnlen)1)) {
 	info = 4;
     } else if (*m < 0) {
 	info = 5;
@@ -273,14 +277,14 @@
 	info = 11;
     }
     if (info != 0) {
-	xerbla_("DTRSM ", &info);
-	return;
+	xerbla_("DTRSM ", &info, (ftnlen)6);
+	return 0;
     }
 
 /*     Quick return if possible. */
 
     if (*m == 0 || *n == 0) {
-	return;
+	return 0;
     }
 
 /*     And when  alpha.eq.zero. */
@@ -295,13 +299,13 @@
 	    }
 /* L20: */
 	}
-	return;
+	return 0;
     }
 
 /*     Start the operations. */
 
     if (lside) {
-	if (lsame_(transa, "N")) {
+	if (lsame_(transa, "N", (ftnlen)1, (ftnlen)1)) {
 
 /*           Form  B := alpha*inv( A )*B. */
 
@@ -405,7 +409,7 @@
 	    }
 	}
     } else {
-	if (lsame_(transa, "N")) {
+	if (lsame_(transa, "N", (ftnlen)1, (ftnlen)1)) {
 
 /*           Form  B := alpha*B*inv( A ). */
 
@@ -550,7 +554,7 @@
 	}
     }
 
-    return;
+    return 0;
 
 /*     End of DTRSM . */
 

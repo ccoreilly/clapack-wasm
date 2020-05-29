@@ -109,7 +109,7 @@
 /* > \ingroup single_blas_level1 */
 
 /*  ===================================================================== */
-/* Subroutine */ void srotm_(integer *n, real *sx, integer *incx, real *sy, 
+/* Subroutine */ int srotm_(integer *n, real *sx, integer *incx, real *sy, 
 	integer *incy, real *sparam)
 {
     /* Initialized data */
@@ -153,7 +153,7 @@
 
     sflag = sparam[1];
     if (*n <= 0 || sflag + two == zero) {
-	return;
+	return 0;
     }
     if (*incx == *incy && *incx > 0) {
 
@@ -244,6 +244,6 @@
 	    }
 	}
     }
-    return;
+    return 0;
 } /* srotm_ */
 

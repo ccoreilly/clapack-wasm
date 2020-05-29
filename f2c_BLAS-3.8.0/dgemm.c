@@ -199,10 +199,10 @@
 /* > \endverbatim */
 /* > */
 /*  ===================================================================== */
-/* Subroutine */ void dgemm_(char *transa, char *transb, integer *m, integer *
+/* Subroutine */ int dgemm_(char *transa, char *transb, integer *m, integer *
 	n, integer *k, doublereal *alpha, doublereal *a, integer *lda, 
 	doublereal *b, integer *ldb, doublereal *beta, doublereal *c__, 
-	integer *ldc)
+	integer *ldc, ftnlen transa_len, ftnlen transb_len)
 {
     /* System generated locals */
     integer a_dim1, a_offset, b_dim1, b_offset, c_dim1, c_offset, i__1, i__2, 
@@ -213,9 +213,9 @@
     logical nota, notb;
     doublereal temp;
     integer ncola;
-    extern  logical lsame_(char *, char *);
+    extern logical lsame_(char *, char *, ftnlen, ftnlen);
     integer nrowa, nrowb;
-    extern /* Subroutine */ void xerbla_(char *, integer *);
+    extern /* Subroutine */ int xerbla_(char *, integer *, ftnlen);
 
 
 /*  -- Reference BLAS level3 routine (version 3.7.0) -- */
@@ -257,8 +257,8 @@
     c__ -= c_offset;
 
     /* Function Body */
-    nota = lsame_(transa, "N");
-    notb = lsame_(transb, "N");
+    nota = lsame_(transa, "N", (ftnlen)1, (ftnlen)1);
+    notb = lsame_(transb, "N", (ftnlen)1, (ftnlen)1);
     if (nota) {
 	nrowa = *m;
 	ncola = *k;
@@ -275,10 +275,11 @@
 /*     Test the input parameters. */
 
     info = 0;
-    if (! nota && ! lsame_(transa, "C") && ! lsame_( transa, "T")) {
+    if (! nota && ! lsame_(transa, "C", (ftnlen)1, (ftnlen)1) && ! lsame_(
+	    transa, "T", (ftnlen)1, (ftnlen)1)) {
 	info = 1;
-    } else if (! notb && ! lsame_(transb, "C") && ! 
-	    lsame_(transb, "T")) {
+    } else if (! notb && ! lsame_(transb, "C", (ftnlen)1, (ftnlen)1) && ! 
+	    lsame_(transb, "T", (ftnlen)1, (ftnlen)1)) {
 	info = 2;
     } else if (*m < 0) {
 	info = 3;
@@ -294,14 +295,14 @@
 	info = 13;
     }
     if (info != 0) {
-	xerbla_("DGEMM ", &info);
-	return;
+	xerbla_("DGEMM ", &info, (ftnlen)6);
+	return 0;
     }
 
 /*     Quick return if possible. */
 
     if (*m == 0 || *n == 0 || (*alpha == 0. || *k == 0) && *beta == 1.) {
-	return;
+	return 0;
     }
 
 /*     And if  alpha.eq.zero. */
@@ -328,7 +329,7 @@
 /* L40: */
 	    }
 	}
-	return;
+	return 0;
     }
 
 /*     Start the operations. */
@@ -449,7 +450,7 @@
 	}
     }
 
-    return;
+    return 0;
 
 /*     End of DGEMM . */
 

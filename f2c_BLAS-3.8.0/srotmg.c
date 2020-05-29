@@ -102,7 +102,7 @@
 /* > \ingroup single_blas_level1 */
 
 /*  ===================================================================== */
-/* Subroutine */ void srotmg_(real *sd1, real *sd2, real *sx1, real *sy1, real 
+/* Subroutine */ int srotmg_(real *sd1, real *sd2, real *sx1, real *sy1, real 
 	*sparam)
 {
     /* Initialized data */
@@ -161,7 +161,7 @@
 	if (sp2 == zero) {
 	    sflag = -two;
 	    sparam[1] = sflag;
-	    return;
+	    return 0;
 	}
 /*        REGULAR-CASE.. */
 	sp1 = *sd1 * *sx1;
@@ -272,6 +272,6 @@
 	sparam[5] = sh22;
     }
     sparam[1] = sflag;
-    return;
+    return 0;
 } /* srotmg_ */
 

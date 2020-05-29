@@ -108,7 +108,7 @@
 /* > \ingroup double_blas_level1 */
 
 /*  ===================================================================== */
-/* Subroutine */ void drotm_(integer *n, doublereal *dx, integer *incx, 
+/* Subroutine */ int drotm_(integer *n, doublereal *dx, integer *incx, 
 	doublereal *dy, integer *incy, doublereal *dparam)
 {
     /* Initialized data */
@@ -152,7 +152,7 @@
 
     dflag = dparam[1];
     if (*n <= 0 || dflag + two == zero) {
-	return;
+	return 0;
     }
     if (*incx == *incy && *incx > 0) {
 
@@ -243,6 +243,6 @@
 	    }
 	}
     }
-    return;
+    return 0;
 } /* drotm_ */
 

@@ -201,9 +201,10 @@
 /* > \endverbatim */
 /* > */
 /*  ===================================================================== */
-/* Subroutine */ void dsymm_(char *side, char *uplo, integer *m, integer *n, 
+/* Subroutine */ int dsymm_(char *side, char *uplo, integer *m, integer *n, 
 	doublereal *alpha, doublereal *a, integer *lda, doublereal *b, 
-	integer *ldb, doublereal *beta, doublereal *c__, integer *ldc)
+	integer *ldb, doublereal *beta, doublereal *c__, integer *ldc, ftnlen 
+	side_len, ftnlen uplo_len)
 {
     /* System generated locals */
     integer a_dim1, a_offset, b_dim1, b_offset, c_dim1, c_offset, i__1, i__2, 
@@ -212,10 +213,10 @@
     /* Local variables */
     integer i__, j, k, info;
     doublereal temp1, temp2;
-    extern  logical lsame_(char *, char *);
+    extern logical lsame_(char *, char *, ftnlen, ftnlen);
     integer nrowa;
     logical upper;
-    extern /* Subroutine */ void xerbla_(char *, integer *);
+    extern /* Subroutine */ int xerbla_(char *, integer *, ftnlen);
 
 
 /*  -- Reference BLAS level3 routine (version 3.7.0) -- */
@@ -255,19 +256,20 @@
     c__ -= c_offset;
 
     /* Function Body */
-    if (lsame_(side, "L")) {
+    if (lsame_(side, "L", (ftnlen)1, (ftnlen)1)) {
 	nrowa = *m;
     } else {
 	nrowa = *n;
     }
-    upper = lsame_(uplo, "U");
+    upper = lsame_(uplo, "U", (ftnlen)1, (ftnlen)1);
 
 /*     Test the input parameters. */
 
     info = 0;
-    if (! lsame_(side, "L") && ! lsame_(side, "R")) {
+    if (! lsame_(side, "L", (ftnlen)1, (ftnlen)1) && ! lsame_(side, "R", (
+	    ftnlen)1, (ftnlen)1)) {
 	info = 1;
-    } else if (! upper && ! lsame_(uplo, "L")) {
+    } else if (! upper && ! lsame_(uplo, "L", (ftnlen)1, (ftnlen)1)) {
 	info = 2;
     } else if (*m < 0) {
 	info = 3;
@@ -281,14 +283,14 @@
 	info = 12;
     }
     if (info != 0) {
-	xerbla_("DSYMM ", &info);
-	return;
+	xerbla_("DSYMM ", &info, (ftnlen)6);
+	return 0;
     }
 
 /*     Quick return if possible. */
 
     if (*m == 0 || *n == 0 || *alpha == 0. && *beta == 1.) {
-	return;
+	return 0;
     }
 
 /*     And when  alpha.eq.zero. */
@@ -315,12 +317,12 @@
 /* L40: */
 	    }
 	}
-	return;
+	return 0;
     }
 
 /*     Start the operations. */
 
-    if (lsame_(side, "L")) {
+    if (lsame_(side, "L", (ftnlen)1, (ftnlen)1)) {
 
 /*        Form  C := alpha*A*B + beta*C. */
 
@@ -427,7 +429,7 @@
 	}
     }
 
-    return;
+    return 0;
 
 /*     End of DSYMM . */
 

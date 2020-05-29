@@ -142,7 +142,7 @@
 /* > \endverbatim */
 /* > */
 /*  ===================================================================== */
-/* Subroutine */ void cgeru_(integer *m, integer *n, complex *alpha, complex *
+/* Subroutine */ int cgeru_(integer *m, integer *n, complex *alpha, complex *
 	x, integer *incx, complex *y, integer *incy, complex *a, integer *lda)
 {
     /* System generated locals */
@@ -152,7 +152,7 @@
     /* Local variables */
     integer i__, j, ix, jy, kx, info;
     complex temp;
-    extern /* Subroutine */ void xerbla_(char *, integer *);
+    extern /* Subroutine */ int xerbla_(char *, integer *, ftnlen);
 
 
 /*  -- Reference BLAS level2 routine (version 3.7.0) -- */
@@ -199,14 +199,14 @@
 	info = 9;
     }
     if (info != 0) {
-	xerbla_("CGERU ", &info);
-	return;
+	xerbla_("CGERU ", &info, (ftnlen)6);
+	return 0;
     }
 
 /*     Quick return if possible. */
 
     if (*m == 0 || *n == 0 || alpha->r == 0.f && alpha->i == 0.f) {
-	return;
+	return 0;
     }
 
 /*     Start the operations. In this version the elements of A are */
@@ -274,7 +274,7 @@
 	}
     }
 
-    return;
+    return 0;
 
 /*     End of CGERU . */
 

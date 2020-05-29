@@ -102,7 +102,7 @@
 /* > \ingroup double_blas_level1 */
 
 /*  ===================================================================== */
-/* Subroutine */ void drotmg_(doublereal *dd1, doublereal *dd2, doublereal *
+/* Subroutine */ int drotmg_(doublereal *dd1, doublereal *dd2, doublereal *
 	dx1, doublereal *dy1, doublereal *dparam)
 {
     /* Initialized data */
@@ -161,7 +161,7 @@
 	if (dp2 == zero) {
 	    dflag = -two;
 	    dparam[1] = dflag;
-	    return;
+	    return 0;
 	}
 /*        REGULAR-CASE.. */
 	dp1 = *dd1 * *dx1;
@@ -272,6 +272,6 @@
 	dparam[5] = dh22;
     }
     dparam[1] = dflag;
-    return;
+    return 0;
 } /* drotmg_ */
 

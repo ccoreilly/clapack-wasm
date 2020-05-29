@@ -104,7 +104,7 @@
 /* > \endverbatim */
 /* > */
 /*  ===================================================================== */
-/* Subroutine */ void drot_(integer *n, doublereal *dx, integer *incx, 
+/* Subroutine */ int drot_(integer *n, doublereal *dx, integer *incx, 
 	doublereal *dy, integer *incy, doublereal *c__, doublereal *s)
 {
     /* System generated locals */
@@ -135,7 +135,7 @@
 
     /* Function Body */
     if (*n <= 0) {
-	return;
+	return 0;
     }
     if (*incx == 1 && *incy == 1) {
 
@@ -169,6 +169,6 @@
 	    iy += *incy;
 	}
     }
-    return;
+    return 0;
 } /* drot_ */
 
