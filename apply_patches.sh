@@ -21,5 +21,5 @@ target_dir=$2
 for patch_file in $(find $patch_dir -type f); do
     file_path=${patch_file#$patch_dir}
     target_file=${target_dir}/${file_path}
-    patch $target_file < $patch_file
+    patch --forward $target_file < $patch_file || true
 done
