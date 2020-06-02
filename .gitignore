@@ -1,6 +1,7 @@
 *.a
 *.f
 *.o
+**/*.rej
 CBLAS/**/*.c
 CLAPACK-3.2.1/INSTALL/test*
 CLAPACK-3.2.1/make.inc
