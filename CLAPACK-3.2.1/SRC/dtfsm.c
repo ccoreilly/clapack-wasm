@@ -36,7 +36,8 @@ static doublereal c_b27 = 1.;
     logical lower;
     extern /* Subroutine */ int dtrsm_(char *, char *, char *, char *, 
 	    integer *, integer *, doublereal *, doublereal *, integer *, 
-	    doublereal *, integer *), xerbla_(
+	    doublereal *, integer *);
+    void xerbla_(
 	    char *, integer *);
     logical misodd, nisodd, notrans;
 

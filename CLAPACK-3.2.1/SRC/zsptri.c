@@ -45,7 +45,8 @@ static integer c__1 = 1;
     extern /* Subroutine */ int zswap_(integer *, doublecomplex *, integer *, 
 	    doublecomplex *, integer *), zspmv_(char *, integer *, 
 	    doublecomplex *, doublecomplex *, doublecomplex *, integer *, 
-	    doublecomplex *, doublecomplex *, integer *), xerbla_(
+	    doublecomplex *, doublecomplex *, integer *);
+    void xerbla_(
 	    char *, integer *);
     integer kcnext;
 

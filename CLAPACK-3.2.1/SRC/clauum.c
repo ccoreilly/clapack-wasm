@@ -39,7 +39,8 @@ static real c_b21 = 1.f;
 	    integer *);
     logical upper;
     extern /* Subroutine */ int clauu2_(char *, integer *, complex *, integer 
-	    *, integer *), xerbla_(char *, integer *);
+	    *, integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
 

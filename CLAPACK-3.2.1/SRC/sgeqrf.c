@@ -31,7 +31,8 @@ static integer c__2 = 2;
     extern /* Subroutine */ int sgeqr2_(integer *, integer *, real *, integer 
 	    *, real *, real *, integer *), slarfb_(char *, char *, char *, 
 	    char *, integer *, integer *, integer *, real *, integer *, real *
-, integer *, real *, integer *, real *, integer *), xerbla_(char *, integer *);
+, integer *, real *, integer *, real *, integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     extern /* Subroutine */ int slarft_(char *, char *, integer *, integer *, 

@@ -50,7 +50,7 @@ static integer c__1 = 1;
     logical upper;
     real absakk;
     extern integer icamax_(integer *, complex *, integer *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     real colmax, rowmax;
 
 

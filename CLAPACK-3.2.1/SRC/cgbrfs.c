@@ -55,7 +55,8 @@ static integer c__1 = 1;
 	    *, integer *, integer *);
     extern doublereal slamch_(char *);
     real safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *), cgbtrs_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  cgbtrs_(
 	    char *, integer *, integer *, integer *, integer *, complex *, 
 	    integer *, integer *, complex *, integer *, integer *);
     logical notran;

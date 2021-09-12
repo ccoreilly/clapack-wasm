@@ -27,7 +27,7 @@ static integer c_n1 = -1;
 
     /* Local variables */
     integer i__, j, nb, nh, iinfo;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     extern /* Subroutine */ int dorgqr_(integer *, integer *, integer *, 

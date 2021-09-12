@@ -68,8 +68,9 @@ static integer c__3 = 3;
     extern doublereal dlamch_(char *);
     doublereal alphai, alphar;
     extern /* Subroutine */ int dlacpy_(char *, integer *, integer *, 
-	    doublereal *, integer *, doublereal *, integer *), 
-	    xerbla_(char *, integer *), dtgexc_(logical *, logical *, 
+	    doublereal *, integer *, doublereal *, integer *);
+	void xerbla_(char *, integer *);
+    int dtgexc_(logical *, logical *, 
 	    integer *, doublereal *, integer *, doublereal *, integer *, 
 	    doublereal *, integer *, doublereal *, integer *, integer *, 
 	    integer *, doublereal *, integer *, integer *);

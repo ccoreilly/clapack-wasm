@@ -29,7 +29,8 @@ static integer c_n1 = -1;
     integer nb;
     extern logical lsame_(char *, char *);
     extern /* Subroutine */ int chetrf_(char *, integer *, complex *, integer 
-	    *, integer *, complex *, integer *, integer *), xerbla_(
+	    *, integer *, complex *, integer *, integer *);
+    void xerbla_(
 	    char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);

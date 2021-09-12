@@ -41,7 +41,8 @@ static doublereal c_b15 = 1.;
     extern /* Subroutine */ int ztrsm_(char *, char *, char *, char *, 
 	    integer *, integer *, doublecomplex *, doublecomplex *, integer *, 
 	     doublecomplex *, integer *), 
-	    zpotf2_(char *, integer *, doublecomplex *, integer *, integer *), xerbla_(char *, integer *);
+	    zpotf2_(char *, integer *, doublecomplex *, integer *, integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
 

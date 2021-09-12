@@ -33,7 +33,8 @@ static integer c__1 = 1;
 	    doublereal *, doublereal *, integer *, doublereal *, integer *, 
 	    doublereal *, doublereal *, integer *), dtrmv_(char *, 
 	    char *, char *, integer *, doublereal *, integer *, doublereal *, 
-	    integer *), xerbla_(char *, integer *);
+	    integer *);
+    void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

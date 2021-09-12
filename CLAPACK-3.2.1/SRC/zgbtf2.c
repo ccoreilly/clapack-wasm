@@ -34,7 +34,8 @@ static integer c__1 = 1;
 	    doublecomplex *, integer *), zgeru_(integer *, integer *, 
 	    doublecomplex *, doublecomplex *, integer *, doublecomplex *, 
 	    integer *, doublecomplex *, integer *), zswap_(integer *, 
-	    doublecomplex *, integer *, doublecomplex *, integer *), xerbla_(
+	    doublecomplex *, integer *, doublecomplex *, integer *);
+    void xerbla_(
 	    char *, integer *);
     extern integer izamax_(integer *, doublecomplex *, integer *);
 

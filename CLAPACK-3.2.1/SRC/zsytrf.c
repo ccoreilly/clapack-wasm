@@ -32,7 +32,8 @@ static integer c__2 = 2;
     integer nbmin, iinfo;
     logical upper;
     extern /* Subroutine */ int zsytf2_(char *, integer *, doublecomplex *, 
-	    integer *, integer *, integer *), xerbla_(char *, integer 
+	    integer *, integer *, integer *);
+    void xerbla_(char *, integer 
 	    *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);

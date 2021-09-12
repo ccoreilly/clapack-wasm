@@ -40,7 +40,8 @@ static real c_b16 = -1.f;
     logical upper;
     extern /* Subroutine */ int ctpsv_(char *, char *, char *, integer *, 
 	    complex *, complex *, integer *), csscal_(
-	    integer *, real *, complex *, integer *), xerbla_(char *, integer 
+	    integer *, real *, complex *, integer *);
+    void xerbla_(char *, integer 
 	    *);
 
 

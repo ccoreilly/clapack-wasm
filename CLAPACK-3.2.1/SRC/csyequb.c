@@ -41,7 +41,7 @@ static integer c__1 = 1;
     extern logical lsame_(char *, char *);
     real sumsq;
     extern doublereal slamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     real bignum;
     extern /* Subroutine */ int classq_(integer *, complex *, integer *, real 
 	    *, real *);

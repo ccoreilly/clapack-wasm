@@ -51,8 +51,8 @@ static integer c__1 = 1;
     extern doublereal dlamch_(char *);
     extern integer idamax_(integer *, doublereal *, integer *);
     extern /* Subroutine */ int dlacpy_(char *, integer *, integer *, 
-	    doublereal *, integer *, doublereal *, integer *), 
-	    xerbla_(char *, integer *);
+	    doublereal *, integer *, doublereal *, integer *);
+	void xerbla_(char *, integer *);
     extern doublereal dlansy_(char *, char *, integer *, doublereal *, 
 	    integer *, doublereal *);
     extern /* Subroutine */ int dpotrf_(char *, integer *, doublereal *, 

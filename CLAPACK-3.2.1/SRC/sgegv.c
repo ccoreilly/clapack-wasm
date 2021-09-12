@@ -59,7 +59,8 @@ static real c_b38 = 0.f;
     char chtemp[1];
     logical ldumma[1];
     extern /* Subroutine */ int slascl_(char *, integer *, integer *, real *, 
-	    real *, integer *, integer *, real *, integer *, integer *), xerbla_(char *, integer *);
+	    real *, integer *, integer *, real *, integer *, integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     integer ijobvl, iright;

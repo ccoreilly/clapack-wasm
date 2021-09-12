@@ -50,7 +50,8 @@ static doublereal c_b26 = 1.;
 	    doublereal *, doublereal *, integer *, doublereal *, integer *), 
 	    dlarfb_(char *, char *, char *, char *, integer *, integer *, 
 	    integer *, doublereal *, integer *, doublereal *, integer *, 
-	    doublereal *, integer *, doublereal *, integer *), xerbla_(char *, integer *);
+	    doublereal *, integer *, doublereal *, integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     integer ldwork, lwkopt;

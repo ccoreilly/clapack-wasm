@@ -62,7 +62,7 @@ static logical c_false = FALSE_;
     extern /* Subroutine */ int checon_(char *, integer *, complex *, integer 
 	    *, integer *, real *, real *, complex *, integer *);
     extern doublereal slamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern integer ilaprec_(char *);
     integer ithresh, n_norms__;
     real rthresh;

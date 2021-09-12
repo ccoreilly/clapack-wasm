@@ -46,7 +46,8 @@ static real c_b26 = 1.f;
 	    real *, real *, integer *, real *, integer *), slarfb_(char *, 
 	    char *, char *, char *, integer *, integer *, integer *, real *, 
 	    integer *, real *, integer *, real *, integer *, real *, integer *
-), xerbla_(char *, integer *);
+);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     integer ldwork, lwkopt;

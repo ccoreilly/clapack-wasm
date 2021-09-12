@@ -21,7 +21,8 @@
 
     /* Local variables */
     extern logical lsame_(char *, char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *), spbtrf_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  spbtrf_(
 	    char *, integer *, integer *, real *, integer *, integer *), spbtrs_(char *, integer *, integer *, integer *, real *, 
 	    integer *, real *, integer *, integer *);
 

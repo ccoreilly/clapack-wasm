@@ -44,7 +44,7 @@ static doublereal c_b13 = 0.;
 	    doublereal *, doublereal *, integer *, doublereal *, doublereal *, 
 	     integer *);
     logical upper;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     integer kcnext;
 
 

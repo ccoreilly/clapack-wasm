@@ -35,8 +35,10 @@ static integer c__1 = 1;
 	    real *, complex *);
     logical nofact;
     extern /* Subroutine */ int clacpy_(char *, integer *, integer *, complex 
-	    *, integer *, complex *, integer *), xerbla_(char *, 
-	    integer *), cptcon_(integer *, real *, complex *, real *, 
+	    *, integer *, complex *, integer *);
+    void xerbla_(char *, 
+	    integer *);
+    int cptcon_(integer *, real *, complex *, real *, 
 	    real *, real *, integer *), cptrfs_(char *, integer *, integer *, 
 	    real *, complex *, real *, complex *, complex *, integer *, 
 	    complex *, integer *, real *, real *, complex *, real *, integer *

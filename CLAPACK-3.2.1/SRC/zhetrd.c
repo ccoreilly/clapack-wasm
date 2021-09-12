@@ -37,7 +37,8 @@ static doublereal c_b23 = 1.;
     extern /* Subroutine */ int zhetd2_(char *, integer *, doublecomplex *, 
 	    integer *, doublereal *, doublereal *, doublecomplex *, integer *), zher2k_(char *, char *, integer *, integer *, 
 	    doublecomplex *, doublecomplex *, integer *, doublecomplex *, 
-	    integer *, doublereal *, doublecomplex *, integer *), xerbla_(char *, integer *);
+	    integer *, doublereal *, doublecomplex *, integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     extern /* Subroutine */ int zlatrd_(char *, integer *, integer *, 

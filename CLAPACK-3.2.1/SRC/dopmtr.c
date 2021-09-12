@@ -33,7 +33,7 @@ static integer c__1 = 1;
 	    doublereal *);
     extern logical lsame_(char *, char *);
     logical upper;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     logical notran, forwrd;
 
 

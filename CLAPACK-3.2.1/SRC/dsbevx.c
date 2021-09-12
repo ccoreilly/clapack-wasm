@@ -68,7 +68,7 @@ static doublereal c_b34 = 0.;
     extern /* Subroutine */ int dlacpy_(char *, integer *, integer *, 
 	    doublereal *, integer *, doublereal *, integer *);
     doublereal safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal abstll, bignum;
     extern /* Subroutine */ int dsbtrd_(char *, char *, integer *, integer *, 
 	    doublereal *, integer *, doublereal *, doublereal *, doublereal *, 

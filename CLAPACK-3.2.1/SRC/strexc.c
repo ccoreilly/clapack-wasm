@@ -29,7 +29,8 @@ static integer c__2 = 2;
     integer nbf, nbl, here;
     extern logical lsame_(char *, char *);
     logical wantq;
-    extern /* Subroutine */ int xerbla_(char *, integer *), slaexc_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  slaexc_(
 	    logical *, integer *, real *, integer *, real *, integer *, 
 	    integer *, integer *, integer *, real *, integer *);
     integer nbnext;

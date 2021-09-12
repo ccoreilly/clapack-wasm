@@ -34,8 +34,8 @@ static doublereal c_b8 = 1.;
 	    doublereal *, integer *), dcopy_(integer *, doublereal *, 
 	    integer *, doublereal *, integer *), daxpy_(integer *, doublereal 
 	    *, doublereal *, integer *, doublereal *, integer *), dlarfp_(
-	    integer *, doublereal *, doublereal *, integer *, doublereal *), 
-	    xerbla_(char *, integer *);
+	    integer *, doublereal *, doublereal *, integer *, doublereal *);
+	void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

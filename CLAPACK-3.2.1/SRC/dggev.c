@@ -74,7 +74,8 @@ static doublereal c_b37 = 1.;
 	    integer *, integer *, doublereal *, integer *, doublereal *, 
 	    integer *, doublereal *, doublereal *, doublereal *, doublereal *, 
 	     integer *, doublereal *, integer *, doublereal *, integer *, 
-	    integer *), xerbla_(char *, integer *);
+	    integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     integer ijobvl, iright, ijobvr;

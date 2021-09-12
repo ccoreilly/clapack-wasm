@@ -46,8 +46,10 @@ static doublecomplex c_b2 = {1.,0.};
 	    integer *, integer *, doublecomplex *, integer *, doublecomplex *, 
 	     doublecomplex *, integer *, doublecomplex *, integer *), zunmr2_(char *, char *, integer *, integer *, integer *, 
 	    doublecomplex *, integer *, doublecomplex *, doublecomplex *, 
-	    integer *, doublecomplex *, integer *), xerbla_(
-	    char *, integer *), zgeqpf_(integer *, integer *, 
+	    integer *, doublecomplex *, integer *);
+    void xerbla_(
+	    char *, integer *);
+    int zgeqpf_(integer *, integer *, 
 	    doublecomplex *, integer *, integer *, doublecomplex *, 
 	    doublecomplex *, doublereal *, integer *), zlacpy_(char *, 
 	    integer *, integer *, doublecomplex *, integer *, doublecomplex *, 

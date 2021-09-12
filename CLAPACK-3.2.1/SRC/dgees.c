@@ -58,8 +58,8 @@ static integer c_n1 = -1;
 	    integer *), dlascl_(char *, integer *, integer *, doublereal *, 
 	    doublereal *, integer *, integer *, doublereal *, integer *, 
 	    integer *), dlacpy_(char *, integer *, integer *, 
-	    doublereal *, integer *, doublereal *, integer *), 
-	    xerbla_(char *, integer *);
+	    doublereal *, integer *, doublereal *, integer *);
+	void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     doublereal bignum;

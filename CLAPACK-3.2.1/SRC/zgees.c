@@ -48,7 +48,8 @@ static integer c_n1 = -1;
 	    integer *, doublereal *, integer *, doublecomplex *, integer *, 
 	    integer *), zgebal_(char *, integer *, 
 	    doublecomplex *, integer *, integer *, integer *, doublereal *, 
-	    integer *), xerbla_(char *, integer *);
+	    integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     extern doublereal zlange_(char *, integer *, integer *, doublecomplex *, 

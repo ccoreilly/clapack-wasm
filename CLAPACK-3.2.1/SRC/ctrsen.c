@@ -43,7 +43,8 @@ static integer c_n1 = -1;
     extern doublereal clange_(char *, integer *, integer *, complex *, 
 	    integer *, real *);
     extern /* Subroutine */ int clacpy_(char *, integer *, integer *, complex 
-	    *, integer *, complex *, integer *), xerbla_(char *, 
+	    *, integer *, complex *, integer *);
+    void xerbla_(char *, 
 	    integer *);
     logical wantbh;
     extern /* Subroutine */ int ctrexc_(char *, integer *, complex *, integer 

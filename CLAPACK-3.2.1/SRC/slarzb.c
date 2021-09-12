@@ -36,7 +36,8 @@ static real c_b23 = -1.f;
 	    real *, integer *), scopy_(integer *, real *, 
 	    integer *, real *, integer *), strmm_(char *, char *, char *, 
 	    char *, integer *, integer *, real *, real *, integer *, real *, 
-	    integer *), xerbla_(char *, 
+	    integer *);
+    void xerbla_(char *, 
 	    integer *);
     char transt[1];
 

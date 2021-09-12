@@ -20,7 +20,8 @@
     integer b_dim1, b_offset, i__1;
 
     /* Local variables */
-    extern /* Subroutine */ int xerbla_(char *, integer *), dpttrf_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  dpttrf_(
 	    integer *, doublereal *, doublereal *, integer *), dpttrs_(
 	    integer *, integer *, doublereal *, doublereal *, doublereal *, 
 	    integer *, integer *);

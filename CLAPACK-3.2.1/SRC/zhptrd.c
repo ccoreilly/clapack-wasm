@@ -41,7 +41,9 @@ static integer c__1 = 1;
 	    doublecomplex *, doublecomplex *, integer *, doublecomplex *, 
 	    doublecomplex *, integer *), zaxpy_(integer *, 
 	    doublecomplex *, doublecomplex *, integer *, doublecomplex *, 
-	    integer *), xerbla_(char *, integer *), zlarfg_(integer *, 
+	    integer *);
+    void xerbla_(char *, integer *);
+    int zlarfg_(integer *, 
 	     doublecomplex *, doublecomplex *, integer *, doublecomplex *);
 
 

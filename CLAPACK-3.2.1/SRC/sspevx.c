@@ -51,7 +51,7 @@ static integer c__1 = 1;
     logical valeig;
     extern doublereal slamch_(char *);
     real safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     real abstll, bignum;
     integer indtau, indisp, indiwo, indwrk;
     extern doublereal slansp_(char *, char *, integer *, real *, real *);

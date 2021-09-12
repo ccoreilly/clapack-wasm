@@ -69,7 +69,7 @@ static integer c__1 = 1;
     extern doublereal slamch_(char *);
     complex salpha;
     real safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     real bignum;
     logical ilcomp;
     integer ihwmny;

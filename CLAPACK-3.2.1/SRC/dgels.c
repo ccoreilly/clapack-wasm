@@ -46,7 +46,8 @@ static integer c__0 = 0;
 	     dgeqrf_(integer *, integer *, doublereal *, integer *, 
 	    doublereal *, doublereal *, integer *, integer *), dlaset_(char *, 
 	     integer *, integer *, doublereal *, doublereal *, doublereal *, 
-	    integer *), xerbla_(char *, integer *);
+	    integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     integer scllen;

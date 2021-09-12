@@ -44,7 +44,8 @@ static integer c__1 = 1;
     extern /* Subroutine */ int zgeru_(integer *, integer *, doublecomplex *, 
 	    doublecomplex *, integer *, doublecomplex *, integer *, 
 	    doublecomplex *, integer *), zswap_(integer *, doublecomplex *, 
-	    integer *, doublecomplex *, integer *), xerbla_(char *, integer *);
+	    integer *, doublecomplex *, integer *);
+    void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

@@ -29,7 +29,7 @@
     logical right;
     extern doublereal dlamch_(char *);
     doublereal oldgap, safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal newgap, thresh;
 
 

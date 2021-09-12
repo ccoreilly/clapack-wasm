@@ -44,7 +44,7 @@ static integer c__1 = 1;
 	    doublereal *, doublereal *, integer *, doublereal *, integer *, 
 	    integer *, integer *, integer *);
     doublereal safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal bignum;
     extern doublereal dlansp_(char *, char *, integer *, doublereal *, 
 	    doublereal *);

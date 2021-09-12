@@ -40,8 +40,8 @@ static doublereal c_b27 = 1.;
     logical upper;
     extern /* Subroutine */ int dtrmv_(char *, char *, char *, integer *, 
 	    doublereal *, integer *, doublereal *, integer *), dtrsv_(char *, char *, char *, integer *, doublereal *, 
-	    integer *, doublereal *, integer *), 
-	    xerbla_(char *, integer *);
+	    integer *, doublereal *, integer *);
+	void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

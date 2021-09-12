@@ -59,8 +59,8 @@ static doublereal c_b37 = 1.;
 	    doublereal *, integer *);
     doublereal safmin;
     extern /* Subroutine */ int dlaset_(char *, integer *, integer *, 
-	    doublereal *, doublereal *, doublereal *, integer *), 
-	    xerbla_(char *, integer *);
+	    doublereal *, doublereal *, doublereal *, integer *);
+	void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     doublereal bignum;

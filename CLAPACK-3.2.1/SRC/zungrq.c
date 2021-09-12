@@ -31,7 +31,8 @@ static integer c__2 = 2;
     integer i__, j, l, ib, nb, ii, kk, nx, iws, nbmin, iinfo;
     extern /* Subroutine */ int zungr2_(integer *, integer *, integer *, 
 	    doublecomplex *, integer *, doublecomplex *, doublecomplex *, 
-	    integer *), xerbla_(char *, integer *);
+	    integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     extern /* Subroutine */ int zlarfb_(char *, char *, char *, char *, 

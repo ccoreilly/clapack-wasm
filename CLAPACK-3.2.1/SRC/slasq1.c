@@ -41,7 +41,8 @@ static integer c__0 = 0;
 	    integer *), slasq2_(integer *, real *, integer *);
     extern doublereal slamch_(char *);
     real safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *), slascl_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  slascl_(
 	    char *, integer *, integer *, real *, real *, integer *, integer *
 , real *, integer *, integer *), slasrt_(char *, integer *
 , real *, integer *);

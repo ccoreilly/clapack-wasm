@@ -52,7 +52,8 @@ static integer c__1 = 1;
     real scaloc;
     extern doublereal slamch_(char *);
     extern /* Subroutine */ int csscal_(integer *, real *, complex *, integer 
-	    *), xerbla_(char *, integer *);
+	    *);
+    void xerbla_(char *, integer *);
     real bignum;
     logical notrna, notrnb;
     real smlnum;

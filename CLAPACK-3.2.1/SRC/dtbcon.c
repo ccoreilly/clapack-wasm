@@ -43,7 +43,8 @@ static integer c__1 = 1;
 	    doublereal *, integer *, doublereal *);
     extern /* Subroutine */ int dlatbs_(char *, char *, char *, char *, 
 	    integer *, integer *, doublereal *, integer *, doublereal *, 
-	    doublereal *, doublereal *, integer *), xerbla_(char *, integer *);
+	    doublereal *, doublereal *, integer *);
+    void xerbla_(char *, integer *);
     doublereal ainvnm;
     logical onenrm;
     char normin[1];

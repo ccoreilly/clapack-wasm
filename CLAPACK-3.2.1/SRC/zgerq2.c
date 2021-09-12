@@ -24,7 +24,9 @@
     doublecomplex alpha;
     extern /* Subroutine */ int zlarf_(char *, integer *, integer *, 
 	    doublecomplex *, integer *, doublecomplex *, doublecomplex *, 
-	    integer *, doublecomplex *), xerbla_(char *, integer *), zlacgv_(integer *, doublecomplex *, integer *), zlarfp_(
+	    integer *, doublecomplex *);
+    void xerbla_(char *, integer *);
+    int zlacgv_(integer *, doublecomplex *, integer *), zlarfp_(
 	    integer *, doublecomplex *, doublecomplex *, integer *, 
 	    doublecomplex *);
 

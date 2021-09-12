@@ -47,7 +47,7 @@ static real c_b14 = 1.f;
 	    real *, real *, integer *, real *, integer *, integer *);
     extern doublereal slamch_(char *);
     real safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     real lstres;
     extern /* Subroutine */ int ssptrs_(char *, integer *, integer *, real *, 
 	    integer *, real *, integer *, integer *);

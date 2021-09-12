@@ -56,7 +56,7 @@ static doublereal c_b29 = 1.;
 	     doublecomplex *, integer *, doublecomplex *, integer *, integer *
 , integer *, doublereal *, doublereal *, doublereal *, integer *);
     doublereal salfar, safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal safmax;
     char chtemp[1];
     logical ldumma[1];

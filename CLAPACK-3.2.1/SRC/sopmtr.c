@@ -32,7 +32,7 @@ static integer c__1 = 1;
     extern /* Subroutine */ int slarf_(char *, integer *, integer *, real *, 
 	    integer *, real *, real *, integer *, real *);
     logical upper;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     logical notran, forwrd;
 
 

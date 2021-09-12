@@ -72,7 +72,7 @@ static integer c__2 = 2;
     extern doublereal dlamch_(char *);
     doublecomplex signbc;
     doublereal safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublecomplex eshift;
     logical ilschr;
     integer icompq, ilastm;

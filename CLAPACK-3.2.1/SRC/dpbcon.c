@@ -42,7 +42,7 @@ static integer c__1 = 1;
 	    integer *, integer *, doublereal *, integer *, doublereal *, 
 	    doublereal *, doublereal *, integer *);
     doublereal scaleu;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal ainvnm;
     char normin[1];
     doublereal smlnum;

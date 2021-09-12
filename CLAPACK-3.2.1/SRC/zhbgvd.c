@@ -42,7 +42,8 @@ static doublecomplex c_b2 = {0.,0.};
     integer llrwk;
     logical wantz;
     integer indwk2;
-    extern /* Subroutine */ int xerbla_(char *, integer *), dsterf_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  dsterf_(
 	    integer *, doublereal *, doublereal *, integer *), zstedc_(char *, 
 	     integer *, doublereal *, doublereal *, doublecomplex *, integer *
 , doublecomplex *, integer *, doublereal *, integer *, integer *, 

@@ -33,7 +33,7 @@ static integer c__1 = 1;
 	    sgemv_(char *, integer *, integer *, real *, real *, integer *, 
 	    real *, integer *, real *, real *, integer *);
     logical upper;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK auxiliary routine (version 3.2) -- */

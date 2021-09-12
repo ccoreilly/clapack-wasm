@@ -38,7 +38,7 @@ static integer c__1 = 1;
 	    integer *, doublereal *, integer *, integer *);
     extern doublereal dlamch_(char *);
     extern integer idamax_(integer *, doublereal *, integer *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal ainvnm;
     extern /* Subroutine */ int dlatrs_(char *, char *, char *, char *, 
 	    integer *, doublereal *, integer *, doublereal *, doublereal *, 

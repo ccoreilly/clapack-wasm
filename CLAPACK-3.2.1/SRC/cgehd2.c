@@ -32,8 +32,8 @@ static integer c__1 = 1;
     complex alpha;
     extern /* Subroutine */ int clarf_(char *, integer *, integer *, complex *
 , integer *, complex *, complex *, integer *, complex *), 
-	    clarfg_(integer *, complex *, complex *, integer *, complex *), 
-	    xerbla_(char *, integer *);
+	    clarfg_(integer *, complex *, complex *, integer *, complex *);
+	void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

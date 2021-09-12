@@ -55,8 +55,8 @@ static real c_b29 = 0.f;
     extern /* Subroutine */ int slasda_(integer *, integer *, integer *, 
 	    integer *, real *, real *, real *, integer *, real *, integer *, 
 	    real *, real *, real *, real *, integer *, integer *, integer *, 
-	    integer *, real *, real *, real *, real *, integer *, integer *), 
-	    xerbla_(char *, integer *);
+	    integer *, real *, real *, real *, real *, integer *, integer *);
+	void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     extern /* Subroutine */ int slascl_(char *, integer *, integer *, real *, 

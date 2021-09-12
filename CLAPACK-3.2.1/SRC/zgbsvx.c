@@ -48,7 +48,8 @@ static integer c__1 = 1;
     logical nofact;
     extern doublereal zlangb_(char *, integer *, integer *, integer *, 
 	    doublecomplex *, integer *, doublereal *);
-    extern /* Subroutine */ int xerbla_(char *, integer *), zlaqgb_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  zlaqgb_(
 	    integer *, integer *, integer *, integer *, doublecomplex *, 
 	    integer *, doublereal *, doublereal *, doublereal *, doublereal *, 
 	     doublereal *, char *);

@@ -47,7 +47,8 @@ static integer c_n1 = -1;
 	    integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
-    extern /* Subroutine */ int xerbla_(char *, integer *), chetrs_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  chetrs_(
 	    char *, integer *, integer *, complex *, integer *, integer *, 
 	    complex *, integer *, integer *);
     integer lwkopt;

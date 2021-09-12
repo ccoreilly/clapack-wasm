@@ -29,7 +29,8 @@ static integer c_n1 = -1;
     integer j, jb, nb;
     extern /* Subroutine */ int cgtts2_(integer *, integer *, integer *, 
 	    complex *, complex *, complex *, complex *, integer *, complex *, 
-	    integer *), xerbla_(char *, integer *);
+	    integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     integer itrans;

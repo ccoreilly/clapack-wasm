@@ -40,7 +40,8 @@ static doublereal c_b26 = 0.;
     extern /* Subroutine */ int dgemv_(char *, integer *, integer *, 
 	    doublereal *, doublereal *, integer *, doublereal *, integer *, 
 	    doublereal *, doublereal *, integer *), dcopy_(integer *, 
-	    doublereal *, integer *, doublereal *, integer *), xerbla_(char *, 
+	    doublereal *, integer *, doublereal *, integer *);
+    void xerbla_(char *, 
 	     integer *);
 
 

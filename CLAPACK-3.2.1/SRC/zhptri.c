@@ -47,7 +47,8 @@ static integer c__1 = 1;
 	    doublecomplex *, doublecomplex *, doublecomplex *, integer *, 
 	    doublecomplex *, doublecomplex *, integer *), zswap_(
 	    integer *, doublecomplex *, integer *, doublecomplex *, integer *)
-	    , xerbla_(char *, integer *);
+	    ;
+    void xerbla_(char *, integer *);
     integer kcnext;
 
 

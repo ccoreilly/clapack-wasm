@@ -47,8 +47,8 @@ static integer c__1 = 1;
     extern doublereal slamch_(char *);
     extern /* Subroutine */ int clatbs_(char *, char *, char *, char *, 
 	    integer *, integer *, complex *, integer *, complex *, real *, 
-	    real *, integer *), xerbla_(char *
-, integer *);
+	    real *, integer *);
+    void xerbla_(char *, integer *);
     real ainvnm;
     extern /* Subroutine */ int csrscl_(integer *, real *, complex *, integer 
 	    *);

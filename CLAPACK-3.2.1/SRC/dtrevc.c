@@ -72,7 +72,7 @@ static logical c_true = TRUE_;
 	     dlabad_(doublereal *, doublereal *);
     extern doublereal dlamch_(char *);
     extern integer idamax_(integer *, doublereal *, integer *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal bignum;
     logical rightv;
     doublereal smlnum;

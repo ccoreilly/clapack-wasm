@@ -49,7 +49,7 @@ static integer c__1 = 1;
     extern /* Subroutine */ int zswap_(integer *, doublecomplex *, integer *, 
 	    doublecomplex *, integer *);
     doublereal absakk;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal colmax;
     extern integer izamax_(integer *, doublecomplex *, integer *);
     doublereal rowmax;

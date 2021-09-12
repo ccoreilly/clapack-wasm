@@ -36,7 +36,7 @@ static integer c__1 = 1;
 	    doublecomplex *, integer *);
     extern doublereal dlamch_(char *);
     logical nofact;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern doublereal zlangt_(char *, integer *, doublecomplex *, 
 	    doublecomplex *, doublecomplex *);
     logical notran;

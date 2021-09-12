@@ -36,7 +36,7 @@ static integer c__1 = 1;
     doublecomplex vt[1]	/* was [1][1] */;
     integer nru;
     extern logical lsame_(char *, char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     integer icompz;
     extern /* Subroutine */ int zlaset_(char *, integer *, integer *, 
 	    doublecomplex *, doublecomplex *, doublecomplex *, integer *), dpttrf_(integer *, doublereal *, doublereal *, integer *)

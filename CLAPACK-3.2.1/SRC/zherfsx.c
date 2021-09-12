@@ -60,7 +60,7 @@ static logical c_false = FALSE_;
 	    zla_hercond_x__(char *, integer *, doublecomplex *, integer *, 
 	    doublecomplex *, integer *, integer *, doublecomplex *, integer *,
 	     doublecomplex *, doublereal *, ftnlen), dlamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern doublereal zlanhe_(char *, char *, integer *, doublecomplex *, 
 	    integer *, doublereal *);
     extern /* Subroutine */ int zhecon_(char *, integer *, doublecomplex *, 

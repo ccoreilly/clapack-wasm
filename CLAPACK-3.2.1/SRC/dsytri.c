@@ -43,7 +43,8 @@ static doublereal c_b13 = 0.;
     logical upper;
     extern /* Subroutine */ int dsymv_(char *, integer *, doublereal *, 
 	    doublereal *, integer *, doublereal *, integer *, doublereal *, 
-	    doublereal *, integer *), xerbla_(char *, integer *);
+	    doublereal *, integer *);
+    void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

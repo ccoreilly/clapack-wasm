@@ -28,7 +28,8 @@
     extern /* Subroutine */ int dorg2l_(integer *, integer *, integer *, 
 	    doublereal *, integer *, doublereal *, doublereal *, integer *), 
 	    dorg2r_(integer *, integer *, integer *, doublereal *, integer *, 
-	    doublereal *, doublereal *, integer *), xerbla_(char *, integer *);
+	    doublereal *, doublereal *, integer *);
+    void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

@@ -29,7 +29,8 @@ static integer c__1 = 1;
     integer isave[3];
     logical upper;
     extern /* Subroutine */ int clacn2_(integer *, complex *, complex *, real 
-	    *, integer *, integer *), xerbla_(char *, integer *);
+	    *, integer *, integer *);
+    void xerbla_(char *, integer *);
     real ainvnm;
     extern /* Subroutine */ int csptrs_(char *, integer *, integer *, complex 
 	    *, integer *, complex *, integer *, integer *);

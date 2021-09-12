@@ -29,7 +29,8 @@
 	    doublecomplex *, integer *, doublecomplex *, doublecomplex *, 
 	    integer *), zung2r_(integer *, integer *, integer *, 
 	    doublecomplex *, integer *, doublecomplex *, doublecomplex *, 
-	    integer *), xerbla_(char *, integer *);
+	    integer *);
+    void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

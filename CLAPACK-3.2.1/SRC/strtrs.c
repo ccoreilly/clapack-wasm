@@ -28,7 +28,8 @@ static real c_b12 = 1.f;
     extern logical lsame_(char *, char *);
     extern /* Subroutine */ int strsm_(char *, char *, char *, char *, 
 	    integer *, integer *, real *, real *, integer *, real *, integer *
-), xerbla_(char *, integer *);
+);
+    void xerbla_(char *, integer *);
     logical nounit;
 
 

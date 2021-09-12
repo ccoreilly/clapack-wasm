@@ -34,7 +34,8 @@ static integer c_n1 = -1;
 , integer *), ccopy_(integer *, complex *, integer *, 
 	    complex *, integer *), cggqrf_(integer *, integer *, integer *, 
 	    complex *, integer *, complex *, complex *, integer *, complex *, 
-	    complex *, integer *, integer *), xerbla_(char *, integer *);
+	    complex *, integer *, integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     integer lwkmin;

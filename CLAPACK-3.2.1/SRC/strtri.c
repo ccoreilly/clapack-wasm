@@ -30,7 +30,7 @@ static real c_b22 = -1.f;
     char ch__1[2];
 
     /* Builtin functions */
-    /* Subroutine */ int s_cat(char *, char **, integer *, integer *, ftnlen);
+    /* Subroutine */ void s_cat(char *, char **, integer *, integer *, ftnlen);
 
     /* Local variables */
     integer j, jb, nb, nn;
@@ -41,8 +41,8 @@ static real c_b22 = -1.f;
 ), strsm_(char *, char *, char *, 
 	    char *, integer *, integer *, real *, real *, integer *, real *, 
 	    integer *), strti2_(char *, char *
-, integer *, real *, integer *, integer *), 
-	    xerbla_(char *, integer *);
+, integer *, real *, integer *, integer *);
+	void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     logical nounit;

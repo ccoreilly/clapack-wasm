@@ -29,7 +29,8 @@ static integer c__1 = 1;
     extern logical lsame_(char *, char *);
     integer isave[3];
     extern /* Subroutine */ int clacn2_(integer *, complex *, complex *, real 
-	    *, integer *, integer *), xerbla_(char *, integer *);
+	    *, integer *, integer *);
+    void xerbla_(char *, integer *);
     real ainvnm;
     logical onenrm;
     extern /* Subroutine */ int cgttrs_(char *, integer *, integer *, complex 

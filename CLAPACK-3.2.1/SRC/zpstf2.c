@@ -48,7 +48,8 @@ static integer c__1 = 1;
 	    doublecomplex *, integer *);
     extern doublereal dlamch_(char *);
     extern logical disnan_(doublereal *);
-    extern /* Subroutine */ int xerbla_(char *, integer *), zdscal_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  zdscal_(
 	    integer *, doublereal *, doublecomplex *, integer *), zlacgv_(
 	    integer *, doublecomplex *, integer *);
     extern integer dmaxloc_(doublereal *, integer *);

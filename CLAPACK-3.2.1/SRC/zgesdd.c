@@ -58,8 +58,9 @@ static integer c__0 = 0;
     extern doublereal dlamch_(char *);
     extern /* Subroutine */ int dlascl_(char *, integer *, integer *, 
 	    doublereal *, doublereal *, integer *, integer *, doublereal *, 
-	    integer *, integer *), xerbla_(char *, integer *),
-	     zgebrd_(integer *, integer *, doublecomplex *, integer *, 
+	    integer *, integer *);
+    void xerbla_(char *, integer *);
+    int zgebrd_(integer *, integer *, doublecomplex *, integer *, 
 	    doublereal *, doublereal *, doublecomplex *, doublecomplex *, 
 	    doublecomplex *, integer *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 

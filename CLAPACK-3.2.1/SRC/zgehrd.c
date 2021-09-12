@@ -47,7 +47,8 @@ static integer c__65 = 65;
 	    integer *, doublecomplex *, integer *, doublecomplex *, 
 	    doublecomplex *, integer *), zlahr2_(integer *, integer *, 
 	    integer *, doublecomplex *, integer *, doublecomplex *, 
-	    doublecomplex *, integer *, doublecomplex *, integer *), xerbla_(
+	    doublecomplex *, integer *, doublecomplex *, integer *);
+    void xerbla_(
 	    char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);

@@ -41,7 +41,8 @@ static doublereal c_b22 = 1.;
 	     doublereal *, integer *), dlabrd_(integer *, integer *, integer *
 , doublereal *, integer *, doublereal *, doublereal *, doublereal 
 	    *, doublereal *, doublereal *, integer *, doublereal *, integer *)
-	    , xerbla_(char *, integer *);
+	    ;
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     integer ldwrkx, ldwrky, lwkopt;

@@ -22,8 +22,9 @@
 
     /* Local variables */
     extern /* Subroutine */ int cgbtrf_(integer *, integer *, integer *, 
-	    integer *, complex *, integer *, integer *, integer *), xerbla_(
-	    char *, integer *), cgbtrs_(char *, integer *, integer *, 
+	    integer *, complex *, integer *, integer *, integer *);
+    void xerbla_(char *, integer *);
+    int cgbtrs_(char *, integer *, integer *, 
 	    integer *, integer *, complex *, integer *, integer *, complex *, 
 	    integer *, integer *);
 

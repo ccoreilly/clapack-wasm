@@ -21,7 +21,9 @@
 
     /* Local variables */
     extern /* Subroutine */ int dgetrf_(integer *, integer *, doublereal *, 
-	    integer *, integer *, integer *), xerbla_(char *, integer *), dgetrs_(char *, integer *, integer *, doublereal *, 
+	    integer *, integer *, integer *);
+    void xerbla_(char *, integer *);
+    int dgetrs_(char *, integer *, integer *, doublereal *, 
 	    integer *, integer *, doublereal *, integer *, integer *);
 
 

@@ -36,7 +36,7 @@ doublereal dla_syrcond__(char *uplo, integer *n, doublereal *a, integer *lda,
     extern /* Subroutine */ int dlacn2_(integer *, doublereal *, doublereal *, 
 	     integer *, doublereal *, integer *, integer *);
     extern doublereal dlamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal ainvnm;
     char normin[1];
     doublereal smlnum;

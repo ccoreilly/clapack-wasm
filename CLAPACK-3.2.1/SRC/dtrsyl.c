@@ -56,7 +56,7 @@ static logical c_true = TRUE_;
     extern doublereal dlamch_(char *), dlange_(char *, integer *, 
 	    integer *, doublereal *, integer *, doublereal *);
     doublereal scaloc;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal bignum;
     logical notrna, notrnb;
     doublereal smlnum;

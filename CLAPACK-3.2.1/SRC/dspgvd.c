@@ -37,7 +37,8 @@ static integer c__1 = 1;
 	    dtpsv_(char *, char *, char *, integer *, doublereal *, 
 	    doublereal *, integer *);
     logical wantz;
-    extern /* Subroutine */ int xerbla_(char *, integer *), dspevd_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  dspevd_(
 	    char *, char *, integer *, doublereal *, doublereal *, doublereal 
 	    *, integer *, doublereal *, integer *, integer *, integer *, 
 	    integer *);

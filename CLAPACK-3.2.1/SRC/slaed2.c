@@ -42,7 +42,7 @@ static integer c__1 = 1;
 	    integer *), scopy_(integer *, real *, integer *, real *, integer *
 );
     extern doublereal slapy2_(real *, real *), slamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern integer isamax_(integer *, real *, integer *);
     extern /* Subroutine */ int slamrg_(integer *, integer *, real *, integer 
 	    *, integer *, integer *), slacpy_(char *, integer *, integer *, 

@@ -34,7 +34,7 @@ static integer c__1 = 1;
 	    integer *);
     extern doublereal slamch_(char *);
     logical nofact;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern doublereal slangt_(char *, integer *, real *, real *, real *);
     extern /* Subroutine */ int slacpy_(char *, integer *, integer *, real *, 
 	    integer *, real *, integer *), sgtcon_(char *, integer *, 

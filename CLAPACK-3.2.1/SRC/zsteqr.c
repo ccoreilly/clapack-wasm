@@ -61,7 +61,7 @@ static doublereal c_b41 = 1.;
     extern /* Subroutine */ int dlartg_(doublereal *, doublereal *, 
 	    doublereal *, doublereal *, doublereal *);
     doublereal safmax;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern doublereal dlanst_(char *, integer *, doublereal *, doublereal *);
     extern /* Subroutine */ int dlasrt_(char *, integer *, doublereal *, 
 	    integer *);

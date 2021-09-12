@@ -47,8 +47,10 @@ static integer c__1 = 1;
 	    doublecomplex *, doublecomplex *, integer *, doublecomplex *, 
 	    integer *), ztpmv_(char *, char *, char *, integer *, 
 	    doublecomplex *, doublecomplex *, integer *), ztpsv_(char *, char *, char *, integer *, doublecomplex *
-, doublecomplex *, integer *), xerbla_(
-	    char *, integer *), zdscal_(integer *, doublereal *, 
+, doublecomplex *, integer *);
+    void xerbla_(
+	    char *, integer *);
+    int zdscal_(integer *, doublereal *, 
 	    doublecomplex *, integer *);
 
 

@@ -38,7 +38,8 @@ static real c_b11 = 1.f;
     logical wantz;
     extern /* Subroutine */ int strsm_(char *, char *, char *, char *, 
 	    integer *, integer *, real *, real *, integer *, real *, integer *
-), xerbla_(char *, integer *);
+);
+    void xerbla_(char *, integer *);
     integer liwmin;
     extern /* Subroutine */ int spotrf_(char *, integer *, real *, integer *, 
 	    integer *), ssyevd_(char *, char *, integer *, real *, 

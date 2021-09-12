@@ -29,7 +29,8 @@
 	    complex *, integer *);
     logical leftv;
     extern /* Subroutine */ int csscal_(integer *, real *, complex *, integer 
-	    *), xerbla_(char *, integer *);
+	    *);
+    void xerbla_(char *, integer *);
     logical rightv;
 
 

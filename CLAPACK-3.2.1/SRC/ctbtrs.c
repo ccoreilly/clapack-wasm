@@ -30,7 +30,7 @@ static integer c__1 = 1;
     extern /* Subroutine */ int ctbsv_(char *, char *, char *, integer *, 
 	    integer *, complex *, integer *, complex *, integer *);
     logical upper;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     logical nounit;
 
 

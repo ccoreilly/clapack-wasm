@@ -40,7 +40,8 @@ static integer c__1 = 1;
     extern /* Subroutine */ int dlaset_(char *, integer *, integer *, 
 	    doublereal *, doublereal *, doublereal *, integer *), 
 	    dlartg_(doublereal *, doublereal *, doublereal *, doublereal *, 
-	    doublereal *), xerbla_(char *, integer *);
+	    doublereal *);
+    void xerbla_(char *, integer *);
     integer icompq, icompz;
 
 

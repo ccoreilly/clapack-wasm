@@ -48,7 +48,7 @@ static integer c__1 = 1;
 	     clatdf_(integer *, integer *, complex *, integer *, complex *, 
 	    real *, real *, integer *, integer *);
     real scaloc;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     logical notran;
 
 

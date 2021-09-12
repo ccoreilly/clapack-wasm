@@ -39,7 +39,8 @@ static doublereal c_b22 = 1.;
     extern /* Subroutine */ int dswap_(integer *, doublereal *, integer *, 
 	    doublereal *, integer *), dtrsm_(char *, char *, char *, char *, 
 	    integer *, integer *, doublereal *, doublereal *, integer *, 
-	    doublereal *, integer *), xerbla_(
+	    doublereal *, integer *);
+    void xerbla_(
 	    char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);

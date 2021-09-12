@@ -51,7 +51,8 @@ static integer c__1 = 1;
     extern integer icamax_(integer *, complex *, integer *);
     extern doublereal slamch_(char *);
     extern /* Subroutine */ int clacpy_(char *, integer *, integer *, complex 
-	    *, integer *, complex *, integer *), xerbla_(char *, 
+	    *, integer *, complex *, integer *);
+    void xerbla_(char *, 
 	    integer *);
     real bignum;
     logical wantbh;

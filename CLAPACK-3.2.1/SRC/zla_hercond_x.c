@@ -40,7 +40,8 @@ doublereal zla_hercond_x__(char *uplo, integer *n, doublecomplex *a, integer *
     integer isave[3];
     doublereal anorm;
     extern /* Subroutine */ int zlacn2_(integer *, doublecomplex *, 
-	    doublecomplex *, doublereal *, integer *, integer *), xerbla_(
+	    doublecomplex *, doublereal *, integer *, integer *);
+    void xerbla_(
 	    char *, integer *);
     doublereal ainvnm;
     extern /* Subroutine */ int zhetrs_(char *, integer *, integer *, 

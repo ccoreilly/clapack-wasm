@@ -56,7 +56,7 @@ static integer c__1 = 1;
 	    integer *, integer *, integer *), dlacpy_(char *, integer 
 	    *, integer *, doublereal *, integer *, doublereal *, integer *);
     doublereal safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal bignum;
     extern /* Subroutine */ int dsbtrd_(char *, char *, integer *, integer *, 
 	    doublereal *, integer *, doublereal *, doublereal *, doublereal *, 

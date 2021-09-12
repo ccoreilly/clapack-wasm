@@ -40,8 +40,9 @@ static integer c__2 = 2;
 	    doublecomplex *, integer *, doublecomplex *, doublecomplex *, 
 	    integer *), zgebd2_(integer *, integer *, 
 	    doublecomplex *, integer *, doublereal *, doublereal *, 
-	    doublecomplex *, doublecomplex *, doublecomplex *, integer *), 
-	    xerbla_(char *, integer *), zlabrd_(integer *, integer *, 
+	    doublecomplex *, doublecomplex *, doublecomplex *, integer *);
+	void xerbla_(char *, integer *);
+    int zlabrd_(integer *, integer *, 
 	    integer *, doublecomplex *, integer *, doublereal *, doublereal *, 
 	     doublecomplex *, doublecomplex *, doublecomplex *, integer *, 
 	    doublecomplex *, integer *);

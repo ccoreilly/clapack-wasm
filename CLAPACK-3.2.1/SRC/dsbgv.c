@@ -27,7 +27,8 @@
     extern logical lsame_(char *, char *);
     integer iinfo;
     logical upper, wantz;
-    extern /* Subroutine */ int xerbla_(char *, integer *), dpbstf_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  dpbstf_(
 	    char *, integer *, integer *, doublereal *, integer *, integer *), dsbtrd_(char *, char *, integer *, integer *, doublereal 
 	    *, integer *, doublereal *, doublereal *, doublereal *, integer *, 
 	     doublereal *, integer *), dsbgst_(char *, char *, 

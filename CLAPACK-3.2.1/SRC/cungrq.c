@@ -35,7 +35,8 @@ static integer c__2 = 2;
 	    complex *, integer *, complex *, integer *, complex *, integer *, 
 	    complex *, integer *), clarft_(
 	    char *, char *, integer *, integer *, complex *, integer *, 
-	    complex *, complex *, integer *), xerbla_(char *, 
+	    complex *, complex *, integer *);
+    void xerbla_(char *, 
 	    integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);

@@ -43,7 +43,8 @@ static real c_b11 = 1.f;
 	    real *, integer *), sspmv_(char *, integer *, real *, real *, 
 	    real *, integer *, real *, real *, integer *), stpmv_(
 	    char *, char *, char *, integer *, real *, real *, integer *), stpsv_(char *, char *, char *, integer *, 
-	     real *, real *, integer *), xerbla_(char 
+	     real *, real *, integer *);
+    void xerbla_(char 
 	    *, integer *);
 
 

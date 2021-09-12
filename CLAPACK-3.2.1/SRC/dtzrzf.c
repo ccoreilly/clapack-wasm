@@ -28,7 +28,8 @@ static integer c__2 = 2;
 
     /* Local variables */
     integer i__, m1, ib, nb, ki, kk, mu, nx, iws, nbmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *), dlarzb_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  dlarzb_(
 	    char *, char *, char *, char *, integer *, integer *, integer *, 
 	    integer *, doublereal *, integer *, doublereal *, integer *, 
 	    doublereal *, integer *, doublereal *, integer *);

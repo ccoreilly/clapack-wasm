@@ -37,8 +37,9 @@ static integer c__1 = 1;
     integer nru;
     extern logical lsame_(char *, char *);
     extern /* Subroutine */ int dlaset_(char *, integer *, integer *, 
-	    doublereal *, doublereal *, doublereal *, integer *), 
-	    xerbla_(char *, integer *), dbdsqr_(char *, integer *, 
+	    doublereal *, doublereal *, doublereal *, integer *);
+	void xerbla_(char *, integer *);
+    int dbdsqr_(char *, integer *, 
 	    integer *, integer *, integer *, doublereal *, doublereal *, 
 	    doublereal *, integer *, doublereal *, integer *, doublereal *, 
 	    integer *, doublereal *, integer *);

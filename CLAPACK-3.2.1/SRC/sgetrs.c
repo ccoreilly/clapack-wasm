@@ -29,7 +29,8 @@ static integer c_n1 = -1;
     extern logical lsame_(char *, char *);
     extern /* Subroutine */ int strsm_(char *, char *, char *, char *, 
 	    integer *, integer *, real *, real *, integer *, real *, integer *
-), xerbla_(char *, integer *);
+);
+    void xerbla_(char *, integer *);
     logical notran;
     extern /* Subroutine */ int slaswp_(integer *, real *, integer *, integer 
 	    *, integer *, integer *, integer *);

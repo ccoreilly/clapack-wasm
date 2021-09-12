@@ -48,7 +48,7 @@ static integer c_n1 = -1;
 , integer *, doublereal *, doublereal *, doublereal *, integer *);
     logical ilascl, ilbscl;
     doublereal safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     extern doublereal zlange_(char *, integer *, integer *, doublecomplex *, 

@@ -43,7 +43,7 @@ static integer c__1 = 1;
 	    complex *, integer *, complex *, integer *, complex *, integer *),
 	     cswap_(integer *, complex *, integer *, complex *, integer *);
     logical upper;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

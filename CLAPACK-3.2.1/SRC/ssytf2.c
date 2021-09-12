@@ -43,7 +43,7 @@ static integer c__1 = 1;
     extern /* Subroutine */ int sswap_(integer *, real *, integer *, real *, 
 	    integer *);
     real absakk;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern integer isamax_(integer *, real *, integer *);
     real colmax;
     extern logical sisnan_(real *);

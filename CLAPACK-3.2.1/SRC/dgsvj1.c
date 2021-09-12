@@ -63,7 +63,7 @@ static doublereal c_b35 = 1.;
 	    doublereal *, doublereal *, integer *, integer *, doublereal *, 
 	    integer *, integer *);
     extern integer idamax_(integer *, doublereal *, integer *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     integer ijblsk, swband, blskip;
     doublereal mxaapq;
     extern /* Subroutine */ int dlassq_(integer *, doublereal *, integer *, 

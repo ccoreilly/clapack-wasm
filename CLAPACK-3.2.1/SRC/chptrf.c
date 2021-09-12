@@ -56,7 +56,8 @@ static integer c__1 = 1;
     real absakk;
     extern integer icamax_(integer *, complex *, integer *);
     extern /* Subroutine */ int csscal_(integer *, real *, complex *, integer 
-	    *), xerbla_(char *, integer *);
+	    *);
+    void xerbla_(char *, integer *);
     real colmax, rowmax;
 
 

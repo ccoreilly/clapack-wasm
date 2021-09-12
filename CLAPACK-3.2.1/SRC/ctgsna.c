@@ -62,7 +62,8 @@ static integer c__3 = 3;
 	    *, integer *, complex *, integer *), ctgexc_(logical *, 
 	    logical *, integer *, complex *, integer *, complex *, integer *, 
 	    complex *, integer *, complex *, integer *, integer *, integer *, 
-	    integer *), xerbla_(char *, integer *);
+	    integer *);
+    void xerbla_(char *, integer *);
     real bignum;
     logical wantbh, wantdf, somcon;
     extern /* Subroutine */ int ctgsyl_(char *, integer *, integer *, integer 

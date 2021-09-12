@@ -34,8 +34,8 @@ static integer c__1 = 1;
     extern doublereal dlamch_(char *);
     logical nofact;
     extern /* Subroutine */ int dlacpy_(char *, integer *, integer *, 
-	    doublereal *, integer *, doublereal *, integer *), 
-	    xerbla_(char *, integer *);
+	    doublereal *, integer *, doublereal *, integer *);
+	void xerbla_(char *, integer *);
     extern doublereal dlanst_(char *, integer *, doublereal *, doublereal *);
     extern /* Subroutine */ int dptcon_(integer *, doublereal *, doublereal *, 
 	     doublereal *, doublereal *, doublereal *, integer *), dptrfs_(

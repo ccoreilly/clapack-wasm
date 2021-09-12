@@ -42,7 +42,7 @@ static doublereal c_b12 = 1.;
 	    doublereal *, doublereal *, integer *);
     logical upper;
     extern logical disnan_(doublereal *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

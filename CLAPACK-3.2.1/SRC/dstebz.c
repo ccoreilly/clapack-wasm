@@ -63,7 +63,7 @@ static integer c__0 = 0;
     integer irange, idiscl;
     doublereal safemn;
     integer idumma[1];
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     integer idiscu, iorder;

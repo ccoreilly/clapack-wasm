@@ -55,7 +55,7 @@ static integer c_n1 = -1;
     real safmin;
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     real abstll, bignum;
     integer indtau, indisp, indiwo, indwkn;
     extern /* Subroutine */ int slacpy_(char *, integer *, integer *, real *, 

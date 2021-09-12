@@ -49,7 +49,8 @@ static doublereal c_b30 = 0.;
     extern /* Subroutine */ int dlamrg_(integer *, integer *, doublereal *, 
 	    integer *, integer *, integer *), dlacpy_(char *, integer *, 
 	    integer *, doublereal *, integer *, doublereal *, integer *), dlaset_(char *, integer *, integer *, doublereal *, 
-	    doublereal *, doublereal *, integer *), xerbla_(char *, 
+	    doublereal *, doublereal *, integer *);
+    void xerbla_(char *, 
 	    integer *);
     doublereal hlftol;
 

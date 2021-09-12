@@ -52,7 +52,8 @@ static integer c__1 = 1;
 	    doublecomplex *, integer *);
     integer minmn;
     logical wantq;
-    extern /* Subroutine */ int xerbla_(char *, integer *), zlaset_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  zlaset_(
 	    char *, integer *, integer *, doublecomplex *, doublecomplex *, 
 	    doublecomplex *, integer *), zlartg_(doublecomplex *, 
 	    doublecomplex *, doublereal *, doublecomplex *, doublecomplex *), 

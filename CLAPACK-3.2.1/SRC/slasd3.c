@@ -49,8 +49,10 @@ static real c_b26 = 0.f;
 	    integer *);
     extern doublereal slamc3_(real *, real *);
     extern /* Subroutine */ int slasd4_(integer *, integer *, real *, real *, 
-	    real *, real *, real *, real *, integer *), xerbla_(char *, 
-	    integer *), slascl_(char *, integer *, integer *, real *, 
+	    real *, real *, real *, real *, integer *);
+    void xerbla_(char *, 
+	    integer *);
+    int slascl_(char *, integer *, integer *, real *, 
 	    real *, integer *, integer *, real *, integer *, integer *), slacpy_(char *, integer *, integer *, real *, integer *, 
 	    real *, integer *);
 

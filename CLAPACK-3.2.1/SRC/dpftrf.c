@@ -33,8 +33,8 @@ static doublereal c_b15 = -1.;
 	    integer *, integer *, doublereal *, doublereal *, integer *, 
 	    doublereal *, integer *), dsyrk_(
 	    char *, char *, integer *, integer *, doublereal *, doublereal *, 
-	    integer *, doublereal *, doublereal *, integer *),
-	     xerbla_(char *, integer *);
+	    integer *, doublereal *, doublereal *, integer *);
+	void xerbla_(char *, integer *);
     logical nisodd;
     extern /* Subroutine */ int dpotrf_(char *, integer *, doublereal *, 
 	    integer *, integer *);

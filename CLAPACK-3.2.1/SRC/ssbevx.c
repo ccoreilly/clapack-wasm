@@ -58,7 +58,7 @@ static real c_b34 = 0.f;
     logical valeig;
     extern doublereal slamch_(char *);
     real safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     real abstll, bignum;
     extern doublereal slansb_(char *, char *, integer *, integer *, real *, 
 	    integer *, real *);

@@ -37,7 +37,9 @@ static integer c__2 = 2;
     integer inode, ndiml, idxqc, ndimr, itemp, sqrei;
     extern /* Subroutine */ int slasd1_(integer *, integer *, integer *, real 
 	    *, real *, real *, real *, integer *, real *, integer *, integer *
-, integer *, real *, integer *), xerbla_(char *, integer *), slasdq_(char *, integer *, integer *, integer *, integer 
+, integer *, real *, integer *);
+    void xerbla_(char *, integer *);
+    int slasdq_(char *, integer *, integer *, integer *, integer 
 	    *, integer *, real *, real *, real *, integer *, real *, integer *
 , real *, integer *, real *, integer *), slasdt_(integer *
 , integer *, integer *, integer *, integer *, integer *, integer *

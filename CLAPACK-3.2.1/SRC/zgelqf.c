@@ -30,7 +30,8 @@ static integer c__2 = 2;
     /* Local variables */
     integer i__, k, ib, nb, nx, iws, nbmin, iinfo;
     extern /* Subroutine */ int zgelq2_(integer *, integer *, doublecomplex *, 
-	     integer *, doublecomplex *, doublecomplex *, integer *), xerbla_(
+	     integer *, doublecomplex *, doublecomplex *, integer *);
+    void xerbla_(
 	    char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);

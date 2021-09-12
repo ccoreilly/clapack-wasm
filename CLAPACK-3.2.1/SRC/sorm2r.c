@@ -30,7 +30,8 @@ static integer c__1 = 1;
     logical left;
     extern logical lsame_(char *, char *);
     extern /* Subroutine */ int slarf_(char *, integer *, integer *, real *, 
-	    integer *, real *, real *, integer *, real *), xerbla_(
+	    integer *, real *, real *, integer *, real *);
+    void xerbla_(
 	    char *, integer *);
     logical notran;
 

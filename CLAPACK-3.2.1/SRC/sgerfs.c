@@ -47,7 +47,7 @@ static real c_b17 = 1.f;
 	    integer *, integer *);
     extern doublereal slamch_(char *);
     real safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     logical notran;
     extern /* Subroutine */ int sgetrs_(char *, integer *, integer *, real *, 
 	    integer *, integer *, real *, integer *, integer *);

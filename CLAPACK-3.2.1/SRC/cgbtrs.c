@@ -37,8 +37,8 @@ static integer c__1 = 1;
 	    ctbsv_(char *, char *, char *, integer *, integer *, complex *, 
 	    integer *, complex *, integer *);
     logical lnoti;
-    extern /* Subroutine */ int clacgv_(integer *, complex *, integer *), 
-	    xerbla_(char *, integer *);
+    extern /* Subroutine */ int clacgv_(integer *, complex *, integer *);
+	void xerbla_(char *, integer *);
     logical notran;
 
 

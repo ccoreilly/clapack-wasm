@@ -41,7 +41,7 @@
 	    integer *, real *, integer *, real *, real *, real *, real *, 
 	    real *, char *);
     logical nofact;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     real bignum;
     integer infequ;
     logical colequ;

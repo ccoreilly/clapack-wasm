@@ -56,7 +56,7 @@ static integer c__0 = 0;
     extern doublereal slamch_(char *);
     real safemn;
     integer idumma[1];
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     integer idiscu;

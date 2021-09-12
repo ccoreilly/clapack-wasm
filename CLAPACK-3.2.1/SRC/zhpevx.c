@@ -55,7 +55,8 @@ static integer c__1 = 1;
     integer iscale, indibl;
     logical valeig;
     doublereal safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *), zdscal_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  zdscal_(
 	    integer *, doublereal *, doublecomplex *, integer *);
     doublereal abstll, bignum;
     integer indiwk, indisp, indtau;

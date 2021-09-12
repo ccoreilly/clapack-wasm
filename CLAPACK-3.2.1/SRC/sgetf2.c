@@ -34,7 +34,7 @@ static real c_b8 = -1.f;
     extern /* Subroutine */ int sswap_(integer *, real *, integer *, real *, 
 	    integer *);
     extern doublereal slamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern integer isamax_(integer *, real *, integer *);
 
 

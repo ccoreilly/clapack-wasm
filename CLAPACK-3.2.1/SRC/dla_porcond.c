@@ -33,7 +33,8 @@ doublereal dla_porcond__(char *uplo, integer *n, doublereal *a, integer *lda,
     extern logical lsame_(char *, char *);
     integer isave[3];
     extern /* Subroutine */ int dlacn2_(integer *, doublereal *, doublereal *, 
-	     integer *, doublereal *, integer *, integer *), xerbla_(char *, 
+	     integer *, doublereal *, integer *, integer *);
+    void xerbla_(char *, 
 	    integer *);
     doublereal ainvnm;
     extern /* Subroutine */ int dpotrs_(char *, integer *, integer *, 

@@ -65,7 +65,7 @@ static logical c_true = TRUE_;
 	    real *, real *, real *, integer *, real *, real *, integer *), 
 	    slabad_(real *, real *);
     extern doublereal slamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     real bignum;
     extern integer isamax_(integer *, real *, integer *);
     logical rightv;

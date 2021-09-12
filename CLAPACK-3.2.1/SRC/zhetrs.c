@@ -45,7 +45,9 @@ static integer c__1 = 1;
     extern /* Subroutine */ int zgeru_(integer *, integer *, doublecomplex *, 
 	    doublecomplex *, integer *, doublecomplex *, integer *, 
 	    doublecomplex *, integer *), zswap_(integer *, doublecomplex *, 
-	    integer *, doublecomplex *, integer *), xerbla_(char *, integer *), zdscal_(integer *, doublereal *, doublecomplex *, 
+	    integer *, doublecomplex *, integer *);
+    void xerbla_(char *, integer *);
+    int zdscal_(integer *, doublereal *, doublecomplex *, 
 	    integer *), zlacgv_(integer *, doublecomplex *, integer *);
 
 

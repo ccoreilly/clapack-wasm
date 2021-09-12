@@ -49,7 +49,7 @@ static integer c__65 = 65;
 	    integer *, integer *, integer *, complex *, integer *, integer *, 
 	    integer *);
     extern integer icamax_(integer *, complex *, integer *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     extern /* Subroutine */ int claswp_(integer *, complex *, integer *, 

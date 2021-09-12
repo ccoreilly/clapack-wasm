@@ -33,7 +33,8 @@ static real c_b15 = -1.f;
 	    integer *, integer *, real *, real *, integer *, real *, integer *
 ), ssyrk_(char *, char *, integer 
 	    *, integer *, real *, real *, integer *, real *, real *, integer *
-), xerbla_(char *, integer *);
+);
+    void xerbla_(char *, integer *);
     logical nisodd;
     extern /* Subroutine */ int spotrf_(char *, integer *, real *, integer *, 
 	    integer *);

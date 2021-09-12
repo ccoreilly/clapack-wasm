@@ -39,7 +39,9 @@ static real c_b22 = 1.f;
 	    integer *, integer *, real *, integer *, real *, real *, integer *
 ), sorm2r_(char *, char *, integer *, integer *, integer *, real *
 , integer *, real *, real *, integer *, real *, integer *), sormr2_(char *, char *, integer *, integer *, integer *, 
-	     real *, integer *, real *, real *, integer *, real *, integer *), xerbla_(char *, integer *), sgeqpf_(
+	     real *, integer *, real *, real *, integer *, real *, integer *);
+    void xerbla_(char *, integer *);
+    int sgeqpf_(
 	    integer *, integer *, real *, integer *, integer *, real *, real *
 , integer *), slacpy_(char *, integer *, integer *, real *, 
 	    integer *, real *, integer *), slaset_(char *, integer *, 

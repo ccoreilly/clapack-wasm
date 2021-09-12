@@ -41,7 +41,8 @@ static integer c__33 = 33;
 	    integer *, doublereal *, doublereal *, integer *),
 	     dpbtf2_(char *, integer *, integer *, doublereal *, integer *, 
 	    integer *), dpotf2_(char *, integer *, doublereal *, 
-	    integer *, integer *), xerbla_(char *, integer *);
+	    integer *, integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
 

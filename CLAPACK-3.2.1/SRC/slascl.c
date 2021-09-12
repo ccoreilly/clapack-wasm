@@ -30,7 +30,7 @@
     real cfrom1;
     extern doublereal slamch_(char *);
     real cfromc;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     real bignum;
     extern logical sisnan_(real *);
     real smlnum;

@@ -48,7 +48,7 @@ static real c_b24 = 1.f;
 	    real *, real *, integer *, real *, real *, integer *), spstf2_(char *, integer *, real *, integer *, integer *, 
 	    integer *, real *, real *, integer *);
     extern doublereal slamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     extern logical sisnan_(real *);

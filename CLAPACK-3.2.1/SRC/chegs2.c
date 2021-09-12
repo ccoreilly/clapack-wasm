@@ -40,7 +40,8 @@ static integer c__1 = 1;
 	    complex *, integer *, complex *, integer *), ctrsv_(char *, char *, char *, integer *, complex *, 
 	    integer *, complex *, integer *), clacgv_(
 	    integer *, complex *, integer *), csscal_(integer *, real *, 
-	    complex *, integer *), xerbla_(char *, integer *);
+	    complex *, integer *);
+    void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

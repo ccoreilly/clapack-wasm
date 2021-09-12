@@ -26,7 +26,7 @@ static integer c__1 = 1;
 
     /* Local variables */
     integer i__, ix;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern integer isamax_(integer *, real *, integer *);
     real ainvnm;
 

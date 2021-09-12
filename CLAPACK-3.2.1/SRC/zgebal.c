@@ -37,7 +37,8 @@ static integer c__1 = 1;
 	    doublecomplex *, integer *);
     doublereal sfmin1, sfmin2, sfmax1, sfmax2;
     extern doublereal dlamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *), zdscal_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  zdscal_(
 	    integer *, doublereal *, doublecomplex *, integer *);
     extern integer izamax_(integer *, doublecomplex *, integer *);
     logical noconv;

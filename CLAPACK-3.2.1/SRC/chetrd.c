@@ -38,7 +38,8 @@ static real c_b23 = 1.f;
 	    *, real *, real *, complex *, integer *), cher2k_(char *, 
 	    char *, integer *, integer *, complex *, complex *, integer *, 
 	    complex *, integer *, real *, complex *, integer *), clatrd_(char *, integer *, integer *, complex *, integer 
-	    *, real *, complex *, complex *, integer *), xerbla_(char 
+	    *, real *, complex *, complex *, integer *);
+    void xerbla_(char 
 	    *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);

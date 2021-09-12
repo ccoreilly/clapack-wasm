@@ -26,7 +26,8 @@
     integer here;
     extern /* Subroutine */ int ctgex2_(logical *, logical *, integer *, 
 	    complex *, integer *, complex *, integer *, complex *, integer *, 
-	    complex *, integer *, integer *, integer *), xerbla_(char *, 
+	    complex *, integer *, integer *, integer *);
+    void xerbla_(char *, 
 	    integer *);
 
 

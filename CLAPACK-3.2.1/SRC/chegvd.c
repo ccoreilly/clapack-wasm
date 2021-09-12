@@ -45,7 +45,9 @@ static complex c_b1 = {1.f,0.f};
 	    integer *, real *, complex *, integer *, real *, integer *, 
 	    integer *, integer *, integer *), chegst_(integer 
 	    *, char *, integer *, complex *, integer *, complex *, integer *, 
-	    integer *), xerbla_(char *, integer *), cpotrf_(
+	    integer *);
+    void xerbla_(char *, integer *);
+    int cpotrf_(
 	    char *, integer *, complex *, integer *, integer *);
     integer liwmin, lrwmin;
     logical lquery;

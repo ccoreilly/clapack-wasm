@@ -59,7 +59,9 @@ static integer c__1 = 1;
 	    integer *, complex *, integer *, complex *, integer *, complex *, 
 	    integer *, complex *, real *, integer *), clacpy_(
 	    char *, integer *, integer *, complex *, integer *, complex *, 
-	    integer *), xerbla_(char *, integer *), cpbstf_(
+	    integer *);
+    void xerbla_(char *, integer *);
+    int cpbstf_(
 	    char *, integer *, integer *, complex *, integer *, integer *);
     integer indiwk, indisp;
     extern /* Subroutine */ int cstein_(integer *, real *, real *, integer *, 

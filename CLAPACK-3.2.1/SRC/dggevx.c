@@ -84,7 +84,8 @@ static doublereal c_b60 = 1.;
 	    doublereal *, integer *, doublereal *, integer *, doublereal *, 
 	    integer *, doublereal *, integer *, doublereal *, doublereal *, 
 	    integer *, integer *, doublereal *, integer *, integer *, integer 
-	    *), xerbla_(char *, integer *);
+	    *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     integer ijobvr;

@@ -73,7 +73,7 @@ static logical c_false = FALSE_;
     extern /* Subroutine */ int dlacpy_(char *, integer *, integer *, 
 	    doublereal *, integer *, doublereal *, integer *);
     doublereal xscale, bignum;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     logical ilcomp, ilcplx;
     integer ihwmny;
 

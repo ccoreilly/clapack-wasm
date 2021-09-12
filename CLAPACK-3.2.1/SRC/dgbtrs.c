@@ -39,7 +39,7 @@ static doublereal c_b23 = 1.;
 	    char *, char *, integer *, integer *, doublereal *, integer *, 
 	    doublereal *, integer *);
     logical lnoti;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     logical notran;
 
 

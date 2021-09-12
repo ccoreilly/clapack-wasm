@@ -36,8 +36,9 @@
 	    integer *, real *, integer *, real *);
     logical nofact;
     extern /* Subroutine */ int slaqge_(integer *, integer *, real *, integer 
-	    *, real *, real *, real *, real *, real *, char *), 
-	    xerbla_(char *, integer *), sgecon_(char *, integer *, 
+	    *, real *, real *, real *, real *, real *, char *);
+	void xerbla_(char *, integer *);
+    int sgecon_(char *, integer *, 
 	    real *, integer *, real *, real *, real *, integer *, integer *);
     real bignum;
     integer infequ;

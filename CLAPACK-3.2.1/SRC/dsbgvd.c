@@ -39,7 +39,9 @@ static doublereal c_b13 = 0.;
     extern /* Subroutine */ int dstedc_(char *, integer *, doublereal *, 
 	    doublereal *, doublereal *, integer *, doublereal *, integer *, 
 	    integer *, integer *, integer *), dlacpy_(char *, integer 
-	    *, integer *, doublereal *, integer *, doublereal *, integer *), xerbla_(char *, integer *), dpbstf_(char *, 
+	    *, integer *, doublereal *, integer *, doublereal *, integer *);
+    void xerbla_(char *, integer *);
+    int dpbstf_(char *, 
 	    integer *, integer *, doublereal *, integer *, integer *),
 	     dsbtrd_(char *, char *, integer *, integer *, doublereal *, 
 	    integer *, doublereal *, doublereal *, doublereal *, integer *, 

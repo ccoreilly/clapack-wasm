@@ -46,7 +46,8 @@ static real c_b43 = -1.f;
 	    integer *), slags2_(logical *, real *, real *, real *, real *, 
 	    real *, real *, real *, real *, real *, real *, real *, real *);
     integer kcycle;
-    extern /* Subroutine */ int xerbla_(char *, integer *), slapll_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  slapll_(
 	    integer *, real *, integer *, real *, integer *, real *), slartg_(
 	    real *, real *, real *, real *, real *), slaset_(char *, integer *
 , integer *, real *, real *, real *, integer *);

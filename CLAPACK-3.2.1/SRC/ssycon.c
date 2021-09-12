@@ -30,7 +30,8 @@ static integer c__1 = 1;
     integer isave[3];
     logical upper;
     extern /* Subroutine */ int slacn2_(integer *, real *, real *, integer *, 
-	    real *, integer *, integer *), xerbla_(char *, integer *);
+	    real *, integer *, integer *);
+    void xerbla_(char *, integer *);
     real ainvnm;
     extern /* Subroutine */ int ssytrs_(char *, integer *, integer *, real *, 
 	    integer *, integer *, real *, integer *, integer *);

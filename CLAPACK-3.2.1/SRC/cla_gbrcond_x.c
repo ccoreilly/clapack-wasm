@@ -39,8 +39,9 @@ doublereal cla_gbrcond_x__(char *trans, integer *n, integer *kl, integer *ku,
     integer isave[3];
     real anorm;
     extern /* Subroutine */ int clacn2_(integer *, complex *, complex *, real 
-	    *, integer *, integer *), xerbla_(char *, integer *), 
-	    cgbtrs_(char *, integer *, integer *, integer *, integer *, 
+	    *, integer *, integer *);
+    void xerbla_(char *, integer *);
+	int cgbtrs_(char *, integer *, integer *, integer *, integer *, 
 	    complex *, integer *, integer *, complex *, integer *, integer *);
     real ainvnm;
     logical notrans;

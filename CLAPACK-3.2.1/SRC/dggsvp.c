@@ -47,7 +47,9 @@ static doublereal c_b22 = 1.;
 	    integer *, integer *, doublereal *, doublereal *, integer *), 
 	    dlacpy_(char *, integer *, integer *, doublereal *, integer *, 
 	    doublereal *, integer *), dlaset_(char *, integer *, 
-	    integer *, doublereal *, doublereal *, doublereal *, integer *), xerbla_(char *, integer *), dlapmt_(logical *, 
+	    integer *, doublereal *, doublereal *, doublereal *, integer *);
+    void xerbla_(char *, integer *);
+    int dlapmt_(logical *, 
 	    integer *, integer *, doublereal *, integer *, integer *);
     logical forwrd;
 

@@ -29,7 +29,8 @@ static integer c__1 = 1;
     extern logical lsame_(char *, char *);
     logical upper;
     extern /* Subroutine */ int ztbsv_(char *, char *, char *, integer *, 
-	    integer *, doublecomplex *, integer *, doublecomplex *, integer *), xerbla_(char *, integer *);
+	    integer *, doublecomplex *, integer *, doublecomplex *, integer *);
+    void xerbla_(char *, integer *);
     logical nounit;
 
 

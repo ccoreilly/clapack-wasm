@@ -63,7 +63,9 @@ static real c_b78 = 0.f;
     extern doublereal slamch_(char *);
     extern /* Subroutine */ int clacpy_(char *, integer *, integer *, complex 
 	    *, integer *, complex *, integer *), claset_(char *, 
-	    integer *, integer *, complex *, complex *, complex *, integer *), xerbla_(char *, integer *), cbdsqr_(char *, 
+	    integer *, integer *, complex *, complex *, complex *, integer *);
+    void xerbla_(char *, integer *);
+    int cbdsqr_(char *, 
 	    integer *, integer *, integer *, integer *, real *, real *, 
 	    complex *, integer *, complex *, integer *, complex *, integer *, 
 	    real *, integer *);

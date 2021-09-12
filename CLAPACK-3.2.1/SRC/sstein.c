@@ -48,7 +48,8 @@ static integer c_n1 = -1;
 	    real *, integer *);
     integer indrv1, indrv2, indrv3, indrv4, indrv5;
     extern doublereal slamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *), slagtf_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  slagtf_(
 	    integer *, real *, real *, real *, real *, real *, real *, 
 	    integer *, integer *);
     integer nrmchk;

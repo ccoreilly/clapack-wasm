@@ -9,6 +9,7 @@
 
 		http://www.netlib.org/f2c/libf2c.zip
 */
+#include <string.h>
 
 #include "f2c.h"
 #include "blaswrap.h"
@@ -159,7 +160,7 @@ integer ilaenv_(integer *ispec, char *name__, char *opts, integer *n1,
     integer ret_val;
 
     /* Builtin functions */
-    /* Subroutine */ int s_copy(char *, char *, ftnlen, ftnlen);
+    /* Subroutine */ void s_copy(char *, char *, ftnlen, ftnlen);
     integer s_cmp(char *, char *, ftnlen, ftnlen);
 
     /* Local variables */

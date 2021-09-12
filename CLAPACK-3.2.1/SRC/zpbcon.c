@@ -38,7 +38,7 @@ static integer c__1 = 1;
 	    doublecomplex *, doublereal *, integer *, integer *);
     extern doublereal dlamch_(char *);
     doublereal scalel, scaleu;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal ainvnm;
     extern integer izamax_(integer *, doublecomplex *, integer *);
     extern /* Subroutine */ int zlatbs_(char *, char *, char *, char *, 

@@ -33,7 +33,8 @@ doublereal sla_gbrcond__(char *trans, integer *n, integer *kl, integer *ku,
     extern logical lsame_(char *, char *);
     integer isave[3];
     extern /* Subroutine */ int slacn2_(integer *, real *, real *, integer *, 
-	    real *, integer *, integer *), xerbla_(char *, integer *);
+	    real *, integer *, integer *);
+    void xerbla_(char *, integer *);
     real ainvnm;
     extern /* Subroutine */ int sgbtrs_(char *, integer *, integer *, integer 
 	    *, integer *, real *, integer *, integer *, real *, integer *, 

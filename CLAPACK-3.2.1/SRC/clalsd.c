@@ -73,8 +73,10 @@ static real c_b35 = 0.f;
 	    integer *, real *, real *, real *, real *, integer *, integer *), 
 	    clacpy_(char *, integer *, integer *, complex *, integer *, 
 	    complex *, integer *), claset_(char *, integer *, integer 
-	    *, complex *, complex *, complex *, integer *), xerbla_(
-	    char *, integer *), slascl_(char *, integer *, integer *, 
+	    *, complex *, complex *, complex *, integer *);
+    void xerbla_(
+	    char *, integer *);
+    int slascl_(char *, integer *, integer *, 
 	    real *, real *, integer *, integer *, real *, integer *, integer *
 );
     extern integer isamax_(integer *, real *, integer *);

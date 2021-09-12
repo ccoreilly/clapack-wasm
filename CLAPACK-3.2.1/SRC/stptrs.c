@@ -28,7 +28,8 @@ static integer c__1 = 1;
     extern logical lsame_(char *, char *);
     logical upper;
     extern /* Subroutine */ int stpsv_(char *, char *, char *, integer *, 
-	    real *, real *, integer *), xerbla_(char *
+	    real *, real *, integer *);
+    void xerbla_(char *
 , integer *);
     logical nounit;
 

@@ -58,7 +58,7 @@ static real c_b41 = 1.f;
     extern /* Subroutine */ int claset_(char *, integer *, integer *, complex 
 	    *, complex *, complex *, integer *);
     real safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     real safmax;
     extern /* Subroutine */ int slascl_(char *, integer *, integer *, real *, 
 	    real *, integer *, integer *, real *, integer *, integer *);

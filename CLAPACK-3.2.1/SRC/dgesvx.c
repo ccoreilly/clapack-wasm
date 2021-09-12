@@ -49,7 +49,8 @@
 	    doublereal *, doublereal *, integer *, integer *), 
 	    dgetrf_(integer *, integer *, doublereal *, integer *, integer *, 
 	    integer *), dlacpy_(char *, integer *, integer *, doublereal *, 
-	    integer *, doublereal *, integer *), xerbla_(char *, 
+	    integer *, doublereal *, integer *);
+    void xerbla_(char *, 
 	    integer *);
     doublereal bignum;
     extern doublereal dlantr_(char *, char *, char *, integer *, integer *, 

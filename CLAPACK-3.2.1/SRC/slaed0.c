@@ -52,7 +52,7 @@ static integer c__1 = 1;
 , real *, integer *, integer *, integer *, integer *, integer *, 
 	    real *, real *, integer *, integer *);
     integer igivcl;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     integer igivnm, submat;

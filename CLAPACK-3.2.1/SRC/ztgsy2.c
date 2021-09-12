@@ -47,7 +47,8 @@ static integer c__1 = 1;
 	     integer *, doublereal *), zgetc2_(integer *, doublecomplex *, 
 	    integer *, integer *, integer *, integer *);
     doublereal scaloc;
-    extern /* Subroutine */ int xerbla_(char *, integer *), zlatdf_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  zlatdf_(
 	    integer *, integer *, doublecomplex *, integer *, doublecomplex *, 
 	     doublereal *, doublereal *, integer *, integer *);
     logical notran;

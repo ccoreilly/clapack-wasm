@@ -73,7 +73,8 @@ static doublereal c_b35 = 0.;
 	     integer *, doublereal *, integer *, doublereal *, integer *, 
 	    doublereal *, integer *), dlaset_(char *, integer *, 
 	    integer *, doublereal *, doublereal *, doublereal *, integer *), dlartg_(doublereal *, doublereal *, doublereal *, 
-	    doublereal *, doublereal *), xerbla_(char *, integer *);
+	    doublereal *, doublereal *);
+    void xerbla_(char *, integer *);
     integer givcol;
     extern doublereal dlanst_(char *, integer *, doublereal *, doublereal *);
     extern /* Subroutine */ int zlalsa_(integer *, integer *, integer *, 

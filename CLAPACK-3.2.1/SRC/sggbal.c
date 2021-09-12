@@ -56,7 +56,7 @@ static real c_b71 = .5f;
 	    real *, integer *);
     real pgamma;
     extern doublereal slamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern integer isamax_(integer *, real *, integer *);
     integer lsfmin, lsfmax;
 

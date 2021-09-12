@@ -51,8 +51,9 @@ static integer c__1 = 1;
 	    integer *, doublereal *, integer *, doublereal *);
     extern integer idamax_(integer *, doublereal *, integer *);
     extern /* Subroutine */ int dlacpy_(char *, integer *, integer *, 
-	    doublereal *, integer *, doublereal *, integer *), 
-	    xerbla_(char *, integer *), dgetrf_(integer *, integer *, 
+	    doublereal *, integer *, doublereal *, integer *);
+	void xerbla_(char *, integer *);
+    int dgetrf_(integer *, integer *, 
 	    doublereal *, integer *, integer *, integer *), dgetrs_(char *, 
 	    integer *, integer *, doublereal *, integer *, integer *, 
 	    doublereal *, integer *, integer *), sgetrf_(integer *, 

@@ -33,8 +33,9 @@ static integer c__1 = 1;
 	    doublecomplex *, doublecomplex *, integer *, doublecomplex *, 
 	    integer *, doublecomplex *, doublecomplex *, integer *), 
 	    ztrmv_(char *, char *, char *, integer *, doublecomplex *, 
-	    integer *, doublecomplex *, integer *), 
-	    xerbla_(char *, integer *), zlacgv_(integer *, 
+	    integer *, doublecomplex *, integer *);
+	void xerbla_(char *, integer *);
+    int zlacgv_(integer *, 
 	    doublecomplex *, integer *);
 
 

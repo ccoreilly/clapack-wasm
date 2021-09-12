@@ -38,7 +38,9 @@ static integer c__1 = 1;
 	    integer *, doublecomplex *, doublecomplex *, integer *), 
 	    zcopy_(integer *, doublecomplex *, integer *, doublecomplex *, 
 	    integer *), zaxpy_(integer *, doublecomplex *, doublecomplex *, 
-	    integer *, doublecomplex *, integer *), xerbla_(char *, integer *), zlacgv_(integer *, doublecomplex *, integer *), zlarfp_(
+	    integer *, doublecomplex *, integer *);
+    void xerbla_(char *, integer *);
+    int zlacgv_(integer *, doublecomplex *, integer *), zlarfp_(
 	    integer *, doublecomplex *, doublecomplex *, integer *, 
 	    doublecomplex *);
 

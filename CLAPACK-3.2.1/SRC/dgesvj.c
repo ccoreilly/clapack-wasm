@@ -86,8 +86,8 @@ static integer c__2 = 2;
 	    integer *, integer *);
     extern integer idamax_(integer *, doublereal *, integer *);
     extern /* Subroutine */ int dlaset_(char *, integer *, integer *, 
-	    doublereal *, doublereal *, doublereal *, integer *), 
-	    xerbla_(char *, integer *);
+	    doublereal *, doublereal *, doublereal *, integer *);
+	void xerbla_(char *, integer *);
     integer ijblsk, swband, blskip;
     doublereal mxaapq;
     extern /* Subroutine */ int dlassq_(integer *, doublereal *, integer *, 

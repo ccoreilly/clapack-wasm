@@ -101,7 +101,7 @@
 /* > \endverbatim */
 /* > */
 /*  ===================================================================== */
-/* Subroutine */ int daxpy_(integer *n, doublereal *da, doublereal *dx, 
+/* Subroutine */ void daxpy_(integer *n, doublereal *da, doublereal *dx, 
 	integer *incx, doublereal *dy, integer *incy)
 {
     /* System generated locals */
@@ -133,10 +133,10 @@
 
     /* Function Body */
     if (*n <= 0) {
-	return 0;
+	return;
     }
     if (*da == 0.) {
-	return 0;
+	return;
     }
     if (*incx == 1 && *incy == 1) {
 
@@ -153,7 +153,7 @@
 	    }
 	}
 	if (*n < 4) {
-	    return 0;
+	    return;
 	}
 	mp1 = m + 1;
 	i__1 = *n;
@@ -183,6 +183,6 @@
 	    iy += *incy;
 	}
     }
-    return 0;
+    return;
 } /* daxpy_ */
 

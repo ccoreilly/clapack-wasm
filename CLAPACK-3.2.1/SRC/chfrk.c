@@ -34,7 +34,7 @@
     integer nrowa;
     logical lower;
     complex calpha;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     logical nisodd, notrans;
 
 

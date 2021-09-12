@@ -34,7 +34,9 @@ static integer c__1 = 1;
     logical wantz;
     extern /* Subroutine */ int stpmv_(char *, char *, char *, integer *, 
 	    real *, real *, integer *), stpsv_(char *, 
-	     char *, char *, integer *, real *, real *, integer *), xerbla_(char *, integer *), spptrf_(char 
+	     char *, char *, integer *, real *, real *, integer *);
+    void xerbla_(char *, integer *);
+    int spptrf_(char 
 	    *, integer *, real *, integer *), sspgst_(integer *, char 
 	    *, integer *, real *, real *, integer *);
 

@@ -34,7 +34,7 @@ static real c_b12 = 1.f;
 	    integer *, integer *, complex *, complex *, integer *, complex *, 
 	    integer *);
     logical lower;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     logical nisodd;
     extern /* Subroutine */ int clauum_(char *, integer *, complex *, integer 
 	    *, integer *), ctftri_(char *, char *, char *, integer *, 

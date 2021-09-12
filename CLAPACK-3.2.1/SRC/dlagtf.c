@@ -25,7 +25,7 @@
     integer k;
     doublereal tl, eps, piv1, piv2, temp, mult, scale1, scale2;
     extern doublereal dlamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

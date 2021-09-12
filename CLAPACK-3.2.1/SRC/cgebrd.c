@@ -41,7 +41,8 @@ static integer c__2 = 2;
 	    integer *, real *, real *, complex *, complex *, complex *, 
 	    integer *), clabrd_(integer *, integer *, integer *, complex *, 
 	    integer *, real *, real *, complex *, complex *, complex *, 
-	    integer *, complex *, integer *), xerbla_(char *, integer *);
+	    integer *, complex *, integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     integer ldwrkx, ldwrky, lwkopt;

@@ -54,7 +54,8 @@ static integer c__1 = 1;
 	    doublecomplex *, integer *);
     extern doublereal dlapy2_(doublereal *, doublereal *);
     doublereal absakk;
-    extern /* Subroutine */ int xerbla_(char *, integer *), zdscal_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  zdscal_(
 	    integer *, doublereal *, doublecomplex *, integer *);
     doublereal colmax;
     extern integer izamax_(integer *, doublecomplex *, integer *);

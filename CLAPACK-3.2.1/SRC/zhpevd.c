@@ -44,7 +44,8 @@ static integer c__1 = 1;
     extern doublereal dlamch_(char *);
     integer iscale;
     doublereal safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *), zdscal_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  zdscal_(
 	    integer *, doublereal *, doublecomplex *, integer *);
     doublereal bignum;
     integer indtau;

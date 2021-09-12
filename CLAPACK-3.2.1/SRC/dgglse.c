@@ -39,7 +39,8 @@ static doublereal c_b33 = 1.;
 	    *, doublereal *, integer *), dggrqf_(
 	    integer *, integer *, integer *, doublereal *, integer *, 
 	    doublereal *, doublereal *, integer *, doublereal *, doublereal *, 
-	     integer *, integer *), xerbla_(char *, integer *);
+	     integer *, integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     integer lwkmin;

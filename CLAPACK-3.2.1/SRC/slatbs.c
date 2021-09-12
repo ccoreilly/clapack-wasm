@@ -46,7 +46,7 @@ static real c_b36 = .5f;
 	    integer *, real *, integer *, real *, integer *), saxpy_(integer *, real *, real *, integer *, real *, 
 	    integer *);
     extern doublereal slamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     real bignum;
     extern integer isamax_(integer *, real *, integer *);
     logical notran;

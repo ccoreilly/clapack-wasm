@@ -41,7 +41,8 @@
     extern /* Subroutine */ int chetrf_(char *, integer *, complex *, integer 
 	    *, integer *, complex *, integer *, integer *), clacpy_(
 	    char *, integer *, integer *, complex *, integer *, complex *, 
-	    integer *), xerbla_(char *, integer *);
+	    integer *);
+    void xerbla_(char *, integer *);
     real bignum;
     integer infequ;
     extern /* Subroutine */ int chetrs_(char *, integer *, integer *, complex 

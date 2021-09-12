@@ -31,7 +31,8 @@ static integer c__2 = 2;
     integer nbmin, iinfo;
     logical upper;
     extern /* Subroutine */ int ssytf2_(char *, integer *, real *, integer *, 
-	    integer *, integer *), xerbla_(char *, integer *);
+	    integer *, integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     extern /* Subroutine */ int slasyf_(char *, integer *, integer *, integer 

@@ -52,7 +52,9 @@ static integer c__1 = 1;
     extern integer icamax_(integer *, complex *, integer *);
     extern doublereal slamch_(char *);
     extern /* Subroutine */ int csscal_(integer *, real *, complex *, integer 
-	    *), xerbla_(char *, integer *), clatrs_(char *, char *, 
+	    *);
+    void xerbla_(char *, integer *);
+    int clatrs_(char *, char *, 
 	    char *, char *, integer *, complex *, integer *, complex *, real *
 , real *, integer *);
     extern doublereal scasum_(integer *, complex *, integer *);

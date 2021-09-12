@@ -36,7 +36,7 @@
     extern doublereal dlamch_(char *);
     doublereal colcnd;
     logical nofact;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern doublereal zlange_(char *, integer *, integer *, doublecomplex *, 
 	    integer *, doublereal *);
     doublereal bignum;

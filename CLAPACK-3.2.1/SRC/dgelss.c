@@ -65,8 +65,9 @@ static doublereal c_b108 = 1.;
 	    doublereal *, doublereal *, integer *, integer *), dlacpy_(char *, 
 	     integer *, integer *, doublereal *, integer *, doublereal *, 
 	    integer *), dlaset_(char *, integer *, integer *, 
-	    doublereal *, doublereal *, doublereal *, integer *), 
-	    xerbla_(char *, integer *), dbdsqr_(char *, integer *, 
+	    doublereal *, doublereal *, doublereal *, integer *);
+	void xerbla_(char *, integer *);
+    int dbdsqr_(char *, integer *, 
 	    integer *, integer *, integer *, doublereal *, doublereal *, 
 	    doublereal *, integer *, doublereal *, integer *, doublereal *, 
 	    integer *, doublereal *, integer *), dorgbr_(char *, 

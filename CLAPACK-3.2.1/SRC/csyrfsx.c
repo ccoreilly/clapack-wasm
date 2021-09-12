@@ -57,7 +57,7 @@ static logical c_false = FALSE_;
 	    complex *, real *, ftnlen), cla_syrcond_x__(char *, integer *, 
 	    complex *, integer *, complex *, integer *, integer *, complex *, 
 	    integer *, complex *, real *, ftnlen), slamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern doublereal clansy_(char *, char *, integer *, complex *, integer *, 
 	     real *);
     extern /* Subroutine */ int csycon_(char *, integer *, complex *, integer 

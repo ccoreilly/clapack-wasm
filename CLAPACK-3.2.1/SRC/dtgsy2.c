@@ -60,8 +60,8 @@ static doublereal c_b56 = 0.;
 	    *, doublereal *, doublereal *, integer *, integer *);
     doublereal scaloc;
     extern /* Subroutine */ int dlaset_(char *, integer *, integer *, 
-	    doublereal *, doublereal *, doublereal *, integer *), 
-	    xerbla_(char *, integer *);
+	    doublereal *, doublereal *, doublereal *, integer *);
+	void xerbla_(char *, integer *);
     logical notran;
 
 

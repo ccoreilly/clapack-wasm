@@ -46,7 +46,7 @@ static integer c__1 = 1;
     extern /* Subroutine */ int cspmv_(char *, integer *, complex *, complex *
 , complex *, integer *, complex *, complex *, integer *);
     logical upper;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     integer kcnext;
 
 

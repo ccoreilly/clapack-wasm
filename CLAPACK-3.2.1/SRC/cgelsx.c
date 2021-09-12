@@ -53,8 +53,8 @@ static integer c__1 = 1;
 	    integer *, complex *, complex *, real *, integer *);
     extern doublereal slamch_(char *);
     extern /* Subroutine */ int claset_(char *, integer *, integer *, complex 
-	    *, complex *, complex *, integer *), xerbla_(char *, 
-	    integer *);
+	    *, complex *, complex *, integer *);
+    void xerbla_(char *, integer *);
     real bignum;
     extern /* Subroutine */ int clatzm_(char *, integer *, integer *, complex 
 	    *, integer *, complex *, complex *, complex *, integer *, complex 

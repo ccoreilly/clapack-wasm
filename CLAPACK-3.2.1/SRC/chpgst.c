@@ -47,7 +47,8 @@ static integer c__1 = 1;
     logical upper;
     extern /* Subroutine */ int ctpsv_(char *, char *, char *, integer *, 
 	    complex *, complex *, integer *), csscal_(
-	    integer *, real *, complex *, integer *), xerbla_(char *, integer 
+	    integer *, real *, complex *, integer *);
+    void xerbla_(char *, integer 
 	    *);
 
 

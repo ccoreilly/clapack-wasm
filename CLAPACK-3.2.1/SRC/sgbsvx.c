@@ -46,7 +46,8 @@ static integer c__1 = 1;
     logical nofact;
     extern /* Subroutine */ int sgbcon_(char *, integer *, integer *, integer 
 	    *, real *, integer *, integer *, real *, real *, real *, integer *
-, integer *), xerbla_(char *, integer *);
+, integer *);
+    void xerbla_(char *, integer *);
     real bignum;
     extern doublereal slantb_(char *, char *, char *, integer *, integer *, 
 	    real *, integer *, real *);

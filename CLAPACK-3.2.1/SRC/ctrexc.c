@@ -37,7 +37,8 @@ static integer c__1 = 1;
     extern logical lsame_(char *, char *);
     logical wantq;
     extern /* Subroutine */ int clartg_(complex *, complex *, real *, complex 
-	    *, complex *), xerbla_(char *, integer *);
+	    *, complex *);
+    void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

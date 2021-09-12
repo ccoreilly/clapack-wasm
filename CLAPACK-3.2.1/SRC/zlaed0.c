@@ -47,7 +47,7 @@ static integer c__1 = 1;
 	    doublereal *, doublecomplex *, doublereal *, integer *, integer *)
 	    ;
     integer igivcl;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     extern /* Subroutine */ int zlacrm_(integer *, integer *, doublecomplex *, 

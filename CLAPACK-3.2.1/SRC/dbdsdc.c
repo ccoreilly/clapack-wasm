@@ -68,7 +68,7 @@ static doublereal c_b29 = 0.;
 	    doublereal *, doublereal *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     integer givcol;
     extern doublereal dlanst_(char *, integer *, doublereal *, doublereal *);
     integer icompq;

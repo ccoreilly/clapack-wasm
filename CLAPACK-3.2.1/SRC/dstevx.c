@@ -52,7 +52,7 @@ static integer c__1 = 1;
     integer iscale, indibl;
     logical valeig;
     doublereal safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal bignum;
     extern doublereal dlanst_(char *, integer *, doublereal *, doublereal *);
     integer indisp;

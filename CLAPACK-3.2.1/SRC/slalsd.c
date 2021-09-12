@@ -57,8 +57,9 @@ static real c_b11 = 1.f;
     extern /* Subroutine */ int slasda_(integer *, integer *, integer *, 
 	    integer *, real *, real *, real *, integer *, real *, integer *, 
 	    real *, real *, real *, real *, integer *, integer *, integer *, 
-	    integer *, real *, real *, real *, real *, integer *, integer *), 
-	    xerbla_(char *, integer *), slalsa_(integer *, integer *, 
+	    integer *, real *, real *, real *, real *, integer *, integer *);
+	void xerbla_(char *, integer *);
+    int slalsa_(integer *, integer *, 
 	    integer *, integer *, real *, integer *, real *, integer *, real *
 , integer *, real *, integer *, real *, real *, real *, real *, 
 	    integer *, integer *, integer *, integer *, real *, real *, real *

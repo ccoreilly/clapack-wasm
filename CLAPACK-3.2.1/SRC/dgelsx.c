@@ -51,7 +51,8 @@ static doublereal c_b36 = 1.;
 	    integer *, integer *), dgeqpf_(integer *, integer *, 
 	    doublereal *, integer *, integer *, doublereal *, doublereal *, 
 	    integer *), dlaset_(char *, integer *, integer *, doublereal *, 
-	    doublereal *, doublereal *, integer *), xerbla_(char *, 
+	    doublereal *, doublereal *, integer *);
+    void xerbla_(char *, 
 	    integer *);
     doublereal bignum;
     extern /* Subroutine */ int dlatzm_(char *, integer *, integer *, 

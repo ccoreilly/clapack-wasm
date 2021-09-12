@@ -43,7 +43,8 @@ static integer c_n1 = -1;
 	    real *, real *, real *, real *, integer *, real *, real *, 
 	    integer *);
     integer isigma;
-    extern /* Subroutine */ int xerbla_(char *, integer *), slascl_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  slascl_(
 	    char *, integer *, integer *, real *, real *, integer *, integer *
 , real *, integer *, integer *), slamrg_(integer *, 
 	    integer *, real *, integer *, integer *, integer *);

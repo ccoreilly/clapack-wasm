@@ -21,7 +21,8 @@
     integer a_dim1, a_offset, b_dim1, b_offset, i__1;
 
     /* Local variables */
-    extern /* Subroutine */ int xerbla_(char *, integer *), zgetrf_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  zgetrf_(
 	    integer *, integer *, doublecomplex *, integer *, integer *, 
 	    integer *), zgetrs_(char *, integer *, integer *, doublecomplex *, 
 	     integer *, integer *, doublecomplex *, integer *, integer *);

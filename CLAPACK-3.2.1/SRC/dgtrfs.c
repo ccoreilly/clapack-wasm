@@ -50,7 +50,7 @@ static doublereal c_b19 = 1.;
 	    doublereal *, doublereal *, doublereal *, doublereal *, 
 	    doublereal *, integer *, doublereal *, doublereal *, integer *);
     doublereal safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     logical notran;
     char transn[1];
     extern /* Subroutine */ int dgttrs_(char *, integer *, integer *, 

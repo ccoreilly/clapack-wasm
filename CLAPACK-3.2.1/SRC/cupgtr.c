@@ -27,7 +27,8 @@
     extern /* Subroutine */ int cung2l_(integer *, integer *, integer *, 
 	    complex *, integer *, complex *, complex *, integer *), cung2r_(
 	    integer *, integer *, integer *, complex *, integer *, complex *, 
-	    complex *, integer *), xerbla_(char *, integer *);
+	    complex *, integer *);
+    void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

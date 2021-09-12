@@ -43,7 +43,8 @@ static real c_b8 = 1.f;
 	    integer *);
     extern doublereal slamc3_(real *, real *);
     extern /* Subroutine */ int slasd4_(integer *, integer *, real *, real *, 
-	    real *, real *, real *, real *, integer *), xerbla_(char *, 
+	    real *, real *, real *, real *, integer *);
+    void xerbla_(char *, 
 	    integer *);
     real dsigjp;
     extern /* Subroutine */ int slascl_(char *, integer *, integer *, real *, 

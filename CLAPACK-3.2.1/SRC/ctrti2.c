@@ -36,7 +36,8 @@ static integer c__1 = 1;
     extern logical lsame_(char *, char *);
     logical upper;
     extern /* Subroutine */ int ctrmv_(char *, char *, char *, integer *, 
-	    complex *, integer *, complex *, integer *), xerbla_(char *, integer *);
+	    complex *, integer *, complex *, integer *);
+    void xerbla_(char *, integer *);
     logical nounit;
 
 

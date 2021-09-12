@@ -35,7 +35,8 @@ static integer c_n1 = -1;
 	     integer *, integer *, doublecomplex *, doublecomplex *, integer *
 , doublecomplex *, integer *), 
 	    zgetf2_(integer *, integer *, doublecomplex *, integer *, integer 
-	    *, integer *), xerbla_(char *, integer *);
+	    *, integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     extern /* Subroutine */ int zlaswp_(integer *, doublecomplex *, integer *, 

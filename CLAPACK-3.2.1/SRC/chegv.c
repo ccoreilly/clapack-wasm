@@ -43,7 +43,8 @@ static integer c_n1 = -1;
 	    *, integer *, complex *, integer *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
-    extern /* Subroutine */ int xerbla_(char *, integer *), cpotrf_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  cpotrf_(
 	    char *, integer *, complex *, integer *, integer *);
     integer lwkopt;
     logical lquery;

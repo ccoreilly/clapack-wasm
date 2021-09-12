@@ -31,7 +31,8 @@
     logical lower;
     extern /* Subroutine */ int dsyrk_(char *, char *, integer *, integer *, 
 	    doublereal *, doublereal *, integer *, doublereal *, doublereal *, 
-	     integer *), xerbla_(char *, integer *);
+	     integer *);
+    void xerbla_(char *, integer *);
     logical nisodd, notrans;
 
 

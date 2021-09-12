@@ -56,8 +56,9 @@ static doublereal c_b28 = 1.;
     extern doublereal dlamch_(char *);
     doublereal dscale, rdscal;
     extern /* Subroutine */ int dlacpy_(char *, integer *, integer *, 
-	    doublereal *, integer *, doublereal *, integer *), 
-	    xerbla_(char *, integer *), dtgexc_(logical *, logical *, 
+	    doublereal *, integer *, doublereal *, integer *);
+	void xerbla_(char *, integer *);
+    int dtgexc_(logical *, logical *, 
 	    integer *, doublereal *, integer *, doublereal *, integer *, 
 	    doublereal *, integer *, doublereal *, integer *, integer *, 
 	    integer *, doublereal *, integer *, integer *), dlassq_(integer *, 

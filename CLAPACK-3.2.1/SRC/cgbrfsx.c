@@ -64,7 +64,7 @@ static logical c_false = FALSE_;
 	    *, complex *, integer *, integer *, real *, real *, complex *, 
 	    real *, integer *);
     extern doublereal slamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     logical colequ, notran, rowequ;
     extern integer ilaprec_(char *);
     integer ithresh, n_norms__;

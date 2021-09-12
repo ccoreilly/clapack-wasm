@@ -42,7 +42,8 @@ static logical c_true = TRUE_;
     extern doublereal slamch_(char *);
     extern /* Subroutine */ int slaein_(logical *, logical *, integer *, real 
 	    *, integer *, real *, real *, real *, real *, real *, integer *, 
-	    real *, real *, real *, real *, integer *), xerbla_(char *, 
+	    real *, real *, real *, real *, integer *);
+    void xerbla_(char *, 
 	    integer *);
     real bignum;
     extern doublereal slanhs_(char *, integer *, real *, integer *, real *);

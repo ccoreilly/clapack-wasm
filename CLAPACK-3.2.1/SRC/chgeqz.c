@@ -74,7 +74,7 @@ static integer c__2 = 2;
 	    *, complex *, complex *, integer *), clartg_(complex *, 
 	    complex *, real *, complex *, complex *);
     real safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     complex eshift;
     logical ilschr;
     integer icompq, ilastm;

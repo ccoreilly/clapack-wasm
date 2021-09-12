@@ -48,7 +48,9 @@ static integer c__1 = 1;
     extern doublereal dlapy2_(doublereal *, doublereal *), dlamch_(char *);
     extern integer idamax_(integer *, doublereal *, integer *);
     extern /* Subroutine */ int dlamrg_(integer *, integer *, doublereal *, 
-	    integer *, integer *, integer *), xerbla_(char *, integer *), zlacpy_(char *, integer *, integer *, doublecomplex *, 
+	    integer *, integer *, integer *);
+    void xerbla_(char *, integer *);
+    int zlacpy_(char *, integer *, integer *, doublecomplex *, 
 	    integer *, doublecomplex *, integer *);
 
 

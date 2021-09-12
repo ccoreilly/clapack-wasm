@@ -60,7 +60,7 @@ static integer c__11 = 11;
     doublereal deemin;
     integer iwhila, iwhilb;
     doublereal oldemn, safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     extern /* Subroutine */ int dlasrt_(char *, integer *, doublereal *, 

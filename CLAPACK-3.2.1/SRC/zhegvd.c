@@ -40,8 +40,10 @@ static doublecomplex c_b1 = {1.,0.};
 	     doublecomplex *, integer *), 
 	    ztrsm_(char *, char *, char *, char *, integer *, integer *, 
 	    doublecomplex *, doublecomplex *, integer *, doublecomplex *, 
-	    integer *), xerbla_(char *, 
-	    integer *), zheevd_(char *, char *, integer *, 
+	    integer *);
+    void xerbla_(char *, 
+	    integer *);
+    int zheevd_(char *, char *, integer *, 
 	    doublecomplex *, integer *, doublereal *, doublecomplex *, 
 	    integer *, doublereal *, integer *, integer *, integer *, integer 
 	    *);

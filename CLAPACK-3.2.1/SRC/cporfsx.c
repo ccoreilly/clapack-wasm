@@ -58,7 +58,8 @@ static logical c_false = FALSE_;
 	    integer *, complex *, integer *, complex *, integer *, complex *, 
 	    real *, ftnlen), clanhe_(char *, char *, integer *, complex *, 
 	    integer *, real *), slamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *), cpocon_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  cpocon_(
 	    char *, integer *, complex *, integer *, real *, real *, complex *
 , real *, integer *);
     extern integer ilaprec_(char *);

@@ -46,7 +46,8 @@ static doublereal c_b52 = .5;
 	    *, integer *, integer *), dsyr2k_(char *, char *, integer 
 	    *, integer *, doublereal *, doublereal *, integer *, doublereal *, 
 	     integer *, doublereal *, doublereal *, integer *)
-	    , xerbla_(char *, integer *);
+	    ;
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
 

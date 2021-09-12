@@ -52,7 +52,8 @@ static doublereal c_b17 = 1.;
 	     integer *, doublereal *, integer *, integer *);
     extern doublereal dlamch_(char *);
     doublereal safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *), dgbtrs_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  dgbtrs_(
 	    char *, integer *, integer *, integer *, integer *, doublereal *, 
 	    integer *, integer *, doublereal *, integer *, integer *);
     logical notran;

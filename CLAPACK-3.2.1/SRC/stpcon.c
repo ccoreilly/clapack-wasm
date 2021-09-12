@@ -36,7 +36,7 @@ static integer c__1 = 1;
     extern /* Subroutine */ int slacn2_(integer *, real *, real *, integer *, 
 	    real *, integer *, integer *);
     extern doublereal slamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern integer isamax_(integer *, real *, integer *);
     real ainvnm;
     logical onenrm;

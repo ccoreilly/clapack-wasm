@@ -32,7 +32,7 @@ static doublereal c_b18 = 1.;
 	    integer *, integer *, doublereal *, doublereal *, integer *, 
 	    doublereal *, integer *);
     logical lower;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     logical nisodd;
     extern /* Subroutine */ int dtrtri_(char *, char *, integer *, doublereal 
 	    *, integer *, integer *);

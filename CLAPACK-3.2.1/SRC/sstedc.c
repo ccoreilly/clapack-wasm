@@ -50,7 +50,7 @@ static integer c__1 = 1;
 	    *, real *, integer *, real *, integer *, real *, integer *, 
 	    integer *);
     extern doublereal slamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     integer finish;

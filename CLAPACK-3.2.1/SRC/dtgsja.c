@@ -55,7 +55,8 @@ static doublereal c_b43 = -1.;
     extern /* Subroutine */ int dlartg_(doublereal *, doublereal *, 
 	    doublereal *, doublereal *, doublereal *), dlaset_(char *, 
 	    integer *, integer *, doublereal *, doublereal *, doublereal *, 
-	    integer *), xerbla_(char *, integer *);
+	    integer *);
+    void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

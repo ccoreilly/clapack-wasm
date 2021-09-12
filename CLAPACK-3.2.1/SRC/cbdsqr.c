@@ -68,7 +68,8 @@ static real c_b72 = -1.f;
 , real *, real *, real *, real *, real *);
     extern doublereal slamch_(char *);
     extern /* Subroutine */ int csscal_(integer *, real *, complex *, integer 
-	    *), xerbla_(char *, integer *);
+	    *);
+    void xerbla_(char *, integer *);
     real sminoa;
     extern /* Subroutine */ int slartg_(real *, real *, real *, real *, real *
 );

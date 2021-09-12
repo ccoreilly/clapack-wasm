@@ -61,7 +61,8 @@ static doublereal c_b72 = .5;
 	    doublecomplex *, integer *);
     extern doublereal dlamch_(char *);
     doublereal pgamma;
-    extern /* Subroutine */ int xerbla_(char *, integer *), zdscal_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  zdscal_(
 	    integer *, doublereal *, doublecomplex *, integer *);
     integer lsfmin;
     extern integer izamax_(integer *, doublecomplex *, integer *);

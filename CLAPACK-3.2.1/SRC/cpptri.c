@@ -39,7 +39,9 @@ static integer c__1 = 1;
 	    complex *, complex *, integer *);
     logical upper;
     extern /* Subroutine */ int csscal_(integer *, real *, complex *, integer 
-	    *), xerbla_(char *, integer *), ctptri_(char *, char *, 
+	    *);
+    void xerbla_(char *, integer *);
+    int ctptri_(char *, char *, 
 	    integer *, complex *, integer *);
 
 

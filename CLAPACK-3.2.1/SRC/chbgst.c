@@ -55,8 +55,10 @@ static integer c__1 = 1;
 	    integer *, complex *, integer *), csscal_(integer *, real *, 
 	    complex *, integer *), claset_(char *, integer *, integer *, 
 	    complex *, complex *, complex *, integer *), clartg_(
-	    complex *, complex *, real *, complex *, complex *), xerbla_(char 
-	    *, integer *), clargv_(integer *, complex *, integer *, 
+	    complex *, complex *, real *, complex *, complex *);
+    void xerbla_(char 
+	    *, integer *);
+    int clargv_(integer *, complex *, integer *, 
 	    complex *, integer *, real *, integer *);
     logical update;
     extern /* Subroutine */ int clartv_(integer *, complex *, integer *, 

@@ -46,7 +46,7 @@ static integer c__1 = 1;
     doublereal absakk;
     extern integer idamax_(integer *, doublereal *, integer *);
     extern logical disnan_(doublereal *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal colmax, rowmax;
 
 

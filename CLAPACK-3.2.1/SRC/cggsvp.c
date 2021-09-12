@@ -49,8 +49,10 @@ static complex c_b2 = {1.f,0.f};
 	    integer *, complex *, complex *, real *, integer *), clacpy_(char 
 	    *, integer *, integer *, complex *, integer *, complex *, integer 
 	    *), claset_(char *, integer *, integer *, complex *, 
-	    complex *, complex *, integer *), xerbla_(char *, integer 
-	    *), clapmt_(logical *, integer *, integer *, complex *, 
+	    complex *, complex *, integer *);
+    void xerbla_(char *, integer 
+	    *);
+    int clapmt_(logical *, integer *, integer *, complex *, 
 	    integer *, integer *);
     logical forwrd;
 

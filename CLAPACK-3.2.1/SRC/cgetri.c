@@ -41,7 +41,7 @@ static integer c__2 = 2;
 	    integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     integer ldwork;
     extern /* Subroutine */ int ctrtri_(char *, char *, integer *, complex *, 
 	    integer *, integer *);

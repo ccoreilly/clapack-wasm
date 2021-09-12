@@ -49,7 +49,7 @@ static integer c__1 = 1;
 	    doublecomplex *, integer *, integer *), zlat2c_(char *, integer *, 
 	     doublecomplex *, integer *, complex *, integer *, integer *);
     extern doublereal dlamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern doublereal zlanhe_(char *, char *, integer *, doublecomplex *, 
 	    integer *, doublereal *);
     extern integer izamax_(integer *, doublecomplex *, integer *);

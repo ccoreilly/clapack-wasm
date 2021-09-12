@@ -57,7 +57,8 @@ static integer c__1 = 1;
     real anorm;
     extern doublereal slamch_(char *), slange_(char *, integer *, 
 	    integer *, real *, integer *, real *);
-    extern /* Subroutine */ int xerbla_(char *, integer *), sgecon_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  sgecon_(
 	    char *, integer *, real *, integer *, real *, real *, real *, 
 	    integer *, integer *);
     logical colequ, notran, rowequ;

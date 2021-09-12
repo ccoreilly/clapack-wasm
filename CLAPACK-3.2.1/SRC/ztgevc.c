@@ -70,7 +70,7 @@ static integer c__1 = 1;
     extern doublereal dlamch_(char *);
     doublecomplex salpha;
     doublereal safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal bignum;
     logical ilcomp;
     extern /* Double Complex */ VOID zladiv_(doublecomplex *, doublecomplex *, 

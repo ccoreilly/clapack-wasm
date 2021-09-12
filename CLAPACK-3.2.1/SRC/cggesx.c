@@ -64,7 +64,8 @@ static integer c_n1 = -1;
 	    integer *, complex *, complex *, integer *, integer *), clacpy_(
 	    char *, integer *, integer *, complex *, integer *, complex *, 
 	    integer *), claset_(char *, integer *, integer *, complex 
-	    *, complex *, complex *, integer *), xerbla_(char *, 
+	    *, complex *, complex *, integer *);
+    void xerbla_(char *, 
 	    integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);

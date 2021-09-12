@@ -28,7 +28,8 @@ static doublereal c_b12 = 1.;
     extern logical lsame_(char *, char *);
     extern /* Subroutine */ int dtrsm_(char *, char *, char *, char *, 
 	    integer *, integer *, doublereal *, doublereal *, integer *, 
-	    doublereal *, integer *), xerbla_(
+	    doublereal *, integer *);
+    void xerbla_(
 	    char *, integer *);
     logical nounit;
 

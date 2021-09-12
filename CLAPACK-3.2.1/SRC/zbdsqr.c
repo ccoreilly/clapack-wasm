@@ -67,8 +67,10 @@ static doublereal c_b72 = -1.;
 	    doublereal *, doublereal *, doublereal *);
     extern doublereal dlamch_(char *);
     extern /* Subroutine */ int dlartg_(doublereal *, doublereal *, 
-	    doublereal *, doublereal *, doublereal *), xerbla_(char *, 
-	    integer *), zdscal_(integer *, doublereal *, 
+	    doublereal *, doublereal *, doublereal *);
+    void xerbla_(char *, 
+	    integer *);
+    int zdscal_(integer *, doublereal *, 
 	    doublecomplex *, integer *);
     doublereal sminoa, thresh;
     logical rotate;

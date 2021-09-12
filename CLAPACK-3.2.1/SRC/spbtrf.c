@@ -39,7 +39,8 @@ static integer c__33 = 33;
 	     integer *, integer *, real *, real *, integer *, real *, real *, 
 	    integer *), spbtf2_(char *, integer *, integer *, 
 	    real *, integer *, integer *), spotf2_(char *, integer *, 
-	    real *, integer *, integer *), xerbla_(char *, integer *);
+	    real *, integer *, integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
 

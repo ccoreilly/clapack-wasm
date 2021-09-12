@@ -39,7 +39,8 @@ static integer c__1 = 1;
 	    complex *, integer *), caxpy_(integer *, complex *, complex *, 
 	    integer *, complex *, integer *), clacgv_(integer *, complex *, 
 	    integer *), clarfp_(integer *, complex *, complex *, integer *, 
-	    complex *), xerbla_(char *, integer *);
+	    complex *);
+    void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

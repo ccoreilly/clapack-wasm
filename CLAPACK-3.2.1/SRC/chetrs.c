@@ -44,7 +44,8 @@ static integer c__1 = 1;
 	     cswap_(integer *, complex *, integer *, complex *, integer *);
     logical upper;
     extern /* Subroutine */ int clacgv_(integer *, complex *, integer *), 
-	    csscal_(integer *, real *, complex *, integer *), xerbla_(char *, 
+	    csscal_(integer *, real *, complex *, integer *);
+    void xerbla_(char *, 
 	    integer *);
 
 

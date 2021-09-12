@@ -40,7 +40,8 @@ static integer c__1 = 1;
 	    real *, real *, char *);
     logical nofact;
     extern /* Subroutine */ int clacpy_(char *, integer *, integer *, complex 
-	    *, integer *, complex *, integer *), xerbla_(char *, 
+	    *, integer *, complex *, integer *);
+    void xerbla_(char *, 
 	    integer *);
     real bignum;
     extern /* Subroutine */ int cppcon_(char *, integer *, complex *, real *, 

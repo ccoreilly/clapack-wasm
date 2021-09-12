@@ -27,8 +27,10 @@ static integer c__1 = 1;
     integer i__, k;
     real aii;
     extern /* Subroutine */ int slarf_(char *, integer *, integer *, real *, 
-	    integer *, real *, real *, integer *, real *), xerbla_(
-	    char *, integer *), slarfp_(integer *, real *, real *, 
+	    integer *, real *, real *, integer *, real *);
+    void xerbla_(
+	    char *, integer *);
+    int slarfp_(integer *, real *, real *, 
 	    integer *, real *);
 
 

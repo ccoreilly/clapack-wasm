@@ -30,7 +30,8 @@ static integer c__1 = 1;
     integer isave[3];
     logical upper;
     extern /* Subroutine */ int dlacn2_(integer *, doublereal *, doublereal *, 
-	     integer *, doublereal *, integer *, integer *), xerbla_(char *, 
+	     integer *, doublereal *, integer *, integer *);
+    void xerbla_(char *, 
 	    integer *);
     doublereal ainvnm;
     extern /* Subroutine */ int dsptrs_(char *, integer *, integer *, 

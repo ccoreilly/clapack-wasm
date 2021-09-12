@@ -60,7 +60,8 @@ static integer c__2 = 2;
 	    doublereal *, integer *), dlasdt_(integer *, integer *, 
 	    integer *, integer *, integer *, integer *, integer *), dlaset_(
 	    char *, integer *, integer *, doublereal *, doublereal *, 
-	    doublereal *, integer *), xerbla_(char *, integer *);
+	    doublereal *, integer *);
+    void xerbla_(char *, integer *);
     integer smlszp;
 
 

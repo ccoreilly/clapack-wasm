@@ -51,7 +51,9 @@ static integer c__2 = 2;
 	    integer *, integer *, complex *, integer *, complex *, integer *, 
 	    integer *, integer *, integer *, integer *, real *, integer *, 
 	    real *, real *, real *, real *, integer *, real *, real *, real *, 
-	     integer *), xerbla_(char *, integer *), slasdt_(integer *
+	     integer *);
+    void xerbla_(char *, integer *);
+    int slasdt_(integer *
 , integer *, integer *, integer *, integer *, integer *, integer *
 );
 

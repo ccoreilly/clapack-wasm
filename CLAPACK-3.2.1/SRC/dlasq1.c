@@ -46,7 +46,8 @@ static integer c__0 = 0;
 	    doublereal *, doublereal *, integer *, integer *, doublereal *, 
 	    integer *, integer *);
     doublereal safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *), dlasrt_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  dlasrt_(
 	    char *, integer *, doublereal *, integer *);
 
 

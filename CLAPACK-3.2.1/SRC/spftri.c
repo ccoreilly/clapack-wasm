@@ -32,7 +32,8 @@ static real c_b11 = 1.f;
 	    integer *, integer *, real *, real *, integer *, real *, integer *
 ), ssyrk_(char *, char *, integer 
 	    *, integer *, real *, real *, integer *, real *, real *, integer *
-), xerbla_(char *, integer *);
+);
+    void xerbla_(char *, integer *);
     logical nisodd;
     extern /* Subroutine */ int slauum_(char *, integer *, real *, integer *, 
 	    integer *), stftri_(char *, char *, char *, integer *, 

@@ -71,7 +71,7 @@ static integer c__2 = 2;
 , real *, integer *, real *, integer *, real *, real *, real *, 
 	    integer *, real *, integer *, integer *);
     extern doublereal slamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     integer ijblsk, swband;
     extern /* Subroutine */ int slascl_(char *, integer *, integer *, real *, 
 	    real *, integer *, integer *, real *, integer *, integer *);

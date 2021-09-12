@@ -37,7 +37,9 @@ static integer c__1 = 1;
 	    integer *, real *, real *, real *, integer *);
     integer iuplo;
     extern /* Subroutine */ int sswap_(integer *, real *, integer *, real *, 
-	    integer *), xerbla_(char *, integer *), slartg_(real *, 
+	    integer *);
+    void xerbla_(char *, integer *);
+    int slartg_(real *, 
 	    real *, real *, real *, real *);
     logical rotate;
     extern /* Subroutine */ int sbdsqr_(char *, integer *, integer *, integer 

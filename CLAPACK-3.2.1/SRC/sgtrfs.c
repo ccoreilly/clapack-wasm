@@ -43,7 +43,8 @@ static real c_b19 = 1.f;
 	    integer *, integer *);
     extern doublereal slamch_(char *);
     real safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *), slagtm_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  slagtm_(
 	    char *, integer *, integer *, real *, real *, real *, real *, 
 	    real *, integer *, real *, real *, integer *);
     logical notran;

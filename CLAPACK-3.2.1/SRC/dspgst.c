@@ -46,7 +46,8 @@ static doublereal c_b11 = 1.;
     extern /* Subroutine */ int dtpmv_(char *, char *, char *, integer *, 
 	    doublereal *, doublereal *, integer *), 
 	    dtpsv_(char *, char *, char *, integer *, doublereal *, 
-	    doublereal *, integer *), xerbla_(char *, 
+	    doublereal *, integer *);
+    void xerbla_(char *, 
 	    integer *);
 
 

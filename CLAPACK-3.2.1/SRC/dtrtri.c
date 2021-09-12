@@ -30,7 +30,7 @@ static doublereal c_b22 = -1.;
     char ch__1[2];
 
     /* Builtin functions */
-    /* Subroutine */ int s_cat(char *, char **, integer *, integer *, ftnlen);
+    /* Subroutine */ void s_cat(char *, char **, integer *, integer *, ftnlen);
 
     /* Local variables */
     integer j, jb, nb, nn;
@@ -42,7 +42,8 @@ static doublereal c_b22 = -1.;
 , doublereal *, integer *, doublereal *, integer *);
     logical upper;
     extern /* Subroutine */ int dtrti2_(char *, char *, integer *, doublereal 
-	    *, integer *, integer *), xerbla_(char *, integer 
+	    *, integer *, integer *);
+    void xerbla_(char *, integer 
 	    *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);

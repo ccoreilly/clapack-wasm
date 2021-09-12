@@ -44,7 +44,7 @@ static real c_b18 = 1.f;
 	    integer *);
     real sstop;
     extern doublereal slamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern logical sisnan_(real *);
     extern integer smaxloc_(real *, integer *);
 

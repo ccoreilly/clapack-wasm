@@ -29,7 +29,8 @@ static doublecomplex c_b1 = {1.,0.};
     logical lower;
     extern /* Subroutine */ int ztfsm_(char *, char *, char *, char *, char *, 
 	     integer *, integer *, doublecomplex *, doublecomplex *, 
-	    doublecomplex *, integer *), xerbla_(char *, integer *);
+	    doublecomplex *, integer *);
+    void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2)                                    -- */

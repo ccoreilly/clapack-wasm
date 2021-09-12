@@ -43,7 +43,8 @@ static real c_b18 = 1.f;
     extern /* Subroutine */ int chegs2_(integer *, char *, integer *, complex 
 	    *, integer *, complex *, integer *, integer *), cher2k_(
 	    char *, char *, integer *, integer *, complex *, complex *, 
-	    integer *, complex *, integer *, real *, complex *, integer *), xerbla_(char *, integer *);
+	    integer *, complex *, integer *, real *, complex *, integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
 

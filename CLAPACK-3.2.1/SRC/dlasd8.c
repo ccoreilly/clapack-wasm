@@ -49,8 +49,8 @@ static doublereal c_b8 = 1.;
 	    doublereal *, integer *), dlascl_(char *, integer *, integer *, 
 	    doublereal *, doublereal *, integer *, integer *, doublereal *, 
 	    integer *, integer *), dlaset_(char *, integer *, integer 
-	    *, doublereal *, doublereal *, doublereal *, integer *), 
-	    xerbla_(char *, integer *);
+	    *, doublereal *, doublereal *, doublereal *, integer *);
+	void xerbla_(char *, integer *);
     doublereal dsigjp;
 
 

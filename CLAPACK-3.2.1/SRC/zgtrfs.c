@@ -53,7 +53,8 @@ static doublecomplex c_b26 = {1.,0.};
 	    integer *, integer *);
     extern doublereal dlamch_(char *);
     doublereal safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *), zlagtm_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  zlagtm_(
 	    char *, integer *, integer *, doublereal *, doublecomplex *, 
 	    doublecomplex *, doublecomplex *, doublecomplex *, integer *, 
 	    doublereal *, doublecomplex *, integer *);

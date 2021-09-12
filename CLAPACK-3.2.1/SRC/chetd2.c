@@ -41,7 +41,8 @@ static integer c__1 = 1;
 	    complex *, integer *);
     logical upper;
     extern /* Subroutine */ int clarfg_(integer *, complex *, complex *, 
-	    integer *, complex *), xerbla_(char *, integer *);
+	    integer *, complex *);
+    void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

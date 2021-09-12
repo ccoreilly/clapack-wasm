@@ -38,7 +38,7 @@ static real c_b12 = 1.f;
 	    sgemv_(char *, integer *, integer *, real *, real *, integer *, 
 	    real *, integer *, real *, real *, integer *);
     logical upper;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern logical sisnan_(real *);
 
 

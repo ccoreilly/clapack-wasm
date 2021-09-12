@@ -28,7 +28,8 @@ static complex c_b2 = {1.f,0.f};
     extern logical lsame_(char *, char *);
     extern /* Subroutine */ int ctrsm_(char *, char *, char *, char *, 
 	    integer *, integer *, complex *, complex *, integer *, complex *, 
-	    integer *), xerbla_(char *, 
+	    integer *);
+    void xerbla_(char *, 
 	    integer *);
     logical nounit;
 

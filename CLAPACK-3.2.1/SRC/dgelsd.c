@@ -55,7 +55,8 @@ static doublereal c_b82 = 0.;
 	    integer *, integer *, doublereal *, integer *, doublereal *, 
 	    doublereal *, integer *, integer *), dlacpy_(char *, integer *, 
 	    integer *, doublereal *, integer *, doublereal *, integer *), dlaset_(char *, integer *, integer *, doublereal *, 
-	    doublereal *, doublereal *, integer *), xerbla_(char *, 
+	    doublereal *, doublereal *, integer *);
+    void xerbla_(char *, 
 	    integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);

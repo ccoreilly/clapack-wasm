@@ -38,7 +38,8 @@ static real c_b27 = 1.f;
 	    real *, integer *), strmv_(char *, char *, char *, integer *, 
 	    real *, integer *, real *, integer *), 
 	    strsv_(char *, char *, char *, integer *, real *, integer *, real 
-	    *, integer *), xerbla_(char *, integer *);
+	    *, integer *);
+    void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

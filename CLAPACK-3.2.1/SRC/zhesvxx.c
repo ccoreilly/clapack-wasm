@@ -39,7 +39,7 @@
     logical equil, rcequ;
     extern doublereal dlamch_(char *);
     logical nofact;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal bignum;
     extern /* Subroutine */ int zlaqhe_(char *, integer *, doublecomplex *, 
 	    integer *, doublereal *, doublereal *, doublereal *, char *);

@@ -36,8 +36,10 @@ static integer c__1 = 1;
     logical wantz;
     extern /* Subroutine */ int ztpmv_(char *, char *, char *, integer *, 
 	    doublecomplex *, doublecomplex *, integer *), ztpsv_(char *, char *, char *, integer *, doublecomplex *
-, doublecomplex *, integer *), xerbla_(
-	    char *, integer *), zhpgst_(integer *, char *, integer *, 
+, doublecomplex *, integer *);
+    void xerbla_(
+	    char *, integer *);
+    int zhpgst_(integer *, char *, integer *, 
 	    doublecomplex *, doublecomplex *, integer *), zpptrf_(
 	    char *, integer *, doublecomplex *, integer *);
 

@@ -21,7 +21,8 @@
     integer ab_dim1, ab_offset, b_dim1, b_offset, i__1;
 
     /* Local variables */
-    extern /* Subroutine */ int xerbla_(char *, integer *), sgbtrf_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  sgbtrf_(
 	    integer *, integer *, integer *, integer *, real *, integer *, 
 	    integer *, integer *), sgbtrs_(char *, integer *, integer *, 
 	    integer *, integer *, real *, integer *, integer *, real *, 

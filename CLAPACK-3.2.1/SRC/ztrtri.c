@@ -30,7 +30,7 @@ static integer c__2 = 2;
     char ch__1[2];
 
     /* Builtin functions */
-    /* Subroutine */ int s_cat(char *, char **, integer *, integer *, ftnlen);
+    /* Subroutine */ void s_cat(char *, char **, integer *, integer *, ftnlen);
 
     /* Local variables */
     integer j, jb, nb, nn;
@@ -42,7 +42,8 @@ static integer c__2 = 2;
 	    ztrsm_(char *, char *, char *, char *, integer *, integer *, 
 	    doublecomplex *, doublecomplex *, integer *, doublecomplex *, 
 	    integer *), ztrti2_(char *, char *
-, integer *, doublecomplex *, integer *, integer *), xerbla_(char *, integer *);
+, integer *, doublecomplex *, integer *, integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     logical nounit;

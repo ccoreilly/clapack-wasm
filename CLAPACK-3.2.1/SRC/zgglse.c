@@ -37,7 +37,8 @@ static integer c_n1 = -1;
 	    integer *), zaxpy_(integer *, doublecomplex *, doublecomplex *, 
 	    integer *, doublecomplex *, integer *), ztrmv_(char *, char *, 
 	    char *, integer *, doublecomplex *, integer *, doublecomplex *, 
-	    integer *), xerbla_(char *, integer *);
+	    integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     extern /* Subroutine */ int zggrqf_(integer *, integer *, integer *, 

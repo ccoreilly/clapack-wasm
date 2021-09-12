@@ -59,7 +59,8 @@ static integer c_n1 = -1;
     doublereal safmin;
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
-    extern /* Subroutine */ int xerbla_(char *, integer *), zdscal_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  zdscal_(
 	    integer *, doublereal *, doublecomplex *, integer *);
     doublereal abstll, bignum;
     extern doublereal zlanhe_(char *, char *, integer *, doublecomplex *, 

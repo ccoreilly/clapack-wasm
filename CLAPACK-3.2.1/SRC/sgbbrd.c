@@ -40,7 +40,8 @@ static integer c__1 = 1;
     logical wantb, wantc;
     integer minmn;
     logical wantq;
-    extern /* Subroutine */ int xerbla_(char *, integer *), slaset_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  slaset_(
 	    char *, integer *, integer *, real *, real *, real *, integer *), slartg_(real *, real *, real *, real *, real *), slargv_(
 	    integer *, real *, integer *, real *, integer *, real *, integer *
 ), slartv_(integer *, real *, integer *, real *, integer *, real *

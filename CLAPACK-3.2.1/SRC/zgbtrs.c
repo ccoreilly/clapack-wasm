@@ -37,7 +37,9 @@ static integer c__1 = 1;
 	    integer *, doublecomplex *, integer *, doublecomplex *, integer *)
 	    , zswap_(integer *, doublecomplex *, integer *, doublecomplex *, 
 	    integer *), ztbsv_(char *, char *, char *, integer *, integer *, 
-	    doublecomplex *, integer *, doublecomplex *, integer *), xerbla_(char *, integer *), zlacgv_(
+	    doublecomplex *, integer *, doublecomplex *, integer *);
+    void xerbla_(char *, integer *);
+    int zlacgv_(
 	    integer *, doublecomplex *, integer *);
     logical notran;
 

@@ -84,7 +84,8 @@ static integer c__0 = 0;
 	    integer *, integer *);
     integer ijobvl;
     extern /* Subroutine */ int slascl_(char *, integer *, integer *, real *, 
-	    real *, integer *, integer *, real *, integer *, integer *), xerbla_(char *, integer *);
+	    real *, integer *, integer *, real *, integer *, integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     extern doublereal slamch_(char *);

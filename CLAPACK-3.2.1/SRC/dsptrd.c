@@ -40,7 +40,8 @@ static doublereal c_b14 = -1.;
 	     doublereal *, integer *);
     logical upper;
     extern /* Subroutine */ int dlarfg_(integer *, doublereal *, doublereal *, 
-	     integer *, doublereal *), xerbla_(char *, integer *);
+	     integer *, doublereal *);
+    void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

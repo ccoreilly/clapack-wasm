@@ -30,8 +30,9 @@ static integer c_n1 = -1;
     extern logical lsame_(char *, char *);
     extern /* Subroutine */ int ctrsm_(char *, char *, char *, char *, 
 	    integer *, integer *, complex *, complex *, integer *, complex *, 
-	    integer *), xerbla_(char *, 
-	    integer *), claswp_(integer *, complex *, integer *, 
+	    integer *);
+    void xerbla_(char *, integer *);
+    int claswp_(integer *, complex *, integer *, 
 	    integer *, integer *, integer *, integer *);
     logical notran;
 

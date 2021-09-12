@@ -34,7 +34,9 @@ static integer c__1 = 1;
     logical nofact;
     extern /* Subroutine */ int chpcon_(char *, integer *, complex *, integer 
 	    *, real *, real *, complex *, integer *), clacpy_(char *, 
-	    integer *, integer *, complex *, integer *, complex *, integer *), xerbla_(char *, integer *), chprfs_(char *, 
+	    integer *, integer *, complex *, integer *, complex *, integer *);
+    void xerbla_(char *, integer *);
+    int chprfs_(char *, 
 	    integer *, integer *, complex *, complex *, integer *, complex *, 
 	    integer *, complex *, integer *, real *, real *, complex *, real *
 , integer *), chptrf_(char *, integer *, complex *, 

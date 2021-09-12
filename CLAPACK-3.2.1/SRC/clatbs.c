@@ -60,7 +60,8 @@ static real c_b36 = .5f;
     extern /* Complex */ VOID cladiv_(complex *, complex *, complex *);
     extern doublereal slamch_(char *);
     extern /* Subroutine */ int csscal_(integer *, real *, complex *, integer 
-	    *), xerbla_(char *, integer *);
+	    *);
+    void xerbla_(char *, integer *);
     real bignum;
     extern integer isamax_(integer *, real *, integer *);
     extern doublereal scasum_(integer *, complex *, integer *);

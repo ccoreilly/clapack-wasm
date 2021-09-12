@@ -48,7 +48,8 @@ static integer c__0 = 0;
     extern /* Subroutine */ int cgeqrf_(integer *, integer *, complex *, 
 	    integer *, complex *, complex *, integer *, integer *), claset_(
 	    char *, integer *, integer *, complex *, complex *, complex *, 
-	    integer *), xerbla_(char *, integer *);
+	    integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     integer scllen;

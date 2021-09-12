@@ -48,7 +48,8 @@ static integer c__1 = 1;
 	    doublecomplex *, integer *, complex *, integer *, integer *);
     extern doublereal dlamch_(char *);
     extern /* Subroutine */ int cgetrf_(integer *, integer *, complex *, 
-	    integer *, integer *, integer *), xerbla_(char *, integer *);
+	    integer *, integer *, integer *);
+    void xerbla_(char *, integer *);
     extern doublereal zlange_(char *, integer *, integer *, doublecomplex *, 
 	    integer *, doublereal *);
     extern /* Subroutine */ int cgetrs_(char *, integer *, integer *, complex 

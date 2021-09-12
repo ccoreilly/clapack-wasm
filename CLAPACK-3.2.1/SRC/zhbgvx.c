@@ -52,7 +52,7 @@ static integer c__1 = 1;
     logical alleig, indeig;
     integer indibl;
     logical valeig;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     integer indiwk, indisp;
     extern /* Subroutine */ int dsterf_(integer *, doublereal *, doublereal *, 
 	     integer *), dstebz_(char *, char *, integer *, doublereal *, 

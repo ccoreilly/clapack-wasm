@@ -39,7 +39,7 @@ static integer c__1 = 1;
     doublereal scalel;
     extern integer idamax_(integer *, doublereal *, integer *);
     doublereal scaleu;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal ainvnm;
     extern /* Subroutine */ int dlatrs_(char *, char *, char *, char *, 
 	    integer *, doublereal *, integer *, doublereal *, doublereal *, 

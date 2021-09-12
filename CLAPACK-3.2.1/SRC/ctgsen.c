@@ -55,8 +55,10 @@ static integer c__1 = 1;
     real safmin;
     extern /* Subroutine */ int ctgexc_(logical *, logical *, integer *, 
 	    complex *, integer *, complex *, integer *, complex *, integer *, 
-	    complex *, integer *, integer *, integer *, integer *), xerbla_(
-	    char *, integer *), classq_(integer *, complex *, integer 
+	    complex *, integer *, integer *, integer *, integer *);
+    void xerbla_(
+	    char *, integer *);
+    int classq_(integer *, complex *, integer 
 	    *, real *, real *);
     integer liwmin;
     extern /* Subroutine */ int ctgsyl_(char *, integer *, integer *, integer 

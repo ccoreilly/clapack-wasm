@@ -56,8 +56,9 @@ static integer c__1 = 1;
     logical wantx;
     extern /* Subroutine */ int zlar2v_(integer *, doublecomplex *, 
 	    doublecomplex *, doublecomplex *, integer *, doublereal *, 
-	    doublecomplex *, integer *), xerbla_(char *, integer *), 
-	    zdscal_(integer *, doublereal *, doublecomplex *, integer *);
+	    doublecomplex *, integer *);
+    void xerbla_(char *, integer *);
+    int zdscal_(integer *, doublereal *, doublecomplex *, integer *);
     logical update;
     extern /* Subroutine */ int zlacgv_(integer *, doublecomplex *, integer *)
 	    , zlaset_(char *, integer *, integer *, doublecomplex *, 

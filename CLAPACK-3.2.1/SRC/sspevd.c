@@ -40,7 +40,7 @@ static integer c__1 = 1;
     integer iscale;
     extern doublereal slamch_(char *);
     real safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     real bignum;
     integer indtau;
     extern /* Subroutine */ int sstedc_(char *, integer *, real *, real *, 

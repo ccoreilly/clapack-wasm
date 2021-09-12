@@ -27,7 +27,8 @@
     extern /* Subroutine */ int sorg2l_(integer *, integer *, integer *, real 
 	    *, integer *, real *, real *, integer *), sorg2r_(integer *, 
 	    integer *, integer *, real *, integer *, real *, real *, integer *
-), xerbla_(char *, integer *);
+);
+    void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

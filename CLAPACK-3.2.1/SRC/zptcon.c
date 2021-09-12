@@ -31,7 +31,7 @@ static integer c__1 = 1;
     /* Local variables */
     integer i__, ix;
     extern integer idamax_(integer *, doublereal *, integer *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal ainvnm;
 
 

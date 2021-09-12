@@ -43,7 +43,7 @@ static integer c__1 = 1;
 	    *, integer *, real *, integer *, real *, real *, integer *, real *
 , integer *);
     extern doublereal slamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern integer isamax_(integer *, real *, integer *);
     extern /* Subroutine */ int slarfp_(integer *, real *, real *, integer *, 
 	    real *);

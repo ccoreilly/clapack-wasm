@@ -32,7 +32,7 @@ static integer c__65 = 65;
     char ch__1[2];
 
     /* Builtin functions */
-    /* Subroutine */ int s_cat(char *, char **, integer *, integer *, ftnlen);
+    /* Subroutine */ void s_cat(char *, char **, integer *, integer *, ftnlen);
 
     /* Local variables */
     integer i__;
@@ -49,7 +49,8 @@ static integer c__65 = 65;
 , complex *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
-    extern /* Subroutine */ int xerbla_(char *, integer *), clarzt_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  clarzt_(
 	    char *, char *, integer *, integer *, complex *, integer *, 
 	    complex *, complex *, integer *);
     logical notran;

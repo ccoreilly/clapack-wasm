@@ -18,7 +18,7 @@
 
 static integer c__1 = 1;
 
-/* Subroutine */ int xerbla_(char *srname, integer *info)
+/* Subroutine */ void xerbla_(char *srname, integer *info)
 {
     
 
@@ -61,5 +61,5 @@ static integer c__1 = 1;
 
 /*     End of XERBLA */
 
-    return 0;
+    return;
 } /* xerbla_ */

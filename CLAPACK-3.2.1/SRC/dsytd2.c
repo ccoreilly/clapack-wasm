@@ -41,7 +41,8 @@ static doublereal c_b14 = -1.;
     extern /* Subroutine */ int dsymv_(char *, integer *, doublereal *, 
 	    doublereal *, integer *, doublereal *, integer *, doublereal *, 
 	    doublereal *, integer *), dlarfg_(integer *, doublereal *, 
-	     doublereal *, integer *, doublereal *), xerbla_(char *, integer *
+	     doublereal *, integer *, doublereal *);
+    void xerbla_(char *, integer *
 );
 
 

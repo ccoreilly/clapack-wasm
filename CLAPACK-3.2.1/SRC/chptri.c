@@ -46,7 +46,7 @@ static integer c__1 = 1;
 	    integer *);
     integer kstep;
     logical upper;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     integer kcnext;
 
 

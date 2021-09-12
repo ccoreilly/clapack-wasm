@@ -34,7 +34,8 @@ static integer c__2 = 2;
     extern /* Subroutine */ int zhetf2_(char *, integer *, doublecomplex *, 
 	    integer *, integer *, integer *), zlahef_(char *, integer 
 	    *, integer *, integer *, doublecomplex *, integer *, integer *, 
-	    doublecomplex *, integer *, integer *), xerbla_(char *, 
+	    doublecomplex *, integer *, integer *);
+    void xerbla_(char *, 
 	    integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);

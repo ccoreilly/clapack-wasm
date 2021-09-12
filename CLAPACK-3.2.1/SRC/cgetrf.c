@@ -35,8 +35,8 @@ static integer c_n1 = -1;
     extern /* Subroutine */ int ctrsm_(char *, char *, char *, char *, 
 	    integer *, integer *, complex *, complex *, integer *, complex *, 
 	    integer *), cgetf2_(integer *, 
-	    integer *, complex *, integer *, integer *, integer *), xerbla_(
-	    char *, integer *);
+	    integer *, complex *, integer *, integer *, integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     extern /* Subroutine */ int claswp_(integer *, complex *, integer *, 

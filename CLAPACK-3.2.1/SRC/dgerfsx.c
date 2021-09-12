@@ -62,7 +62,8 @@ static integer c__1 = 1;
 	    integer *, doublereal *, integer *, doublereal *);
     extern /* Subroutine */ int dgecon_(char *, integer *, doublereal *, 
 	    integer *, doublereal *, doublereal *, doublereal *, integer *, 
-	    integer *), xerbla_(char *, integer *);
+	    integer *);
+    void xerbla_(char *, integer *);
     logical colequ, notran, rowequ;
     extern integer ilaprec_(char *);
     integer ithresh, n_norms__;

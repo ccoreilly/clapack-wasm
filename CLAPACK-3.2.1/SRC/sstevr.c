@@ -54,7 +54,7 @@ static integer c__4 = 4;
     real safmin;
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     real bignum;
     integer indisp, indiwo, liwmin;
     logical tryrac;

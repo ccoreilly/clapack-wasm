@@ -37,7 +37,8 @@ static real c_b23 = 1.f;
     extern /* Subroutine */ int ssytd2_(char *, integer *, real *, integer *, 
 	    real *, real *, real *, integer *), ssyr2k_(char *, char *
 , integer *, integer *, real *, real *, integer *, real *, 
-	    integer *, real *, real *, integer *), xerbla_(
+	    integer *, real *, real *, integer *);
+    void xerbla_(
 	    char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);

@@ -43,8 +43,8 @@
     logical nofact;
     extern /* Subroutine */ int cgetrf_(integer *, integer *, complex *, 
 	    integer *, integer *, integer *), clacpy_(char *, integer *, 
-	    integer *, complex *, integer *, complex *, integer *), 
-	    xerbla_(char *, integer *);
+	    integer *, complex *, integer *, complex *, integer *);
+	void xerbla_(char *, integer *);
     real bignum;
     integer infequ;
     logical colequ;

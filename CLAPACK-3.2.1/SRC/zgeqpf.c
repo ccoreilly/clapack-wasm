@@ -49,7 +49,8 @@ static integer c__1 = 1;
 	    integer *, doublecomplex *, integer *, doublecomplex *, 
 	    doublecomplex *, integer *, doublecomplex *, integer *);
     extern integer idamax_(integer *, doublereal *, integer *);
-    extern /* Subroutine */ int xerbla_(char *, integer *), zlarfp_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  zlarfp_(
 	    integer *, doublecomplex *, doublecomplex *, integer *, 
 	    doublecomplex *);
 

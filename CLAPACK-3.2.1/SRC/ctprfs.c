@@ -51,7 +51,7 @@ static integer c__1 = 1;
 	    integer *, complex *, complex *, real *, integer *, integer *);
     extern doublereal slamch_(char *);
     real safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     logical notran;
     char transn[1], transt[1];
     logical nounit;

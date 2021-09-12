@@ -46,7 +46,7 @@ static integer c__1 = 1;
     doublereal safmin;
     extern doublereal zlanhb_(char *, char *, integer *, integer *, 
 	    doublecomplex *, integer *, doublereal *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal bignum;
     extern /* Subroutine */ int dsterf_(integer *, doublereal *, doublereal *, 
 	     integer *), zlascl_(char *, integer *, integer *, doublereal *, 

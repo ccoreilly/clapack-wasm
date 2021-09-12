@@ -59,7 +59,8 @@ static doublereal c_b36 = .5;
 	    doublereal *);
     extern doublereal dlamch_(char *);
     extern integer idamax_(integer *, doublereal *, integer *);
-    extern /* Subroutine */ int xerbla_(char *, integer *), zdscal_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  zdscal_(
 	    integer *, doublereal *, doublecomplex *, integer *);
     doublereal bignum;
     extern integer izamax_(integer *, doublecomplex *, integer *);

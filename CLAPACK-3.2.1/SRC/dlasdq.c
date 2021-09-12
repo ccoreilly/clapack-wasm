@@ -38,8 +38,10 @@ static integer c__1 = 1;
 , doublereal *, integer *);
     integer iuplo;
     extern /* Subroutine */ int dlartg_(doublereal *, doublereal *, 
-	    doublereal *, doublereal *, doublereal *), xerbla_(char *, 
-	    integer *), dbdsqr_(char *, integer *, integer *, integer 
+	    doublereal *, doublereal *, doublereal *);
+    void xerbla_(char *, 
+	    integer *);
+    int dbdsqr_(char *, integer *, integer *, integer 
 	    *, integer *, doublereal *, doublereal *, doublereal *, integer *, 
 	     doublereal *, integer *, doublereal *, integer *, doublereal *, 
 	    integer *);

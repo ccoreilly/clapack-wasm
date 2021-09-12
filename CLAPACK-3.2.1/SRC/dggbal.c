@@ -61,7 +61,7 @@ static doublereal c_b71 = .5;
     extern doublereal dlamch_(char *);
     doublereal pgamma;
     extern integer idamax_(integer *, doublereal *, integer *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     integer lsfmin, lsfmax;
 
 

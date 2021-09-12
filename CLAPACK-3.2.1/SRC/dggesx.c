@@ -71,7 +71,7 @@ static doublereal c_b43 = 1.;
     extern /* Subroutine */ int dlaset_(char *, integer *, integer *, 
 	    doublereal *, doublereal *, doublereal *, integer *);
     doublereal safmax;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal bignum;
     extern /* Subroutine */ int dhgeqz_(char *, char *, char *, integer *, 
 	    integer *, integer *, doublereal *, integer *, doublereal *, 

@@ -38,8 +38,8 @@
     extern doublereal slamch_(char *);
     logical nofact;
     extern /* Subroutine */ int slaqge_(integer *, integer *, real *, integer 
-	    *, real *, real *, real *, real *, real *, char *), 
-	    xerbla_(char *, integer *);
+	    *, real *, real *, real *, real *, real *, char *);
+	void xerbla_(char *, integer *);
     real bignum;
     integer infequ;
     logical colequ;

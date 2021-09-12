@@ -28,7 +28,7 @@
     integer i__, j, kd;
     real rcmin, rcmax;
     extern doublereal slamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     real bignum, smlnum;
 
 

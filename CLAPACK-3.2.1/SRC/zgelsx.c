@@ -49,7 +49,8 @@ static integer c__1 = 1;
     extern doublereal dlamch_(char *);
     extern /* Subroutine */ int zunm2r_(char *, char *, integer *, integer *, 
 	    integer *, doublecomplex *, integer *, doublecomplex *, 
-	    doublecomplex *, integer *, doublecomplex *, integer *), xerbla_(char *, integer *);
+	    doublecomplex *, integer *, doublecomplex *, integer *);
+    void xerbla_(char *, integer *);
     extern doublereal zlange_(char *, integer *, integer *, doublecomplex *, 
 	    integer *, doublereal *);
     doublereal bignum;

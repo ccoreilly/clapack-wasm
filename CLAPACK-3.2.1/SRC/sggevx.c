@@ -55,7 +55,8 @@ static real c_b58 = 1.f;
 	    integer *, real *, real *, real *, integer *);
     logical ilascl, ilbscl;
     extern doublereal slamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *), sgghrd_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  sgghrd_(
 	    char *, char *, integer *, integer *, integer *, real *, integer *
 , real *, integer *, real *, integer *, real *, integer *, 
 	    integer *);

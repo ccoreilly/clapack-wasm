@@ -72,7 +72,7 @@ static integer c__1 = 1;
     extern /* Subroutine */ int clacpy_(char *, integer *, integer *, complex 
 	    *, integer *, complex *, integer *);
     real safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     real abstll, bignum;
     integer indiwk, indisp;
     extern /* Subroutine */ int cstein_(integer *, real *, real *, integer *, 

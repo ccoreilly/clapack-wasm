@@ -48,7 +48,7 @@ static complex c_b16 = {1.f,0.f};
     logical upper;
     extern doublereal slamch_(char *);
     real safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern integer isamax_(integer *, real *, integer *);
     real lstres;
     extern /* Subroutine */ int cpttrs_(char *, integer *, integer *, real *, 

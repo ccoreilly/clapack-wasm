@@ -29,7 +29,7 @@ static integer c_n1 = -1;
     extern logical lsame_(char *, char *);
     integer iinfo;
     logical upper;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     extern /* Subroutine */ int sorgql_(integer *, integer *, integer *, real 

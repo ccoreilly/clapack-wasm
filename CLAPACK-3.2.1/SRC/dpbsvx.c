@@ -45,8 +45,9 @@ static integer c__1 = 1;
 	    doublereal *, char *);
     logical nofact;
     extern /* Subroutine */ int dlacpy_(char *, integer *, integer *, 
-	    doublereal *, integer *, doublereal *, integer *), 
-	    xerbla_(char *, integer *), dpbequ_(char *, integer *, 
+	    doublereal *, integer *, doublereal *, integer *);
+	void xerbla_(char *, integer *);
+    int dpbequ_(char *, integer *, 
 	    integer *, doublereal *, integer *, doublereal *, doublereal *, 
 	    doublereal *, integer *);
     doublereal bignum;

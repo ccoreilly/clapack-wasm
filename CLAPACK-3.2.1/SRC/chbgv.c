@@ -31,7 +31,9 @@
 	    complex *, integer *, real *, real *, complex *, integer *, 
 	    complex *, integer *), chbgst_(char *, char *, 
 	    integer *, integer *, integer *, complex *, integer *, complex *, 
-	    integer *, complex *, integer *, complex *, real *, integer *), xerbla_(char *, integer *), cpbstf_(char 
+	    integer *, complex *, integer *, complex *, real *, integer *);
+    void xerbla_(char *, integer *);
+    int cpbstf_(char 
 	    *, integer *, integer *, complex *, integer *, integer *);
     integer indwrk;
     extern /* Subroutine */ int csteqr_(char *, integer *, real *, real *, 

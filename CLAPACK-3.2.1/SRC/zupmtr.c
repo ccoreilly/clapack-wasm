@@ -38,7 +38,7 @@ static integer c__1 = 1;
 	    doublecomplex *, integer *, doublecomplex *, doublecomplex *, 
 	    integer *, doublecomplex *);
     logical upper;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     logical notran, forwrd;
 
 

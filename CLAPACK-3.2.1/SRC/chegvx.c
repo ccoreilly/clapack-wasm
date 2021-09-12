@@ -43,7 +43,8 @@ static integer c_n1 = -1;
 	    *, integer *, complex *, integer *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
-    extern /* Subroutine */ int xerbla_(char *, integer *), cheevx_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  cheevx_(
 	    char *, char *, char *, integer *, complex *, integer *, real *, 
 	    real *, integer *, integer *, real *, integer *, real *, complex *
 , integer *, complex *, integer *, real *, integer *, integer *, 

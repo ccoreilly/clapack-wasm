@@ -35,7 +35,7 @@ doublereal sla_syrcond__(char *uplo, integer *n, real *a, integer *lda, real *
     extern /* Subroutine */ int slacn2_(integer *, real *, real *, integer *, 
 	    real *, integer *, integer *);
     extern doublereal slamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     real ainvnm;
     char normin[1];
     real smlnum;

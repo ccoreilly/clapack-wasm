@@ -40,7 +40,8 @@ static real c_b22 = 1.f;
     extern /* Subroutine */ int sgebd2_(integer *, integer *, real *, integer 
 	    *, real *, real *, real *, real *, real *, integer *), slabrd_(
 	    integer *, integer *, integer *, real *, integer *, real *, real *
-, real *, real *, real *, integer *, real *, integer *), xerbla_(
+, real *, real *, real *, integer *, real *, integer *);
+    void xerbla_(
 	    char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);

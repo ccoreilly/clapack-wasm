@@ -28,7 +28,7 @@
 	    doublereal *, integer *, doublereal *, doublereal *, integer *, 
 	    doublereal *);
     extern logical lsame_(char *, char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     logical notran;
 
 

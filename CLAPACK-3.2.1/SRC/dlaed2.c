@@ -48,7 +48,8 @@ static integer c__1 = 1;
     extern integer idamax_(integer *, doublereal *, integer *);
     extern /* Subroutine */ int dlamrg_(integer *, integer *, doublereal *, 
 	    integer *, integer *, integer *), dlacpy_(char *, integer *, 
-	    integer *, doublereal *, integer *, doublereal *, integer *), xerbla_(char *, integer *);
+	    integer *, doublereal *, integer *, doublereal *, integer *);
+    void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

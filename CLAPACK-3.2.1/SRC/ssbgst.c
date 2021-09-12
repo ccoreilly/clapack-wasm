@@ -46,7 +46,8 @@ static real c_b20 = -1.f;
     extern /* Subroutine */ int sscal_(integer *, real *, real *, integer *);
     logical upper, wantx;
     extern /* Subroutine */ int slar2v_(integer *, real *, real *, real *, 
-	    integer *, real *, real *, integer *), xerbla_(char *, integer *);
+	    integer *, real *, real *, integer *);
+    void xerbla_(char *, integer *);
     logical update;
     extern /* Subroutine */ int slaset_(char *, integer *, integer *, real *, 
 	    real *, real *, integer *), slartg_(real *, real *, real *

@@ -57,7 +57,7 @@ static doublecomplex c_b45 = {1.,0.};
 	    doublecomplex *, integer *, doublecomplex *, integer *, 
 	    doublereal *, doublereal *, doublereal *, integer *);
     doublereal scaloc;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     integer iround;

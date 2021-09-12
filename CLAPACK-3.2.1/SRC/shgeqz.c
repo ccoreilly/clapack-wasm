@@ -71,7 +71,7 @@ static integer c__3 = 3;
     extern /* Subroutine */ int slarfg_(integer *, real *, real *, integer *, 
 	    real *);
     real safmax;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     real eshift;
     logical ilschr;
     integer icompq, ilastm;

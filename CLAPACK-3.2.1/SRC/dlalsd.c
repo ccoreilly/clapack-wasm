@@ -76,8 +76,8 @@ static doublereal c_b11 = 1.;
 	    doublereal *, integer *), dlacpy_(char *, integer *, 
 	    integer *, doublereal *, integer *, doublereal *, integer *), dlartg_(doublereal *, doublereal *, doublereal *, 
 	    doublereal *, doublereal *), dlaset_(char *, integer *, integer *, 
-	     doublereal *, doublereal *, doublereal *, integer *), 
-	    xerbla_(char *, integer *);
+	     doublereal *, doublereal *, doublereal *, integer *);
+	void xerbla_(char *, integer *);
     integer givcol;
     extern doublereal dlanst_(char *, integer *, doublereal *, doublereal *);
     extern /* Subroutine */ int dlasrt_(char *, integer *, doublereal *, 

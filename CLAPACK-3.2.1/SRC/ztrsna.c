@@ -50,7 +50,7 @@ static integer c__1 = 1;
 	    doublereal *, doublereal *);
     extern doublereal dznrm2_(integer *, doublecomplex *, integer *), dlamch_(
 	    char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal bignum;
     logical wantbh;
     extern integer izamax_(integer *, doublecomplex *, integer *);

@@ -36,8 +36,10 @@ static integer c__1 = 1;
     integer nru;
     extern logical lsame_(char *, char *);
     extern /* Subroutine */ int claset_(char *, integer *, integer *, complex 
-	    *, complex *, complex *, integer *), xerbla_(char *, 
-	    integer *), cbdsqr_(char *, integer *, integer *, integer 
+	    *, complex *, complex *, integer *);
+    void xerbla_(char *, 
+	    integer *);
+    int cbdsqr_(char *, integer *, integer *, integer 
 	    *, integer *, real *, real *, complex *, integer *, complex *, 
 	    integer *, complex *, integer *, real *, integer *);
     integer icompz;

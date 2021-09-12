@@ -35,7 +35,8 @@ static integer c__1 = 1;
     real vt[1]	/* was [1][1] */;
     integer nru;
     extern logical lsame_(char *, char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *), slaset_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  slaset_(
 	    char *, integer *, integer *, real *, real *, real *, integer *), sbdsqr_(char *, integer *, integer *, integer *, integer 
 	    *, real *, real *, real *, integer *, real *, integer *, real *, 
 	    integer *, real *, integer *);

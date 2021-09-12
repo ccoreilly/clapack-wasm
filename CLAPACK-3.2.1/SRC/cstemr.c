@@ -70,7 +70,7 @@ static real c_b18 = .003f;
     extern doublereal slamch_(char *);
     integer wbegin;
     real safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     real bignum;
     integer inderr, iindwk, indgrs, offset;
     extern /* Subroutine */ int slarrc_(char *, integer *, real *, real *, 

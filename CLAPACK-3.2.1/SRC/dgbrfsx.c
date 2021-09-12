@@ -64,7 +64,8 @@ static integer c__1 = 1;
 	    doublereal *, integer *, doublereal *), dlamch_(char *);
     extern /* Subroutine */ int dgbcon_(char *, integer *, integer *, integer 
 	    *, doublereal *, integer *, integer *, doublereal *, doublereal *, 
-	     doublereal *, integer *, integer *), xerbla_(char *, 
+	     doublereal *, integer *, integer *);
+    void xerbla_(char *, 
 	    integer *);
     logical colequ, notran, rowequ;
     extern integer ilaprec_(char *);

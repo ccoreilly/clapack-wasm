@@ -48,7 +48,7 @@ static integer c__0 = 0;
 	    real *, integer *, real *, real *, integer *), scopy_(
 	    integer *, real *, integer *, real *, integer *);
     extern doublereal slamc3_(real *, real *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     real dsigjp;
     extern /* Subroutine */ int slascl_(char *, integer *, integer *, real *, 
 	    real *, integer *, integer *, real *, integer *, integer *), slacpy_(char *, integer *, integer *, real *, integer *, 

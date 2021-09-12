@@ -39,7 +39,8 @@ static doublereal c_b14 = 1.;
     extern /* Subroutine */ int dsyrk_(char *, char *, integer *, integer *, 
 	    doublereal *, doublereal *, integer *, doublereal *, doublereal *, 
 	     integer *), dpotf2_(char *, integer *, 
-	    doublereal *, integer *, integer *), xerbla_(char *, 
+	    doublereal *, integer *, integer *);
+    void xerbla_(char *, 
 	    integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);

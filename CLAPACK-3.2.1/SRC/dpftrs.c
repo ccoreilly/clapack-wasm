@@ -30,7 +30,7 @@ static doublereal c_b10 = 1.;
 	     integer *, integer *, doublereal *, doublereal *, doublereal *, 
 	    integer *);
     logical lower;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2)                                    -- */

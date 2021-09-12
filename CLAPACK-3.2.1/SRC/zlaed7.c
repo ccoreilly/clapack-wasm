@@ -47,7 +47,9 @@ static integer c_n1 = -1;
 	     integer *);
     integer idlmda;
     extern /* Subroutine */ int dlamrg_(integer *, integer *, doublereal *, 
-	    integer *, integer *, integer *), xerbla_(char *, integer *), zlacrm_(integer *, integer *, doublecomplex *, integer *, 
+	    integer *, integer *, integer *);
+    void xerbla_(char *, integer *);
+    int zlacrm_(integer *, integer *, doublecomplex *, integer *, 
 	     doublereal *, integer *, doublecomplex *, integer *, doublereal *
 );
     integer coltyp;

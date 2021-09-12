@@ -46,8 +46,10 @@ static integer c__1 = 1;
     extern doublereal slamch_(char *);
     logical nofact;
     extern /* Subroutine */ int clacpy_(char *, integer *, integer *, complex 
-	    *, integer *, complex *, integer *), xerbla_(char *, 
-	    integer *), cpbequ_(char *, integer *, integer *, complex 
+	    *, integer *, complex *, integer *);
+    void xerbla_(char *, 
+	    integer *);
+    int cpbequ_(char *, integer *, integer *, complex 
 	    *, integer *, real *, real *, real *, integer *), cpbrfs_(
 	    char *, integer *, integer *, integer *, complex *, integer *, 
 	    complex *, integer *, complex *, integer *, complex *, integer *, 

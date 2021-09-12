@@ -36,7 +36,8 @@ static integer c__1 = 1;
 	    doublecomplex *, doublecomplex *, integer *), ztpsv_(char *, char *, char *, integer *, doublecomplex *
 , doublecomplex *, integer *);
     logical alleig, indeig, valeig;
-    extern /* Subroutine */ int xerbla_(char *, integer *), zhpgst_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  zhpgst_(
 	    integer *, char *, integer *, doublecomplex *, doublecomplex *, 
 	    integer *), zhpevx_(char *, char *, char *, integer *, 
 	    doublecomplex *, doublereal *, doublereal *, integer *, integer *, 

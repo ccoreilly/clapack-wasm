@@ -50,7 +50,8 @@ static doublereal c_b14 = 1.;
 	     doublereal *, integer *, doublereal *, integer *, integer *);
     extern doublereal dlamch_(char *);
     doublereal safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *), dpotrs_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  dpotrs_(
 	    char *, integer *, integer *, doublereal *, integer *, doublereal 
 	    *, integer *, integer *);
     doublereal lstres;

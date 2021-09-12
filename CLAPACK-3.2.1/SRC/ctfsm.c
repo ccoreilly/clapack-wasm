@@ -36,7 +36,8 @@ static complex c_b1 = {1.f,0.f};
     logical lower;
     extern /* Subroutine */ int ctrsm_(char *, char *, char *, char *, 
 	    integer *, integer *, complex *, complex *, integer *, complex *, 
-	    integer *), xerbla_(char *, 
+	    integer *);
+    void xerbla_(char *, 
 	    integer *);
     logical misodd, nisodd, notrans;
 

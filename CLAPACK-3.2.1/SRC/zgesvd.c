@@ -35,7 +35,7 @@ static integer c_n1 = -1;
     char ch__1[2];
 
     /* Builtin functions */
-    /* Subroutine */ int s_cat(char *, char **, integer *, integer *, ftnlen);
+    /* Subroutine */ void s_cat(char *, char **, integer *, integer *, ftnlen);
     double sqrt(doublereal);
 
     /* Local variables */
@@ -57,8 +57,9 @@ static integer c_n1 = -1;
     extern doublereal dlamch_(char *);
     extern /* Subroutine */ int dlascl_(char *, integer *, integer *, 
 	    doublereal *, doublereal *, integer *, integer *, doublereal *, 
-	    integer *, integer *), xerbla_(char *, integer *),
-	     zgebrd_(integer *, integer *, doublecomplex *, integer *, 
+	    integer *, integer *);
+    void xerbla_(char *, integer *);
+    int zgebrd_(integer *, integer *, doublecomplex *, integer *, 
 	    doublereal *, doublereal *, doublecomplex *, doublecomplex *, 
 	    doublecomplex *, integer *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 

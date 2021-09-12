@@ -30,7 +30,8 @@ static integer c_n1 = -1;
     integer j, jb, nb;
     extern /* Subroutine */ int zgtts2_(integer *, integer *, integer *, 
 	    doublecomplex *, doublecomplex *, doublecomplex *, doublecomplex *
-, integer *, doublecomplex *, integer *), xerbla_(char *, integer 
+, integer *, doublecomplex *, integer *);
+    void xerbla_(char *, integer 
 	    *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);

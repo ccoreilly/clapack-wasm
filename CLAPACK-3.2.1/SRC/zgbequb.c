@@ -30,7 +30,7 @@
     integer i__, j, kd;
     doublereal radix, rcmin, rcmax;
     extern doublereal dlamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal bignum, logrdx, smlnum;
 
 

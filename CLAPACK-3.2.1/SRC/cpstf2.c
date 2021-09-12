@@ -48,7 +48,8 @@ static integer c__1 = 1;
     extern /* Subroutine */ int clacgv_(integer *, complex *, integer *);
     extern doublereal slamch_(char *);
     extern /* Subroutine */ int csscal_(integer *, real *, complex *, integer 
-	    *), xerbla_(char *, integer *);
+	    *);
+    void xerbla_(char *, integer *);
     extern logical sisnan_(real *);
     extern integer smaxloc_(real *, integer *);
 

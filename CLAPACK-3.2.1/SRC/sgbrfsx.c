@@ -60,7 +60,8 @@ static integer c__1 = 1;
 	     integer *, real *), slamch_(char *);
     extern /* Subroutine */ int sgbcon_(char *, integer *, integer *, integer 
 	    *, real *, integer *, integer *, real *, real *, real *, integer *
-, integer *), xerbla_(char *, integer *);
+, integer *);
+    void xerbla_(char *, integer *);
     logical colequ, notran, rowequ;
     extern integer ilaprec_(char *);
     integer ithresh, n_norms__;

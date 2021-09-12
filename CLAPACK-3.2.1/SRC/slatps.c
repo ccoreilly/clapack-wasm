@@ -45,7 +45,7 @@ static real c_b36 = .5f;
 	    real *, integer *), stpsv_(char *, char *, char *, integer *, 
 	    real *, real *, integer *);
     extern doublereal slamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     real bignum;
     extern integer isamax_(integer *, real *, integer *);
     logical notran;

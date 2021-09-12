@@ -45,8 +45,9 @@ static doublereal c_b80 = 0.;
     extern /* Subroutine */ int dlascl_(char *, integer *, integer *, 
 	    doublereal *, doublereal *, integer *, integer *, doublereal *, 
 	    integer *, integer *), dlaset_(char *, integer *, integer 
-	    *, doublereal *, doublereal *, doublereal *, integer *), 
-	    xerbla_(char *, integer *), zgebrd_(integer *, integer *, 
+	    *, doublereal *, doublereal *, doublereal *, integer *);
+	void xerbla_(char *, integer *);
+    int zgebrd_(integer *, integer *, 
 	    doublecomplex *, integer *, doublereal *, doublereal *, 
 	    doublecomplex *, doublecomplex *, doublecomplex *, integer *, 
 	    integer *);

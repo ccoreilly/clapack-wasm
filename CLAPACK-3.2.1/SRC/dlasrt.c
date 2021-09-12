@@ -29,7 +29,7 @@
     integer stack[64]	/* was [2][32] */;
     doublereal dmnmx;
     integer start;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     integer stkpnt;
 
 

@@ -29,7 +29,7 @@
     /* Local variables */
     integer j, k;
     doublecomplex temp, mult;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

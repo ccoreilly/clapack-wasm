@@ -62,7 +62,7 @@ static integer c__0 = 0;
 	    integer *, integer *, integer *, doublereal *, doublereal *, 
 	    doublereal *, integer *);
     logical ilascl, ilbscl;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     logical ldumma[1];

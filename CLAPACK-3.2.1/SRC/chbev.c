@@ -48,7 +48,7 @@ static integer c__1 = 1;
 	    integer *);
     extern doublereal slamch_(char *);
     real safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     real bignum;
     integer indrwk;
     extern /* Subroutine */ int csteqr_(char *, integer *, real *, real *, 

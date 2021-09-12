@@ -46,7 +46,8 @@ static integer c__1 = 1;
     logical upper;
     extern /* Subroutine */ int csymv_(char *, integer *, complex *, complex *
 , integer *, complex *, integer *, complex *, complex *, integer *
-), xerbla_(char *, integer *);
+);
+    void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

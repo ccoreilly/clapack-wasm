@@ -49,7 +49,7 @@ static integer c__1 = 1;
     extern /* Subroutine */ int csscal_(integer *, real *, complex *, integer 
 	    *);
     real safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     real bignum;
     integer indtau;
     extern /* Subroutine */ int chptrd_(char *, integer *, complex *, real *, 

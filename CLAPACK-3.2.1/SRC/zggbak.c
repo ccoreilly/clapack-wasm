@@ -25,8 +25,9 @@
     extern logical lsame_(char *, char *);
     logical leftv;
     extern /* Subroutine */ int zswap_(integer *, doublecomplex *, integer *, 
-	    doublecomplex *, integer *), xerbla_(char *, integer *), 
-	    zdscal_(integer *, doublereal *, doublecomplex *, integer *);
+	    doublecomplex *, integer *);
+    void xerbla_(char *, integer *);
+    int zdscal_(integer *, doublereal *, doublecomplex *, integer *);
     logical rightv;
 
 

@@ -38,7 +38,7 @@ static integer c__1 = 1;
 	    integer *);
     extern doublereal slamch_(char *);
     logical nofact;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     real bignum;
     extern doublereal slansb_(char *, char *, integer *, integer *, real *, 
 	    integer *, real *);

@@ -43,7 +43,8 @@ static logical c_true = TRUE_;
     logical leftv, bothv;
     doublereal hnorm;
     extern doublereal dlamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *), zlaein_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  zlaein_(
 	    logical *, logical *, integer *, doublecomplex *, integer *, 
 	    doublecomplex *, doublecomplex *, doublecomplex *, integer *, 
 	    doublereal *, doublereal *, doublereal *, integer *);

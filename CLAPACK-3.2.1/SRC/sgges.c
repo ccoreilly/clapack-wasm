@@ -60,7 +60,7 @@ static real c_b39 = 1.f;
 	    integer *, real *, integer *, real *, integer *, real *, integer *
 , real *, integer *, integer *);
     real safmax;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     real bignum;
     extern /* Subroutine */ int slascl_(char *, integer *, integer *, real *, 
 	    real *, integer *, integer *, real *, integer *, integer *);

@@ -39,7 +39,8 @@ static doublereal c_b11 = 1.;
 	    integer *, integer *, doublereal *, doublereal *, integer *, 
 	    doublereal *, integer *);
     logical upper, wantz;
-    extern /* Subroutine */ int xerbla_(char *, integer *), dpotrf_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  dpotrf_(
 	    char *, integer *, doublereal *, integer *, integer *);
     integer liwmin;
     extern /* Subroutine */ int dsyevd_(char *, char *, integer *, doublereal 

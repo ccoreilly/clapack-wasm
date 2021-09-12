@@ -61,8 +61,10 @@ static real c_b42 = 1.f;
 	    *, integer *);
     integer kcycle;
     extern /* Subroutine */ int claset_(char *, integer *, integer *, complex 
-	    *, complex *, complex *, integer *), xerbla_(char *, 
-	    integer *), slartg_(real *, real *, real *, real *, real *
+	    *, complex *, complex *, integer *);
+    void xerbla_(char *, 
+	    integer *);
+    int slartg_(real *, real *, real *, real *, real *
 );
 
 

@@ -39,7 +39,8 @@ static doublereal c_b23 = 1.;
 	    *, doublereal *, integer *, doublereal *, integer *, doublereal *, 
 	     doublereal *, integer *), dlatrd_(char *, 
 	    integer *, integer *, doublereal *, integer *, doublereal *, 
-	    doublereal *, doublereal *, integer *), xerbla_(char *, 
+	    doublereal *, doublereal *, integer *);
+    void xerbla_(char *, 
 	    integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);

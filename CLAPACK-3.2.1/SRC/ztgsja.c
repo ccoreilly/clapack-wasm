@@ -59,8 +59,10 @@ static doublereal c_b42 = 1.;
 	    doublecomplex *, doublereal *, doublecomplex *);
     integer kcycle;
     extern /* Subroutine */ int dlartg_(doublereal *, doublereal *, 
-	    doublereal *, doublereal *, doublereal *), xerbla_(char *, 
-	    integer *), zdscal_(integer *, doublereal *, 
+	    doublereal *, doublereal *, doublereal *);
+    void xerbla_(char *, 
+	    integer *);
+    int zdscal_(integer *, doublereal *, 
 	    doublecomplex *, integer *), zlapll_(integer *, doublecomplex *, 
 	    integer *, doublecomplex *, integer *, doublereal *), zlaset_(
 	    char *, integer *, integer *, doublecomplex *, doublecomplex *, 

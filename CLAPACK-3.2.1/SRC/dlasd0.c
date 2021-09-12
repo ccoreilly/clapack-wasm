@@ -43,7 +43,8 @@ static integer c__2 = 2;
 	    integer *, integer *, doublereal *, doublereal *, doublereal *, 
 	    integer *, doublereal *, integer *, doublereal *, integer *, 
 	    doublereal *, integer *), dlasdt_(integer *, integer *, 
-	    integer *, integer *, integer *, integer *, integer *), xerbla_(
+	    integer *, integer *, integer *, integer *, integer *);
+    void xerbla_(
 	    char *, integer *);
 
 

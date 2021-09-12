@@ -34,7 +34,7 @@ static integer c__2 = 2;
 	    integer *, doublecomplex *, integer *, integer *, doublecomplex *, 
 	     doublereal *, doublereal *, doublecomplex *);
     extern doublereal dznrm2_(integer *, doublecomplex *, integer *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     extern /* Subroutine */ int zgeqrf_(integer *, integer *, doublecomplex *, 

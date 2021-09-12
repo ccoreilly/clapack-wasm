@@ -41,7 +41,8 @@ static real c_b52 = .5f;
 , integer *), ssygs2_(integer *, 
 	    char *, integer *, real *, integer *, real *, integer *, integer *
 ), ssyr2k_(char *, char *, integer *, integer *, real *, 
-	    real *, integer *, real *, integer *, real *, real *, integer *), xerbla_(char *, integer *);
+	    real *, integer *, real *, integer *, real *, real *, integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
 

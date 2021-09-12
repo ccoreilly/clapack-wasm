@@ -698,4 +698,12 @@ extern "C" {
 }
 #endif
 
+#ifndef doublecomplex
+   typedef struct { double r, i; } doublecomplex;
+#endif
+
+#ifndef complex
+   typedef struct { float r, i; } complex;
+#endif
+
 #endif /*  CBLAS_F77_H */

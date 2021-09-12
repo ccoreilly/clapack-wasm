@@ -58,7 +58,7 @@ static integer c__3 = 3;
     doublecomplex dummy1[1];
     extern doublereal dznrm2_(integer *, doublecomplex *, integer *), dlamch_(
 	    char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal bignum;
     logical wantbh, wantdf, somcon;
     extern /* Subroutine */ int zlacpy_(char *, integer *, integer *, 

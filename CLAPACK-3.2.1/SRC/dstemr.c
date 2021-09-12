@@ -81,7 +81,8 @@ static doublereal c_b18 = .001;
     extern /* Subroutine */ int dlarrj_(integer *, doublereal *, doublereal *, 
 	     integer *, integer *, doublereal *, integer *, doublereal *, 
 	    doublereal *, doublereal *, integer *, doublereal *, doublereal *, 
-	     integer *), xerbla_(char *, integer *);
+	     integer *);
+    void xerbla_(char *, integer *);
     doublereal bignum;
     integer inderr, iindwk, indgrs, offset;
     extern doublereal dlanst_(char *, integer *, doublereal *, doublereal *);

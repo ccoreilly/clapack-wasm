@@ -51,7 +51,7 @@ static integer c__1 = 1;
     extern /* Subroutine */ int clacrm_(integer *, integer *, complex *, 
 	    integer *, real *, integer *, complex *, integer *, real *);
     integer igivcl;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     integer igivnm, submat, curprb, subpbs, igivpt, curlvl, matsiz, iprmpt, 

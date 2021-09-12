@@ -30,7 +30,8 @@ static integer c__1 = 1;
     extern /* Subroutine */ int sscal_(integer *, real *, real *, integer *);
     logical upper;
     extern /* Subroutine */ int stpmv_(char *, char *, char *, integer *, 
-	    real *, real *, integer *), xerbla_(char *
+	    real *, real *, integer *);
+    void xerbla_(char *
 , integer *);
     integer jclast;
     logical nounit;

@@ -44,8 +44,8 @@
 	    integer *, complex *, integer *, integer *, integer *);
     logical nofact;
     extern /* Subroutine */ int clacpy_(char *, integer *, integer *, complex 
-	    *, integer *, complex *, integer *), xerbla_(char *, 
-	    integer *);
+	    *, integer *, complex *, integer *);
+    void xerbla_(char *, integer *);
     real bignum;
     extern /* Subroutine */ int cgbtrs_(char *, integer *, integer *, integer 
 	    *, integer *, complex *, integer *, integer *, complex *, integer 

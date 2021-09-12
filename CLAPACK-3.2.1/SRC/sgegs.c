@@ -50,7 +50,8 @@ static real c_b37 = 1.f;
     real safmin;
     extern /* Subroutine */ int sgghrd_(char *, char *, integer *, integer *, 
 	    integer *, real *, integer *, real *, integer *, real *, integer *
-, real *, integer *, integer *), xerbla_(char *, 
+, real *, integer *, integer *);
+    void xerbla_(char *, 
 	    integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);

@@ -50,7 +50,7 @@ static integer c__1 = 1;
     logical wantd1, wantd2;
     extern doublereal dlamch_(char *);
     doublereal dscale, rdscal, safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     integer liwmin;
     extern /* Subroutine */ int zlacpy_(char *, integer *, integer *, 
 	    doublecomplex *, integer *, doublecomplex *, integer *), 

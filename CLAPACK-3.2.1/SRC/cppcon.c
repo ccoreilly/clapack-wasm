@@ -39,7 +39,8 @@ static integer c__1 = 1;
     real scalel;
     extern doublereal slamch_(char *);
     real scaleu;
-    extern /* Subroutine */ int xerbla_(char *, integer *), clatps_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  clatps_(
 	    char *, char *, char *, char *, integer *, complex *, complex *, 
 	    real *, real *, integer *);
     real ainvnm;

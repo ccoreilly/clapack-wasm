@@ -38,7 +38,8 @@ static real c_b16 = 1.f;
     extern /* Subroutine */ int strsm_(char *, char *, char *, char *, 
 	    integer *, integer *, real *, real *, integer *, real *, integer *
 ), ssyev_(char *, char *, integer 
-	    *, real *, integer *, real *, real *, integer *, integer *), xerbla_(char *, integer *);
+	    *, real *, integer *, real *, real *, integer *, integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     integer lwkmin;

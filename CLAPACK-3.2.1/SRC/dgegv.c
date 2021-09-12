@@ -74,8 +74,8 @@ static doublereal c_b38 = 0.;
 	    integer *), dtgevc_(char *, char *, 
 	    logical *, integer *, doublereal *, integer *, doublereal *, 
 	    integer *, doublereal *, integer *, doublereal *, integer *, 
-	    integer *, integer *, doublereal *, integer *), 
-	    xerbla_(char *, integer *);
+	    integer *, integer *, doublereal *, integer *);
+	void xerbla_(char *, integer *);
     integer ijobvl, iright;
     logical ilimit;
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 

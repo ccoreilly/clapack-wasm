@@ -49,7 +49,7 @@ static integer c__1 = 1;
     extern doublereal dlansb_(char *, char *, integer *, integer *, 
 	    doublereal *, integer *, doublereal *);
     doublereal safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal bignum;
     extern /* Subroutine */ int dsbtrd_(char *, char *, integer *, integer *, 
 	    doublereal *, integer *, doublereal *, doublereal *, doublereal *, 

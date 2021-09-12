@@ -52,7 +52,8 @@ static integer c__1 = 1;
 	    doublecomplex *, doublecomplex *, integer *, doublereal *, 
 	    doublecomplex *, integer *);
     integer iqaend;
-    extern /* Subroutine */ int xerbla_(char *, integer *), zlacgv_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  zlacgv_(
 	    integer *, doublecomplex *, integer *), zlaset_(char *, integer *, 
 	     integer *, doublecomplex *, doublecomplex *, doublecomplex *, 
 	    integer *), zlartg_(doublecomplex *, doublecomplex *, 

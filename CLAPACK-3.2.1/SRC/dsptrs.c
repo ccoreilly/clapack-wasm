@@ -45,7 +45,7 @@ static doublereal c_b19 = 1.;
 	    doublereal *, doublereal *, integer *), dswap_(integer *, 
 	    doublereal *, integer *, doublereal *, integer *);
     logical upper;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

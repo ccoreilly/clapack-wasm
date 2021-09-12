@@ -36,7 +36,8 @@ static integer c__1 = 1;
 	    doublecomplex *, integer *, doublereal *, doublecomplex *);
     extern logical lsame_(char *, char *);
     logical wantq;
-    extern /* Subroutine */ int xerbla_(char *, integer *), zlartg_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  zlartg_(
 	    doublecomplex *, doublecomplex *, doublereal *, doublecomplex *, 
 	    doublecomplex *);
 

@@ -55,7 +55,8 @@ static integer c__2 = 2;
     extern doublereal slamch_(char *);
     integer iwhila, iwhilb;
     real oldemn, safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *), slasrt_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  slasrt_(
 	    char *, integer *, real *, integer *);
 
 

@@ -49,7 +49,8 @@ static integer c__65 = 65;
 	    complex *, integer *, complex *, complex *, integer *, complex *, 
 	    integer *), clarfb_(char *, char *, char *, char *, integer *, 
 	    integer *, integer *, complex *, integer *, complex *, integer *, 
-	    complex *, integer *, complex *, integer *), xerbla_(char *, integer *);
+	    complex *, integer *, complex *, integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     integer ldwork, lwkopt;

@@ -39,8 +39,9 @@ static integer c__1 = 1;
     logical wantz;
     extern /* Subroutine */ int chpevd_(char *, char *, integer *, complex *, 
 	    real *, complex *, integer *, complex *, integer *, real *, 
-	    integer *, integer *, integer *, integer *), 
-	    xerbla_(char *, integer *), chpgst_(integer *, char *, 
+	    integer *, integer *, integer *, integer *);
+	void xerbla_(char *, integer *);
+    int chpgst_(integer *, char *, 
 	    integer *, complex *, complex *, integer *), cpptrf_(char 
 	    *, integer *, complex *, integer *);
     integer liwmin, lrwmin;

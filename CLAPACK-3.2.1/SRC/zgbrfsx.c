@@ -63,7 +63,7 @@ static logical c_false = FALSE_;
 	    *, doublecomplex *, integer *, doublecomplex *, integer *, 
 	    integer *, doublecomplex *, integer *, doublecomplex *, 
 	    doublereal *, ftnlen), dlamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern doublereal zlangb_(char *, integer *, integer *, integer *, 
 	    doublecomplex *, integer *, doublereal *);
     extern /* Subroutine */ int zgbcon_(char *, integer *, integer *, integer 

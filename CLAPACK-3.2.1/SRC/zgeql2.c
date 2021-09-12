@@ -32,7 +32,9 @@ static integer c__1 = 1;
     doublecomplex alpha;
     extern /* Subroutine */ int zlarf_(char *, integer *, integer *, 
 	    doublecomplex *, integer *, doublecomplex *, doublecomplex *, 
-	    integer *, doublecomplex *), xerbla_(char *, integer *), zlarfp_(integer *, doublecomplex *, doublecomplex *, 
+	    integer *, doublecomplex *);
+    void xerbla_(char *, integer *);
+    int zlarfp_(integer *, doublecomplex *, doublecomplex *, 
 	    integer *, doublecomplex *);
 
 

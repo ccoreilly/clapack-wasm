@@ -57,7 +57,8 @@ static integer c_n1 = -1;
     extern doublereal slamch_(char *), slange_(char *, integer *, 
 	    integer *, real *, integer *, real *);
     extern /* Subroutine */ int sgehrd_(integer *, integer *, integer *, real 
-	    *, integer *, real *, real *, integer *, integer *), xerbla_(char 
+	    *, integer *, real *, real *, integer *, integer *);
+    void xerbla_(char 
 	    *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);

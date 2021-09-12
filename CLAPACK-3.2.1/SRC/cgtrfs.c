@@ -55,7 +55,7 @@ static complex c_b26 = {1.f,0.f};
 	    real *, complex *, integer *);
     extern doublereal slamch_(char *);
     real safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     logical notran;
     char transn[1];
     extern /* Subroutine */ int cgttrs_(char *, integer *, integer *, complex 

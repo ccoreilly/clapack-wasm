@@ -31,7 +31,8 @@ static integer c__2 = 2;
     logical wantq;
     extern /* Subroutine */ int dlaexc_(logical *, integer *, doublereal *, 
 	    integer *, doublereal *, integer *, integer *, integer *, integer 
-	    *, doublereal *, integer *), xerbla_(char *, integer *);
+	    *, doublereal *, integer *);
+    void xerbla_(char *, integer *);
     integer nbnext;
 
 

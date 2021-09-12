@@ -54,7 +54,8 @@ static integer c__1 = 1;
 	    doublereal *, doublereal *, doublereal *, integer *, doublereal *, 
 	     integer *, integer *, integer *, integer *), dlaset_(
 	    char *, integer *, integer *, doublereal *, doublereal *, 
-	    doublereal *, integer *), xerbla_(char *, integer *);
+	    doublereal *, integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     integer finish;

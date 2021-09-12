@@ -52,8 +52,10 @@ static real c_b56 = 0.f;
 	    integer *, integer *);
     real scaloc;
     extern /* Subroutine */ int slatdf_(integer *, integer *, real *, integer 
-	    *, real *, real *, real *, integer *, integer *), xerbla_(char *, 
-	    integer *), slaset_(char *, integer *, integer *, real *, 
+	    *, real *, real *, real *, integer *, integer *);
+    void xerbla_(char *, 
+	    integer *);
+    int slaset_(char *, integer *, integer *, real *, 
 	    real *, real *, integer *);
     logical notran;
 

@@ -33,8 +33,10 @@ doublereal dla_gbrcond__(char *trans, integer *n, integer *kl, integer *ku,
     extern logical lsame_(char *, char *);
     integer isave[3];
     extern /* Subroutine */ int dlacn2_(integer *, doublereal *, doublereal *, 
-	     integer *, doublereal *, integer *, integer *), xerbla_(char *, 
-	    integer *), dgbtrs_(char *, integer *, integer *, integer 
+	     integer *, doublereal *, integer *, integer *);
+    void xerbla_(char *, 
+	    integer *);
+    int dgbtrs_(char *, integer *, integer *, integer 
 	    *, integer *, doublereal *, integer *, integer *, doublereal *, 
 	    integer *, integer *);
     doublereal ainvnm;

@@ -53,7 +53,8 @@ static real c_b37 = 1.f;
     logical ilascl, ilbscl;
     extern doublereal slamch_(char *), slange_(char *, integer *, 
 	    integer *, real *, integer *, real *);
-    extern /* Subroutine */ int xerbla_(char *, integer *), sgghrd_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  sgghrd_(
 	    char *, char *, integer *, integer *, integer *, real *, integer *
 , real *, integer *, real *, integer *, real *, integer *, 
 	    integer *);

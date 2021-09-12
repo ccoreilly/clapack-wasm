@@ -28,7 +28,8 @@ static integer c__1 = 1;
     extern logical lsame_(char *, char *);
     logical upper;
     extern /* Subroutine */ int ztpsv_(char *, char *, char *, integer *, 
-	    doublecomplex *, doublecomplex *, integer *), xerbla_(char *, integer *);
+	    doublecomplex *, doublecomplex *, integer *);
+    void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

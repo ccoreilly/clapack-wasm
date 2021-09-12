@@ -60,7 +60,7 @@ static logical c_false = FALSE_;
 	    zla_syrcond_x__(char *, integer *, doublecomplex *, integer *, 
 	    doublecomplex *, integer *, integer *, doublecomplex *, integer *,
 	     doublecomplex *, doublereal *, ftnlen), dlamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern doublereal zlansy_(char *, char *, integer *, doublecomplex *, 
 	    integer *, doublereal *);
     extern /* Subroutine */ int zsycon_(char *, integer *, doublecomplex *, 

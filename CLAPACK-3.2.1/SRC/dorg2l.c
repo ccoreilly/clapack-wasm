@@ -28,7 +28,8 @@ static integer c__1 = 1;
     integer i__, j, l, ii;
     extern /* Subroutine */ int dscal_(integer *, doublereal *, doublereal *, 
 	    integer *), dlarf_(char *, integer *, integer *, doublereal *, 
-	    integer *, doublereal *, doublereal *, integer *, doublereal *), xerbla_(char *, integer *);
+	    integer *, doublereal *, doublereal *, integer *, doublereal *);
+    void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

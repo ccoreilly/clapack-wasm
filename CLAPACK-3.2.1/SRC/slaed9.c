@@ -36,7 +36,7 @@ static integer c__1 = 1;
 	    integer *), slaed4_(integer *, integer *, real *, real *, real *, 
 	    real *, real *, integer *);
     extern doublereal slamc3_(real *, real *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

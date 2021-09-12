@@ -29,7 +29,7 @@ static complex c_b1 = {1.f,0.f};
 	    integer *, integer *, complex *, complex *, integer *, complex *, 
 	    integer *);
     logical upper;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

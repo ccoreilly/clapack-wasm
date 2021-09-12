@@ -45,8 +45,8 @@ static integer c__1 = 1;
     extern /* Subroutine */ int zswap_(integer *, doublecomplex *, integer *, 
 	    doublecomplex *, integer *), zsymv_(char *, integer *, 
 	    doublecomplex *, doublecomplex *, integer *, doublecomplex *, 
-	    integer *, doublecomplex *, doublecomplex *, integer *), 
-	    xerbla_(char *, integer *);
+	    integer *, doublecomplex *, doublecomplex *, integer *);
+	void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

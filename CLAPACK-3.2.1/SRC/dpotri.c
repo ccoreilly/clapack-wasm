@@ -21,7 +21,8 @@
 
     /* Local variables */
     extern logical lsame_(char *, char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *), dlauum_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  dlauum_(
 	    char *, integer *, doublereal *, integer *, integer *), 
 	    dtrtri_(char *, char *, integer *, doublereal *, integer *, 
 	    integer *);

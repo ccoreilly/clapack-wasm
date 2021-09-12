@@ -36,7 +36,8 @@ static integer c__1 = 1;
 	    doublecomplex *, integer *);
     logical upper;
     extern /* Subroutine */ int ztpmv_(char *, char *, char *, integer *, 
-	    doublecomplex *, doublecomplex *, integer *), xerbla_(char *, integer *);
+	    doublecomplex *, doublecomplex *, integer *);
+    void xerbla_(char *, integer *);
     integer jclast;
     logical nounit;
 

@@ -42,7 +42,7 @@ static integer c__1 = 1;
     logical wantq, wantu, wantv;
     extern doublereal dlamch_(char *);
     integer ncycle;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern doublereal zlange_(char *, integer *, integer *, doublecomplex *, 
 	    integer *, doublereal *);
     extern /* Subroutine */ int ztgsja_(char *, char *, char *, integer *, 

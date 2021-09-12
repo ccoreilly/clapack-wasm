@@ -39,7 +39,8 @@ doublereal zla_gbrcond_x__(char *trans, integer *n, integer *kl, integer *ku,
     integer isave[3];
     doublereal anorm;
     extern /* Subroutine */ int zlacn2_(integer *, doublecomplex *, 
-	    doublecomplex *, doublereal *, integer *, integer *), xerbla_(
+	    doublecomplex *, doublereal *, integer *, integer *);
+    void xerbla_(
 	    char *, integer *);
     doublereal ainvnm;
     extern /* Subroutine */ int zgbtrs_(char *, integer *, integer *, integer 

@@ -40,7 +40,8 @@ static real c_b13 = 0.f;
     extern /* Subroutine */ int scopy_(integer *, real *, integer *, real *, 
 	    integer *), sswap_(integer *, real *, integer *, real *, integer *
 ), sspmv_(char *, integer *, real *, real *, real *, integer *, 
-	    real *, real *, integer *), xerbla_(char *, integer *);
+	    real *, real *, integer *);
+    void xerbla_(char *, integer *);
     integer kcnext;
 
 

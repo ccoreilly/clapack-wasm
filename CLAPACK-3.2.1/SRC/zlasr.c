@@ -26,7 +26,7 @@
     doublecomplex temp;
     extern logical lsame_(char *, char *);
     doublereal ctemp, stemp;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK auxiliary routine (version 3.2) -- */

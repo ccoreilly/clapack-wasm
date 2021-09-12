@@ -34,7 +34,7 @@ static integer c__49 = 49;
     char ch__1[2];
 
     /* Builtin functions */
-    /* Subroutine */ int s_cat(char *, char **, integer *, integer *, ftnlen);
+    /* Subroutine */ void s_cat(char *, char **, integer *, integer *, ftnlen);
 
     /* Local variables */
     complex hl[2401]	/* was [49][49] */;
@@ -53,7 +53,8 @@ static integer c__49 = 49;
 	    integer *, integer *), clacpy_(char *, integer *, integer *, 
 	    complex *, integer *, complex *, integer *), claset_(char 
 	    *, integer *, integer *, complex *, complex *, complex *, integer 
-	    *), xerbla_(char *, integer *);
+	    *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     logical lquery;

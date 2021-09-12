@@ -38,7 +38,8 @@ static integer c__2 = 2;
 	    doublereal *, integer *, integer *, doublereal *, doublereal *, 
 	    doublereal *, doublereal *), dgeqrf_(integer *, integer *, 
 	    doublereal *, integer *, doublereal *, doublereal *, integer *, 
-	    integer *), xerbla_(char *, integer *);
+	    integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     extern /* Subroutine */ int dlaqps_(integer *, integer *, integer *, 

@@ -30,7 +30,7 @@
     integer iy, jx, kx, ky, info;
     real temp, safe1;
     extern doublereal slamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern integer ilauplo_(char *);
 
 

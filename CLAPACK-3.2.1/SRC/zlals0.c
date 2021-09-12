@@ -54,7 +54,8 @@ static integer c__0 = 0;
 	    doublereal *, doublereal *);
     extern doublereal dlamc3_(doublereal *, doublereal *);
     extern /* Subroutine */ int zcopy_(integer *, doublecomplex *, integer *, 
-	    doublecomplex *, integer *), xerbla_(char *, integer *);
+	    doublecomplex *, integer *);
+    void xerbla_(char *, integer *);
     doublereal dsigjp;
     extern /* Subroutine */ int zdscal_(integer *, doublereal *, 
 	    doublecomplex *, integer *), zlascl_(char *, integer *, integer *, 

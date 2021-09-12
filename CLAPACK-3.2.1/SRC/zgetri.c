@@ -38,8 +38,8 @@ static integer c__2 = 2;
 	    zswap_(integer *, doublecomplex *, integer *, doublecomplex *, 
 	    integer *), ztrsm_(char *, char *, char *, char *, integer *, 
 	    integer *, doublecomplex *, doublecomplex *, integer *, 
-	    doublecomplex *, integer *), 
-	    xerbla_(char *, integer *);
+	    doublecomplex *, integer *);
+	void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     integer ldwork, lwkopt;

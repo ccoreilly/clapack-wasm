@@ -34,8 +34,8 @@ static doublereal c_b12 = 1.;
     logical lower;
     extern /* Subroutine */ int ztrmm_(char *, char *, char *, char *, 
 	    integer *, integer *, doublecomplex *, doublecomplex *, integer *, 
-	     doublecomplex *, integer *), 
-	    xerbla_(char *, integer *);
+	     doublecomplex *, integer *);
+	void xerbla_(char *, integer *);
     logical nisodd;
     extern /* Subroutine */ int zlauum_(char *, integer *, doublecomplex *, 
 	    integer *, integer *), ztftri_(char *, char *, char *, 

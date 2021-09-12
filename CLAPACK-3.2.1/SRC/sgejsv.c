@@ -68,7 +68,7 @@ static integer c_n1 = -1;
     real aatmin;
     extern doublereal slamch_(char *);
     real aatmax;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     logical noscal;
     extern /* Subroutine */ int sgelqf_(integer *, integer *, real *, integer 
 	    *, real *, real *, integer *, integer *);

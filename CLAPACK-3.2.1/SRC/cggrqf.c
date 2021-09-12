@@ -30,7 +30,8 @@ static integer c_n1 = -1;
     extern /* Subroutine */ int cgeqrf_(integer *, integer *, complex *, 
 	    integer *, complex *, complex *, integer *, integer *), cgerqf_(
 	    integer *, integer *, complex *, integer *, complex *, complex *, 
-	    integer *, integer *), xerbla_(char *, integer *);
+	    integer *, integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     extern /* Subroutine */ int cunmrq_(char *, char *, integer *, integer *, 

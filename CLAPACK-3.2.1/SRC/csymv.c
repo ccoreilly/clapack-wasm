@@ -25,7 +25,7 @@
     integer i__, j, ix, iy, jx, jy, kx, ky, info;
     complex temp1, temp2;
     extern logical lsame_(char *, char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
 
 
 /*  -- LAPACK auxiliary routine (version 3.2) -- */

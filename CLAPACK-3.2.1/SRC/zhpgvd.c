@@ -35,7 +35,8 @@ static integer c__1 = 1;
     logical upper, wantz;
     extern /* Subroutine */ int ztpmv_(char *, char *, char *, integer *, 
 	    doublecomplex *, doublecomplex *, integer *), ztpsv_(char *, char *, char *, integer *, doublecomplex *
-, doublecomplex *, integer *), xerbla_(
+, doublecomplex *, integer *);
+    void xerbla_(
 	    char *, integer *);
     integer liwmin;
     extern /* Subroutine */ int zhpevd_(char *, char *, integer *, 

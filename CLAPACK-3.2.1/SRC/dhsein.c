@@ -47,7 +47,7 @@ static logical c_true = TRUE_;
 , doublereal *, doublereal *, integer *);
     extern doublereal dlanhs_(char *, integer *, doublereal *, integer *, 
 	    doublereal *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal bignum;
     logical noinit;
     integer ldwork;

@@ -50,7 +50,7 @@ static doublecomplex c_b16 = {1.,0.};
     extern doublereal dlamch_(char *);
     extern integer idamax_(integer *, doublereal *, integer *);
     doublereal safmin;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal lstres;
     extern /* Subroutine */ int zpttrs_(char *, integer *, integer *, 
 	    doublereal *, doublecomplex *, doublecomplex *, integer *, 

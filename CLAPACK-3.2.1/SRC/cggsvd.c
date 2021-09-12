@@ -48,7 +48,8 @@ static integer c__1 = 1;
 	    integer *, complex *, integer *, complex *, integer *, complex *, 
 	    integer *, integer *);
     integer ncycle;
-    extern /* Subroutine */ int xerbla_(char *, integer *), cggsvp_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  cggsvp_(
 	    char *, char *, char *, integer *, integer *, integer *, complex *
 , integer *, complex *, integer *, real *, real *, integer *, 
 	    integer *, complex *, integer *, complex *, integer *, complex *, 

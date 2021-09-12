@@ -36,8 +36,10 @@ static real c_b14 = -1.f;
     logical upper;
     extern /* Subroutine */ int saxpy_(integer *, real *, real *, integer *, 
 	    real *, integer *), sspmv_(char *, integer *, real *, real *, 
-	    real *, integer *, real *, real *, integer *), xerbla_(
-	    char *, integer *), slarfg_(integer *, real *, real *, 
+	    real *, integer *, real *, real *, integer *);
+    void xerbla_(
+	    char *, integer *);
+    int slarfg_(integer *, real *, real *, 
 	    integer *, real *);
 
 

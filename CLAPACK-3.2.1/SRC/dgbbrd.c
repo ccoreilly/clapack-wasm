@@ -44,7 +44,9 @@ static integer c__1 = 1;
     extern /* Subroutine */ int dlaset_(char *, integer *, integer *, 
 	    doublereal *, doublereal *, doublereal *, integer *), 
 	    dlartg_(doublereal *, doublereal *, doublereal *, doublereal *, 
-	    doublereal *), xerbla_(char *, integer *), dlargv_(
+	    doublereal *);
+    void xerbla_(char *, integer *);
+    int dlargv_(
 	    integer *, doublereal *, integer *, doublereal *, integer *, 
 	    doublereal *, integer *), dlartv_(integer *, doublereal *, 
 	    integer *, doublereal *, integer *, doublereal *, doublereal *, 

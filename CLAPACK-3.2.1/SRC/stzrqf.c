@@ -32,8 +32,9 @@ static real c_b8 = 1.f;
 	    integer *, integer *, real *, real *, integer *, real *, integer *
 , real *, real *, integer *), scopy_(integer *, real *, 
 	    integer *, real *, integer *), saxpy_(integer *, real *, real *, 
-	    integer *, real *, integer *), xerbla_(char *, integer *),
-	     slarfp_(integer *, real *, real *, integer *, real *);
+	    integer *, real *, integer *);
+    void xerbla_(char *, integer *);
+    int slarfp_(integer *, real *, real *, integer *, real *);
 
 
 /*  -- LAPACK routine (version 3.2) -- */

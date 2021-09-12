@@ -52,7 +52,7 @@ static doublereal c_b17 = 1.;
     doublereal safmin;
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal bignum;
     integer indtau;
     extern /* Subroutine */ int dsterf_(integer *, doublereal *, doublereal *, 

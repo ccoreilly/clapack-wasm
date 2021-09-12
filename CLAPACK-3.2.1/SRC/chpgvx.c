@@ -36,7 +36,8 @@ static integer c__1 = 1;
     extern /* Subroutine */ int ctpsv_(char *, char *, char *, integer *, 
 	    complex *, complex *, integer *);
     logical wantz, alleig, indeig, valeig;
-    extern /* Subroutine */ int xerbla_(char *, integer *), chpgst_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  chpgst_(
 	    integer *, char *, integer *, complex *, complex *, integer *), chpevx_(char *, char *, char *, integer *, complex *, 
 	    real *, real *, integer *, integer *, real *, integer *, real *, 
 	    complex *, integer *, complex *, real *, integer *, integer *, 

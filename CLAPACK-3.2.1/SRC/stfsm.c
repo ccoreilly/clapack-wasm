@@ -35,7 +35,8 @@ static real c_b27 = 1.f;
     logical lower;
     extern /* Subroutine */ int strsm_(char *, char *, char *, char *, 
 	    integer *, integer *, real *, real *, integer *, real *, integer *
-), xerbla_(char *, integer *);
+);
+    void xerbla_(char *, integer *);
     logical misodd, nisodd, notrans;
 
 

@@ -58,7 +58,7 @@ static integer c__1 = 1;
     doublereal anorm;
     logical rcequ;
     extern doublereal dlamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern doublereal dlansy_(char *, char *, integer *, doublereal *, 
 	    integer *, doublereal *);
     extern /* Subroutine */ int dsycon_(char *, integer *, doublereal *, 

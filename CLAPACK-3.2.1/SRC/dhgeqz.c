@@ -82,7 +82,7 @@ static integer c__3 = 3;
     extern /* Subroutine */ int dlartg_(doublereal *, doublereal *, 
 	    doublereal *, doublereal *, doublereal *);
     doublereal safmax;
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal eshift;
     logical ilschr;
     integer icompq, ilastm, ischur;

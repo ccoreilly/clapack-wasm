@@ -32,7 +32,8 @@ static integer c__2 = 2;
     integer nbmin, minmn, minws;
     extern /* Subroutine */ int sswap_(integer *, real *, integer *, real *, 
 	    integer *), slaqp2_(integer *, integer *, integer *, real *, 
-	    integer *, integer *, real *, real *, real *, real *), xerbla_(
+	    integer *, integer *, real *, real *, real *, real *);
+    void xerbla_(
 	    char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);

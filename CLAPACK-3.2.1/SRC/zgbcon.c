@@ -45,7 +45,7 @@ static integer c__1 = 1;
 	    integer *, doublecomplex *, doublecomplex *, doublereal *, 
 	    integer *, integer *);
     extern doublereal dlamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     doublereal ainvnm;
     extern integer izamax_(integer *, doublecomplex *, integer *);
     logical onenrm;

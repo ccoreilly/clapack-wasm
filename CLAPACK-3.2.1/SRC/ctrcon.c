@@ -40,7 +40,7 @@ static integer c__1 = 1;
     real xnorm;
     extern integer icamax_(integer *, complex *, integer *);
     extern doublereal slamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     extern doublereal clantr_(char *, char *, char *, integer *, integer *, 
 	    complex *, integer *, real *);
     real ainvnm;

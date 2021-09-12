@@ -49,7 +49,8 @@ static integer c__65 = 65;
 	    doublecomplex *, doublecomplex *, integer *, doublecomplex *, 
 	    integer *), zgbtf2_(integer *, 
 	    integer *, integer *, integer *, doublecomplex *, integer *, 
-	    integer *, integer *), xerbla_(char *, integer *);
+	    integer *, integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *), izamax_(integer *, 
 	    doublecomplex *, integer *);

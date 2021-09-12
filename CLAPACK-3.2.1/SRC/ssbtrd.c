@@ -39,7 +39,8 @@ static integer c__1 = 1;
     extern /* Subroutine */ int slar2v_(integer *, real *, real *, real *, 
 	    integer *, real *, real *, integer *);
     integer iqaend;
-    extern /* Subroutine */ int xerbla_(char *, integer *), slaset_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  slaset_(
 	    char *, integer *, integer *, real *, real *, real *, integer *), slartg_(real *, real *, real *, real *, real *), slargv_(
 	    integer *, real *, integer *, real *, integer *, real *, integer *
 ), slartv_(integer *, real *, integer *, real *, integer *, real *

@@ -33,7 +33,8 @@ static real c_b33 = 1.f;
 	    real *, integer *, real *, integer *, real *, real *, integer *), scopy_(integer *, real *, integer *, real *, integer *), 
 	    saxpy_(integer *, real *, real *, integer *, real *, integer *), 
 	    strmv_(char *, char *, char *, integer *, real *, integer *, real 
-	    *, integer *), xerbla_(char *, integer *);
+	    *, integer *);
+    void xerbla_(char *, integer *);
     extern integer ilaenv_(integer *, char *, char *, integer *, integer *, 
 	    integer *, integer *);
     extern /* Subroutine */ int sggrqf_(integer *, integer *, integer *, real 

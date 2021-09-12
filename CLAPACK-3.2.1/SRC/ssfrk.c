@@ -30,7 +30,8 @@
     integer nrowa;
     logical lower;
     extern /* Subroutine */ int ssyrk_(char *, char *, integer *, integer *, 
-	    real *, real *, integer *, real *, real *, integer *), xerbla_(char *, integer *);
+	    real *, real *, integer *, real *, real *, integer *);
+    void xerbla_(char *, integer *);
     logical nisodd, notrans;
 
 

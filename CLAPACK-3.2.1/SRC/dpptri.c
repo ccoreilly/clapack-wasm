@@ -37,7 +37,8 @@ static integer c__1 = 1;
     extern /* Subroutine */ int dtpmv_(char *, char *, char *, integer *, 
 	    doublereal *, doublereal *, integer *);
     logical upper;
-    extern /* Subroutine */ int xerbla_(char *, integer *), dtptri_(
+    extern /* Subroutine */ void xerbla_(char *, integer *);
+    int  dtptri_(
 	    char *, char *, integer *, doublereal *, integer *);
 
 

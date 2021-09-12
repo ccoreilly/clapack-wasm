@@ -32,7 +32,8 @@ static integer c__2 = 2;
     extern /* Subroutine */ int dtgex2_(logical *, logical *, integer *, 
 	    doublereal *, integer *, doublereal *, integer *, doublereal *, 
 	    integer *, doublereal *, integer *, integer *, integer *, integer 
-	    *, doublereal *, integer *, integer *), xerbla_(char *, integer *);
+	    *, doublereal *, integer *, integer *);
+    void xerbla_(char *, integer *);
     integer nbnext;
     logical lquery;
 

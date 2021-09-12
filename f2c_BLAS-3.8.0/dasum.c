@@ -9,7 +9,6 @@
 
 		http://www.netlib.org/f2c/libf2c.zip
 */
-
 #include "f2c.h"
 
 /* > \brief \b DASUM */

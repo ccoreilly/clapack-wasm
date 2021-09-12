@@ -38,7 +38,8 @@ static integer c__1 = 1;
 	    complex *, integer *), ctrmm_(char *, char *, char *, char *, 
 	    integer *, integer *, complex *, complex *, integer *, complex *, 
 	    integer *), clacgv_(integer *, 
-	    complex *, integer *), xerbla_(char *, integer *);
+	    complex *, integer *);
+    void xerbla_(char *, integer *);
     char transt[1];
 
 

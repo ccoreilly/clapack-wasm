@@ -43,7 +43,8 @@ static integer c__1 = 1;
     integer jprev;
     extern doublereal dlapy2_(doublereal *, doublereal *), dlamch_(char *);
     extern /* Subroutine */ int dlamrg_(integer *, integer *, doublereal *, 
-	    integer *, integer *, integer *), xerbla_(char *, integer *);
+	    integer *, integer *, integer *);
+    void xerbla_(char *, integer *);
     doublereal hlftol;
 
 

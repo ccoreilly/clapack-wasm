@@ -54,7 +54,8 @@ static real c_b35 = 1.f;
     extern /* Subroutine */ int sswap_(integer *, real *, integer *, real *, 
 	    integer *), saxpy_(integer *, real *, real *, integer *, real *, 
 	    integer *), srotm_(integer *, real *, integer *, real *, integer *
-, real *), xerbla_(char *, integer *);
+, real *);
+    void xerbla_(char *, integer *);
     integer ijblsk, swband;
     extern /* Subroutine */ int slascl_(char *, integer *, integer *, real *, 
 	    real *, integer *, integer *, real *, integer *, integer *);

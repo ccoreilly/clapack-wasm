@@ -64,7 +64,7 @@ static integer c__3 = 3;
     extern doublereal slapy2_(real *, real *);
     real dummy1[1], alphai, alphar;
     extern doublereal slamch_(char *);
-    extern /* Subroutine */ int xerbla_(char *, integer *);
+    extern /* Subroutine */ void xerbla_(char *, integer *);
     logical wantbh, wantdf;
     extern /* Subroutine */ int slacpy_(char *, integer *, integer *, real *, 
 	    integer *, real *, integer *), stgexc_(logical *, logical 
